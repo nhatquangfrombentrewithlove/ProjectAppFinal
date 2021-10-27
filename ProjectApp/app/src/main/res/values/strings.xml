@@ -20,5 +20,15 @@
     <string name="goitructuyen">Gọi trực tuyến</string>
     <string name="gaptructiep">Gặp trực tiếp</string>
     <string name="ghichu">Ghi chú</string>
+    <string name="them_ghi_chu">Thêm ghi chú của bạn</string>
+    <string name="confirm">CHẤP NHẬN</string>
+    <string name="chi_phi">Chi phí</string>
+    <string name="fee_phidieutri">Chi phí điều trị</string>
+    <string name="magiamgia">Mã giảm giá</string>
+    <string name="fee_thanh_tien_phidieutri">800.000đ</string>
+    <string name="hint_nhapmagiamgia">Nhập mã giảm giá</string>
+    <string name="apdung">Áp dụng</string>
+    <string name="tongcong">Tổng cộng:</string>
+    <string name="fee_tong_cong">800.000đ</string>
 
 </resources>

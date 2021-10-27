@@ -32,14 +32,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="@string/name_bacsi"/>
+                android:text="@string/name_bacsi"
+                android:textColor="@color/color_app_black"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="@string/name_subinfor"/>
+                android:textSize="16sp"
+                android:text="@string/name_subinfor"
+                android:textColor="@color/color_app_black"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -55,12 +57,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ngayhen"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/color_app_black"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Date_time_ngayhen"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/color_app_black"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -72,36 +76,161 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/thoigianhen"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/color_app_black"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Date_time_thoigianhen"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/color_app_black"/>
         </LinearLayout>
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phuongthucgap"
-        android:textSize="20sp"/>
+        android:textSize="16sp"
+        android:textColor="@color/color_app_black"
+        android:layout_marginTop="5dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:text="@string/goitructuyen"
-            android:layout_margin="10dp"/>
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:text="@string/gaptructiep"
-            android:layout_margin="10dp"/>  </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/radTrucTuyen"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/goitructuyen"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@color/color_app_dark_gray"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/radTrucTiep"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/gaptructiep"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector"
+                android:layout_margin="20dp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup></LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ghichu"/>
+        android:text="@string/ghichu"
+        android:textSize="16sp"
+        android:textColor="@color/color_app_black"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:hint="@string/them_ghi_chu"
+        android:background="@drawable/edit_text"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chi_phi"
+        android:textColor="@color/color_app_black"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fee_phidieutri"
+            android:textColor="@color/color_app_black"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fee_thanh_tien_phidieutri"
+            android:textColor="@color/color_app_black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/magiamgia"
+        android:textColor="@color/color_app_black"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:hint="@string/hint_nhapmagiamgia"
+            android:background="@drawable/edit_text"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apdung"
+            android:background="@drawable/radio_selected"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tongcong"
+            android:textColor="@color/color_app_black"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fee_tong_cong"
+            android:textColor="@color/color_app_black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/confirm"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"/>
 </LinearLayout>

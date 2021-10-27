@@ -7,5 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    //mã màu định nghĩa của app
     <color name="background_color">#F4F7FB</color>
+    <color name="color_start">#27CBC9</color>
+    <color name="color_end">#2436A0</color>
+    <color name="color_app_black">#141414</color>
+    <color name="color_app_dark_gray">#333333</color>
+    <color name="color_app_light_gray">#707070</color>
+    <color name="color_app_white_gray">#CCCCCC</color>
+    <color name="color_high_light_blue">#0078BD</color>
+    <color name="color_high_light_green_light">#00BF68</color>
+    <color name="color_high_light_green_dark">#6DC505</color>
 </resources>

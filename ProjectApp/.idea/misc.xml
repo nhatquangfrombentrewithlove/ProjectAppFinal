@@ -3,9 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stroke_only.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circle_imageview.xml" value="0.19537037037037036" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circleimage.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selected.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selector.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_normal.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selected.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selector.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml" value="0.22" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selector.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.22" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml" value="0.20052083333333334" />
