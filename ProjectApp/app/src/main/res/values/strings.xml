@@ -31,4 +31,11 @@
     <string name="tongcong">Tổng cộng:</string>
     <string name="fee_tong_cong">800.000đ</string>
 
+    <string name="hoanthanh">HOÀN THÀNH</string>
+    <string name="Lichhenduocxacnhan1">Lịch hẹn đã được xác nhận</string>
+    <string name="Lichhenduocxacnhan2">Cuộc gọi trực tuyến với Bs. Phan Giang</string>
+    <string name="Lichhenduocxacnhan3">sẽ bắt đầu vào lúc 2:00 CH</string>
+    <string name="Lichhenduocxacnhan4">ngày 02/11/2021</string>
+
+
 </resources>
