@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/background_color">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rbLeft"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:text="@string/benh_nhan"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_left_selector"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:gravity="center"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/rbRight"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:text="@string/bac_si"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_right_selector"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="vertical">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabGmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/white"
+                    android:src="@drawable/google"
+                    android:layout_marginRight="80dp"/>
+             <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/google"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:gravity="center">
+                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook"
+                    android:focusable="true"
+                    app:backgroundTint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facebook"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên bạn là"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:hint="@string/name"
+            android:background="@drawable/edit_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:hint="@string/email"
+            android:background="@drawable/edit_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mật khẩu"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/password_hint"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@drawable/edit_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nhập lại mật khẩu"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/password_hint"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@drawable/edit_text"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="TẠO TÀI KHOẢN"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

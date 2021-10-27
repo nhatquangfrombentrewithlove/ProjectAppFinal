@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProjectApp</string>
+    <string name="name">Nhập tên của bạn</string>
+    <string name="email">Nhập email của bạn</string>
+    <string name="password_hint">Nhập mật khẩu của bạn</string>
+    <string name="benh_nhan">BỆNH NHÂN</string>
+    <string name="bac_si">BÁC SĨ</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
 </resources>
