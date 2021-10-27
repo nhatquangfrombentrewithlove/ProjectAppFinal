@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProjectApp</string>
-
     <string name="name">Nhập tên của bạn</string>
+    <string name="ten">Nhập tên của bạn</string>
     <string name="email">Nhập email của bạn</string>
     <string name="password_hint">Nhập mật khẩu của bạn</string>
     <string name="benh_nhan">BỆNH NHÂN</string>
@@ -37,5 +37,15 @@
     <string name="Lichhenduocxacnhan3">sẽ bắt đầu vào lúc 2:00 CH</string>
     <string name="Lichhenduocxacnhan4">ngày 02/11/2021</string>
 
+
+    <string name="ten_ban">Tên bạn là</string>
+    <string name="email_cua_ban">Email</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="nhap_lai_mat_khau">Nhập lại mật khẩu</string>
+    <string name="tao_tai_khoan">TẠO TÀI KHOẢN</string>
+    <string name="da_co_tai_khoan">Bạn đã có tài khoản</string>
+    <string name="sign_in"><u>Đăng nhập</u></string>
+    <string name="chao_mung">CHÀO MỪNG TRỞ LẠI</string>
+    <string name="login">ĐĂNG NHẬP</string>
 
 </resources>

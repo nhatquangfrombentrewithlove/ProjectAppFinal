@@ -10,10 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+<<<<<<< Updated upstream
             android:name=".Appointment_call_screen" android:exported="true" />
+=======
+            android:name=".SigninActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+>>>>>>> Stashed changes
 
         <activity android:name=".confirm_screen" android:exported="true" />
 
+<<<<<<< Updated upstream
         <activity
             android:name=".BookConfirmation_screen" android:exported="true">
              <intent-filter>
@@ -27,6 +41,12 @@
         </activity>
         <activity
             android:name=".SignupActivity" android:exported="true" />
+=======
+            android:exported="true">
+
+        </activity>
+
+>>>>>>> Stashed changes
     </application>
 
 </manifest>

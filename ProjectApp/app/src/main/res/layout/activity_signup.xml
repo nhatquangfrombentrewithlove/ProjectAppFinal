@@ -88,7 +88,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tên bạn là"
+            android:text="@string/ten_ban"
             android:textSize="16sp"
             android:textColor="@color/black"/>
         <EditText
@@ -96,13 +96,13 @@
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40sp"
-            android:hint="@string/name"
+            android:hint="@string/ten"
             android:background="@drawable/edit_text"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/email_cua_ban"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"/>
@@ -118,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Mật khẩu"
+            android:text="@string/mat_khau"
             android:textSize="16sp"
             android:textColor="@color/black"/>
 
@@ -135,7 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Nhập lại mật khẩu"
+            android:text="@string/nhap_lai_mat_khau"
             android:textSize="16sp"
             android:textColor="@color/black"/>
 
@@ -153,14 +153,27 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="TẠO TÀI KHOẢN"
+            android:text="@string/tao_tai_khoan"
             android:textSize="20dp"
             android:textColor="@color/white"
             android:background="@drawable/button"/>
-
-
-
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/da_co_tai_khoan"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
 
     </LinearLayout>
 
