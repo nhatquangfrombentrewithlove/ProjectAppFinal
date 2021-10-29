@@ -37,6 +37,15 @@
     <string name="Lichhenduocxacnhan3">sẽ bắt đầu vào lúc 2:00 CH</string>
     <string name="Lichhenduocxacnhan4">ngày 02/11/2021</string>
 
+    <string name="Lichhendaduocxacnhan">Lịch hẹn đã được xác nhận</string>
+    <string name="Call">GỌI</string>
+    <string name="Huylich">HỦY LỊCH</string>
+    <string name="Ghichu">GHI CHÚ</string>
+    <string name="Lichhentruocdo">Lịch hẹn trước đó</string>
+    <string name="Date_time_Giohentruocdo">5:00 CH</string>
+    <string name="Date_time_Ngayhentruocdo">15/10/2021</string>
+    <string name="Date_time_Giohentruoctruocdo">3:00 CH</string>
+    <string name="Date_time_Ngayhentruoctruocdo">08/10/2021</string>
 
     <string name="ten_ban">Tên bạn là</string>
     <string name="email_cua_ban">Email</string>
