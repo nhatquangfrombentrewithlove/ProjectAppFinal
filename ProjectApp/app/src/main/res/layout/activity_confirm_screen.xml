@@ -27,7 +27,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/image_phangiang"
+                android:src="@drawable/avabsgiang"
                 android:gravity="center">
             </de.hdodenhof.circleimageview.CircleImageView>
             <TextView
