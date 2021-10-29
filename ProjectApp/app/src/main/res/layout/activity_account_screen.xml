@@ -33,7 +33,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:gravity="center"
-                android:src="@drawable/avaQuan">
+                android:src="@drawable/avaquan">
             </de.hdodenhof.circleimageview.CircleImageView>
 
             <TextView
