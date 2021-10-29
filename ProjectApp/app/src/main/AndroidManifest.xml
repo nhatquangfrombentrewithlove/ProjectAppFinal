@@ -9,20 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
+
         <activity
-<<<<<<< Updated upstream
             android:name=".account_screen"
-            android:exported="true" >
-=======
+            android:exported="true" />
+        <activity
             android:name=".PaymentMethodActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Appointment_call_screen"
-            android:exported="true" />
-        <activity
-            android:name=".SigninActivity"
-            android:exported="true">
->>>>>>> Stashed changes
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,53 +23,39 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< Updated upstream
+            android:name=".SigninActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".Turn_on_screen"
             android:exported="true">
         </activity>
         <activity
             android:name=".SelfHelpQS"
             android:exported="true" >
-
         </activity>
         <activity
             android:name=".Appointment_call_screen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
             android:name=".confirm_screen"
             android:exported="true" />
-        <activity
-            android:name=".BookConfirmation_screen"
-            android:exported="true">
-        </activity>
+
         <activity
             android:name=".SignupActivity"
             android:exported="true">
         </activity>
-=======
-            android:name=".SignupActivity"
-            android:exported="true" />
-        <activity
-            android:name=".confirm_screen"
-            android:exported="true" />
+
         <activity
             android:name=".BookConfirmation_screen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
->>>>>>> Stashed changes
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
