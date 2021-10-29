@@ -219,4 +219,10 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/spinnerNoPeople" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
