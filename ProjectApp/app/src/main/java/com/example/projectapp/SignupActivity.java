@@ -39,7 +39,7 @@ public class SignupActivity extends AppCompatActivity {
                     rbRight.setTextColor(Color.WHITE);
                     rbLeft.setTextColor(Color.BLACK);
                 break;
-        }
+                }
+            }
     }
-}
 }
