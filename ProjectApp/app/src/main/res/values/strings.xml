@@ -47,7 +47,9 @@
     <string name="Date_time_Giohentruoctruocdo">3:00 CH</string>
     <string name="Date_time_Ngayhentruoctruocdo">08/10/2021</string>
 
+
     <string name="Lichhendabihuy">Lịch hẹn đã bị hủy</string>
+
 
     <string name="ten_ban">Tên bạn là</string>
     <string name="email_cua_ban">Email</string>
@@ -79,5 +81,13 @@
     <string name="tep_am_thanh">Tệp âm thanh bạn đang nghe</string>
     <string name="xem_them"><u>Xem thêm</u></string>
     <string name="daytime_appointment">14:00 PM, 22/11/2021</string>
+
+    <string name="help">Chúng tôi có thể giúp gì được cho bạn?</string>
+    <string name="self_help">TỰ TRỊ LIỆU</string>
+    <string name="doctor_help">TÌM BÁC SĨ</string>
+
+    <string name="note">Ghi chú buổi trị liệu</string>
+    <string name="note1">Ghi chú</string>
+
 
 </resources>
