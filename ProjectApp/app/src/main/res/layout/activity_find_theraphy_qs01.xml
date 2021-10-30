@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindTheraphyQS_01"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tìm bác sĩ tâm lý"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/color_app_black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hãy cho chúng tôi biết tiêu chí của bạn"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/color_app_black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chúng tôi sẽ tìm ra bác sĩ phù hợp nhất cho bạn"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/color_app_black" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Giới tính"
+        android:textColor="@color/color_app_black"
+        android:textSize="20sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_spinner"
+            android:textColor="@color/color_app_dark_gray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_drop_down"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtCostEachTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Chi phí mỗi lần điều trị"
+        android:textColor="@color/color_app_black"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/sliderCostEachTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:value="2500000"
+        android:valueFrom="500000"
+        android:valueTo="5000000"
+        android:stepSize="50000"
+        android:theme="@style/MyMaterialTheme"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500.000đ"
+            android:textSize="15sp"
+            android:textColor="@color/color_app_black"
+            android:layout_marginRight="120dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.000.000đ"
+            android:textSize="15sp"
+            android:textColor="@color/color_app_black"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtFillCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nhập trực tiếp chi phí điều trị"
+        android:textColor="@color/color_app_black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtFillCost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_spinner"
+        android:textColor="@color/color_app_dark_gray"/>
+
+    <TextView
+        android:id="@+id/txtSpeciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Chuyên ngành"
+        android:textColor="@color/color_app_black"
+        android:textSize="20sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/spinnerSpeciality"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_spinner"
+            android:textColor="@color/color_app_dark_gray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_add"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Tiếp theo"
+        android:textColor="@color/background_color"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center"/>
+</LinearLayout>

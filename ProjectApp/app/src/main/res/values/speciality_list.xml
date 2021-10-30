@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="specility_list">
+        <item>Nhà tâm lý</item>
+        <item>Cố vấn tâm lý</item>
+        <item>Nhân viên xã hội lâm sàng được cấp phép</item>
+        <item>Bác sĩ tâm lý</item>
+        <item>Bác sĩ gia đình</item>
+    </string-array>
+</resources>
