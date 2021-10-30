@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/button_listivew">
+    <ImageView
+        android:id="@+id/imvAudioBN"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bnhomedangnghe2"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtAudioInfo"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_bacsi"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtNameBS"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_bacsi"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_app_light_gray"/>
+
+        <TextView
+            android:id="@+id/txtAudioNumber"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="@string/daytime_appointment"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imvNextButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_button_next"/>
+
+</LinearLayout>
