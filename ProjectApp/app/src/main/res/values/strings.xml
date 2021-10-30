@@ -47,6 +47,8 @@
     <string name="Date_time_Giohentruoctruocdo">3:00 CH</string>
     <string name="Date_time_Ngayhentruoctruocdo">08/10/2021</string>
 
+    <string name="Lichhendabihuy">Lịch hẹn đã bị hủy</string>
+
     <string name="ten_ban">Tên bạn là</string>
     <string name="email_cua_ban">Email</string>
     <string name="mat_khau">Mật khẩu</string>

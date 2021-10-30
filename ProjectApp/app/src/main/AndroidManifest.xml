@@ -15,7 +15,13 @@
             android:exported="true" />
         <activity
             android:name=".PaymentMethodActivity"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".Cancel_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Call_screen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,38 +30,28 @@
         </activity>
         <activity
             android:name=".SigninActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Turn_on_screen"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SelfHelpQS"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Appointment_call_screen"
             android:exported="true" />
         <activity
             android:name=".confirm_screen"
             android:exported="true" />
-
         <activity
             android:name=".SignupActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"/>
         <activity
             android:name=".BookConfirmation_screen"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"/>
     </application>
 
 </manifest>
