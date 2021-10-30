@@ -4,23 +4,25 @@
     android:layout_height="wrap_content"
     android:padding="15dp">
     <ImageView
+        android:id="@+id/imvIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/paymomo"/>
     <TextView
+        android:id="@+id/txtDescription"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:text="Ví điện tử Momo"
+        android:text="@string/description"
         android:textSize="16sp"
         android:layout_marginLeft="30dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
     <ImageView
-        android:layout_marginLeft="40dp"
+        android:id="@+id/imvNextButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_button_next"/>
-
-
 
 </LinearLayout>
