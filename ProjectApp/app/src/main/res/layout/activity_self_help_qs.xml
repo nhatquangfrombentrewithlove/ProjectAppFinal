@@ -109,7 +109,7 @@
                 android:gravity="center">
                 <RadioButton
                     android:id="@+id/radGTNam"
-                    android:layout_width="48dp"
+                    android:layout_width="60dp"
                     android:layout_height="48dp"
                     android:text="@string/gt_nam"
                     android:button="@android:color/transparent"
@@ -122,8 +122,8 @@
 
                 <RadioButton
                     android:id="@+id/radGTNu"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
                     android:text="@string/gt_nu"
                     android:button="@android:color/transparent"
                     android:textAlignment="center"
@@ -133,8 +133,8 @@
 
                 <RadioButton
                     android:id="@+id/radGTKhac"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
                     android:text="@string/gt_khac"
                     android:textAlignment="center"
                     android:button="@android:color/transparent"
@@ -152,7 +152,7 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -173,7 +173,6 @@
             android:textColor="@color/color_app_dark_gray" />
 
         <ImageView
-            android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
