@@ -127,7 +127,7 @@
                     android:text="@string/gt_nu"
                     android:button="@android:color/transparent"
                     android:textAlignment="center"
-                    android:background="@drawable/radio_left_selector"
+                    android:background="@drawable/radio_normal"
                     android:textColor="@color/color_app_dark_gray"
                     android:onClick="onRadioButtonClicked"/>
 
@@ -138,7 +138,7 @@
                     android:text="@string/gt_khac"
                     android:textAlignment="center"
                     android:button="@android:color/transparent"
-                    android:background="@drawable/radio_left_selector"
+                    android:background="@drawable/radio_right_normal"
                     android:textColor="@color/color_app_dark_gray"
                     android:onClick="onRadioButtonClicked"/>
             </RadioGroup>

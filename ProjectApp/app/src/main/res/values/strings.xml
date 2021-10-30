@@ -66,5 +66,12 @@
     <string name="gt_nam">Nam</string>
     <string name="gt_nu">Nữ</string>
     <string name="gt_khac">Khác</string>
+    <string name="co_chung_chi">Có chứng chỉ</string>
+    <string name="find_theraphy">TÌM BÁC SĨ</string>
+    <string name="co_kinh_nghiem">Có kinh nghiệm</string>
+    <string name="than_thien">Thân thiện</string>
+    <string name="binh_dang_gioi">Bình đẳng giới</string>
+    <string name="tu_van_ao">Tư vấn ảo</string>
+    <string name="chi_phi_re">Chi phí rẻ</string>
 
 </resources>
