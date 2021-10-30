@@ -62,5 +62,6 @@
 
     <string name="next">Tiếp theo</string>
     <string name="description">Ví điện tử Momo</string>
+    <string name="welcome_name">Xin chào, Quân</string>
 
 </resources>

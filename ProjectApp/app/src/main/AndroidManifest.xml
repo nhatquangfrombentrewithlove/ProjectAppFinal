@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
+        <activity
+            android:name=".Homepage_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".account_screen"
             android:exported="true" />
@@ -22,11 +30,7 @@
         <activity
             android:name=".Call_screen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SigninActivity"
@@ -36,7 +40,9 @@
             android:exported="true" />
         <activity
             android:name=".SelfHelpQS"
+
             android:exported="true" />
+
         <activity
             android:name=".Appointment_call_screen"
             android:exported="true" />
@@ -45,6 +51,7 @@
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
+
             android:exported="true"/>
         <activity
             android:name=".BookConfirmation_screen"
@@ -52,6 +59,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
+
     </application>
 
 </manifest>
