@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelfHelpQS_02"
+    tools:context=".SelfHelpQS_04"
     android:orientation="vertical"
     android:background="@color/background_color"
     android:padding="10dp">
@@ -31,109 +31,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Bạn hãy tự đánh giá sức khỏe tinh thần của bạn từ thấp đến cao"
+        android:text="Khả năng tập trung"
         android:textSize="20sp"
         android:textColor="@color/color_app_black" />
-
-    <View
-        android:layout_width="320dp"
-        android:layout_height="4dp"
-        android:background="@drawable/button"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
-
-    <LinearLayout
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderKhaNangTapTrung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:valueFrom="1"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:theme="@style/MyMaterialTheme"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:gravity="center_horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thấp"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:layout_marginRight="40dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bình thường"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cao"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:layout_marginLeft="40dp"/>
-    </LinearLayout>
+        android:text="Nhận thức về bản thân"
+        android:textSize="20sp"
+        android:textColor="@color/color_app_black" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderNhanThucVBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:theme="@style/MyMaterialTheme"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Khả năng giao tiếp và làm việc nhóm"
+        android:textSize="20sp"
+        android:textColor="@color/color_app_black" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderKhaNangGTVLVN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:theme="@style/MyMaterialTheme"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Giá trị bản thân"
+        android:text="“Sức khỏe tốt và trí tuệ minh mẫn là hai điều hạnh phúc nhất của cuộc đời.”"
+        android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="bold|italic"
         android:textColor="@color/color_app_black" />
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderGTBanThan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:valueFrom="1"
-        android:valueTo="3"
-        android:stepSize="1"
-        android:theme="@style/MyMaterialTheme"/>
-        app:trackColor="@drawable/button"
-        app:thumbColor="@color/color_app_light_gray"
-        app:thumbStrokeColor="@color/color_high_light_blue"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Khả năng giải quyết vấn đề"
+        android:text="Publilius Syrus"
+        android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="italic"
         android:textColor="@color/color_app_black" />
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderKhaNangGQVD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:valueFrom="1"
-        android:valueTo="3"
-        android:stepSize="1"
-        android:theme="@style/MyMaterialTheme"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Khả năng kiểm soát áp lực"
-        android:textSize="20sp"
-        android:textColor="@color/color_app_black" />
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderKhaNangKSAL"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:valueFrom="1"
-        android:valueTo="3"
-        android:stepSize="1"
-        android:theme="@style/MyMaterialTheme"/>
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnComplete"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:text="Tiếp theo"
+        android:text="Hoàn thành"
         android:textColor="@color/background_color"
         android:textSize="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button"
         android:layout_gravity="center"/>
 

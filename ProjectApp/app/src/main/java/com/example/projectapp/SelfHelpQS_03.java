@@ -9,32 +9,31 @@ import android.widget.Button;
 import com.google.android.material.slider.LabelFormatter;
 import com.google.android.material.slider.Slider;
 
-public class SelfHelpQS_02 extends AppCompatActivity {
-
-    Slider sliderGTBanThan, sliderKhaNangGQVD, sliderKhaNangKSAL;
+public class SelfHelpQS_03 extends AppCompatActivity {
+    
+    Slider sliderMucDoLoLang,sliderDongLucTHMT, sliderChatLuongGiacNgu, sliderNguonNLTT;
     Button btnNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_self_help_qs02);
-
+        setContentView(R.layout.activity_self_help_qs03);
+        
         linkView();
         initData();
-
-
     }
 
     private void linkView() {
-        sliderGTBanThan = findViewById(R.id.sliderGTBanThan);
-        sliderKhaNangGQVD = findViewById(R.id.sliderKhaNangGQVD);
-        sliderKhaNangKSAL = findViewById(R.id.sliderKhaNangKSAL);
+        sliderMucDoLoLang = findViewById(R.id.sliderMucDoLoLang);
+        sliderDongLucTHMT = findViewById(R.id.sliderDongLucTHMT);
+        sliderChatLuongGiacNgu = findViewById(R.id.sliderChatLuongGiacNgu);
+        sliderNguonNLTT = findViewById(R.id.sliderNguonNLTT);
 
         btnNext = findViewById(R.id.btnNext);
     }
 
     private void initData() {
-        sliderGTBanThan.setLabelFormatter(new LabelFormatter() {
+        sliderMucDoLoLang.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -48,7 +47,7 @@ public class SelfHelpQS_02 extends AppCompatActivity {
             }
         });
 
-        sliderKhaNangGQVD.setLabelFormatter(new LabelFormatter() {
+        sliderDongLucTHMT.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -62,7 +61,21 @@ public class SelfHelpQS_02 extends AppCompatActivity {
             }
         });
 
-        sliderKhaNangKSAL.setLabelFormatter(new LabelFormatter() {
+        sliderChatLuongGiacNgu.setLabelFormatter(new LabelFormatter() {
+            @NonNull
+            @Override
+            public String getFormattedValue(float value) {
+                if(value == 1){
+                    return "Thấp";}
+                else if (value == 2){
+                    return "Bình thường";}
+                else if (value == 3){
+                    return "Cao";}
+                return "";
+            }
+        });
+
+        sliderNguonNLTT.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -77,4 +90,3 @@ public class SelfHelpQS_02 extends AppCompatActivity {
         });
     }
 }
-

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelfHelpQS_02"
+    tools:context=".SelfHelpQS_03"
     android:orientation="vertical"
     android:background="@color/background_color"
     android:padding="10dp">
@@ -31,78 +31,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Bạn hãy tự đánh giá sức khỏe tinh thần của bạn từ thấp đến cao"
-        android:textSize="20sp"
-        android:textColor="@color/color_app_black" />
-
-    <View
-        android:layout_width="320dp"
-        android:layout_height="4dp"
-        android:background="@drawable/button"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thấp"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:layout_marginRight="40dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bình thường"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cao"
-            android:textSize="20sp"
-            android:textColor="@color/color_app_black"
-            android:layout_marginLeft="40dp"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Giá trị bản thân"
+        android:text="Mức độ lo lắng"
         android:textSize="20sp"
         android:textColor="@color/color_app_black" />
     <com.google.android.material.slider.Slider
-        android:id="@+id/sliderGTBanThan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:valueFrom="1"
-        android:valueTo="3"
-        android:stepSize="1"
-        android:theme="@style/MyMaterialTheme"/>
-        app:trackColor="@drawable/button"
-        app:thumbColor="@color/color_app_light_gray"
-        app:thumbStrokeColor="@color/color_high_light_blue"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Khả năng giải quyết vấn đề"
-        android:textSize="20sp"
-        android:textColor="@color/color_app_black" />
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderKhaNangGQVD"
+        android:id="@+id/sliderMucDoLoLang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:valueFrom="1"
@@ -114,11 +47,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Khả năng kiểm soát áp lực"
+        android:text="Động lực thực hiện mực tiêu"
         android:textSize="20sp"
         android:textColor="@color/color_app_black" />
     <com.google.android.material.slider.Slider
-        android:id="@+id/sliderKhaNangKSAL"
+        android:id="@+id/sliderDongLucTHMT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:theme="@style/MyMaterialTheme"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Chất lượng giấc ngủ"
+        android:textSize="20sp"
+        android:textColor="@color/color_app_black" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderChatLuongGiacNgu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="3"
+        android:stepSize="1"
+        android:theme="@style/MyMaterialTheme"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nguồn năng lượng tinh thần"
+        android:textSize="20sp"
+        android:textColor="@color/color_app_black" />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderNguonNLTT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:valueFrom="1"
@@ -136,6 +101,5 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
         android:layout_gravity="center"/>
-
 
 </LinearLayout>

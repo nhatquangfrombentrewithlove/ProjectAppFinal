@@ -9,32 +9,28 @@ import android.widget.Button;
 import com.google.android.material.slider.LabelFormatter;
 import com.google.android.material.slider.Slider;
 
-public class SelfHelpQS_02 extends AppCompatActivity {
+public class SelfHelpQS_04 extends AppCompatActivity {
 
-    Slider sliderGTBanThan, sliderKhaNangGQVD, sliderKhaNangKSAL;
-    Button btnNext;
+    Slider sliderKhaNangTapTrung, sliderNhanThucVBT, sliderKhaNangGTVLVN;
+    Button btnComplete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_self_help_qs02);
+        setContentView(R.layout.activity_self_help_qs04);
 
         linkView();
         initData();
-
-
     }
 
     private void linkView() {
-        sliderGTBanThan = findViewById(R.id.sliderGTBanThan);
-        sliderKhaNangGQVD = findViewById(R.id.sliderKhaNangGQVD);
-        sliderKhaNangKSAL = findViewById(R.id.sliderKhaNangKSAL);
-
-        btnNext = findViewById(R.id.btnNext);
+        sliderKhaNangTapTrung = findViewById(R.id.sliderKhaNangTapTrung);
+        sliderNhanThucVBT = findViewById(R.id.sliderNhanThucVBT);
+        sliderKhaNangGTVLVN = findViewById(R.id.sliderKhaNangGTVLVN);
     }
 
     private void initData() {
-        sliderGTBanThan.setLabelFormatter(new LabelFormatter() {
+        sliderKhaNangTapTrung.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -48,7 +44,7 @@ public class SelfHelpQS_02 extends AppCompatActivity {
             }
         });
 
-        sliderKhaNangGQVD.setLabelFormatter(new LabelFormatter() {
+        sliderNhanThucVBT.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -62,7 +58,7 @@ public class SelfHelpQS_02 extends AppCompatActivity {
             }
         });
 
-        sliderKhaNangKSAL.setLabelFormatter(new LabelFormatter() {
+        sliderKhaNangGTVLVN.setLabelFormatter(new LabelFormatter() {
             @NonNull
             @Override
             public String getFormattedValue(float value) {
@@ -77,4 +73,3 @@ public class SelfHelpQS_02 extends AppCompatActivity {
         });
     }
 }
-
