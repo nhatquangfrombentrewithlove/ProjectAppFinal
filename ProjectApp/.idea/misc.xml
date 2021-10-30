@@ -32,7 +32,6 @@
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/background.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.22" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/signup_screen.xml" value="0.12" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_call_screen.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment.xml" value="0.19166666666666668" />
@@ -43,10 +42,12 @@
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml" value="0.2" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_listivew.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stroke_only.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circle_imageview.xml" value="0.19537037037037036" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circleimage.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_button_back.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selected.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selector.xml" value="0.21333333333333335" />
@@ -56,12 +57,16 @@
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selector.xml" value="0.21333333333333335" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml" value="0.22" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selector.xml" value="0.21333333333333335" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_call_screen.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.22" />
-
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.19743589743589743" />
-
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_audio.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.19743589743589743" />
       </map>
