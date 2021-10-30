@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">@color/color_high_light_blue</item>
+
+    </style>
+</resources>
