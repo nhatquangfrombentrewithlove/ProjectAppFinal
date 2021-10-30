@@ -10,18 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
-
-            android:name=".Homepage_screen"
-
-            android:name=".SelfHelpQS_02"
-
-            android:exported="true">
+            android:name=".SelfHelpQS_04"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SelfHelpQS_03"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SelfHelpQS_02"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Homepage_screen"
+            android:exported="true">
+        </activity>
+
         <activity
             android:name=".account_screen"
             android:exported="true" />
@@ -35,9 +44,8 @@
         <activity
             android:name=".Call_screen"
             android:exported="true">
-
         </activity>
-
+        <activity
             android:name=".Turn_on_screen"
             android:exported="true" />
 
@@ -51,7 +59,6 @@
             android:name=".SelfHelpQS"
             android:exported="true" />
             android:exported="true">
-        </activity>
 
         <activity
             android:name=".Appointment_call_screen"
@@ -72,7 +79,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
-            android:exported="true" />
         <activity
             android:name=".SignupActivity"
             android:exported="true" />
