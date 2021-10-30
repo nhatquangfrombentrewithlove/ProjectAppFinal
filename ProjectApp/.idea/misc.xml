@@ -3,10 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_checked.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_none_checked.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_theraphy.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_checked.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_none_checked.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_theraphy.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_as02.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs01.xml" value="0.1796875" />
-        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.165625" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.16666666666666666" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.4466666666666667" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs03.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml" value="0.1796875" />
