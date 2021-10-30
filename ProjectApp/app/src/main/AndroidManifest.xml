@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+
             android:name=".Homepage_screen"
+
+            android:name=".SelfHelpQS_02"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +26,7 @@
             android:name=".account_screen"
             android:exported="true" />
         <activity
+
             android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
@@ -32,6 +37,10 @@
             android:exported="true">
 
         </activity>
+
+            android:name=".Turn_on_screen"
+            android:exported="true" />
+
         <activity
             android:name=".SigninActivity"
             android:exported="true"/>
@@ -40,26 +49,33 @@
             android:exported="true" />
         <activity
             android:name=".SelfHelpQS"
-
             android:exported="true" />
+            android:exported="true">
+        </activity>
 
         <activity
             android:name=".Appointment_call_screen"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".confirm_screen"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
-
             android:exported="true"/>
         <activity
             android:name=".BookConfirmation_screen"
+
             android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
-
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

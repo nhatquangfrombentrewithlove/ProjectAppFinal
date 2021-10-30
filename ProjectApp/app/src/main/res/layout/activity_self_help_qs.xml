@@ -1,222 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SelfHelpQS"
+    android:orientation="vertical"
     android:background="@color/background_color"
-    android:padding="10dp"
-    >
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/logo"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="9dp" />
+        android:src="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Hãy cho chúng tôi biết đôi điều về bạn để chúng tôi có thể phục vụ bạn tốt hơn"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textColor="@color/color_app_black"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textColor="@color/color_app_black" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
-        android:gravity="center"
-        android:src="@drawable/ava"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints"
-        app:civ_border_width="1dp"
-        app:civ_border_color="@color/color_app_light_gray">
-
-    </de.hdodenhof.circleimageview.CircleImageView>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
-        android:text="Tuổi"
-        android:textAlignment="center"
-        android:textColor="@color/color_app_black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints" />
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:src="@drawable/ava"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/color_app_light_gray"
+            android:layout_gravity="center_vertical">
+        </de.hdodenhof.circleimageview.CircleImageView>
 
-    <Spinner
-        android:id="@+id/spinnerAge"
-        android:layout_width="156dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edit_spinner"
-        android:textAlignment="center"
-        android:textColor="@color/color_app_dark_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="1">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:src="@drawable/ic_drop_down"
-        app:layout_constraintBottom_toBottomOf="@+id/spinnerAge"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerAge"
-        app:layout_constraintTop_toTopOf="@+id/spinnerAge" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuổi"
+                    android:textColor="@color/color_app_black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="56dp"
-        android:text="Giới tính"
-        android:textColor="@color/color_app_black"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/edit_spinner"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_app_dark_gray"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_drop_down" />
+                </FrameLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính"
+                android:textColor="@color/color_app_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="0dp"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/radGTNam"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="@string/gt_nam"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textAlignment="center"
+                    android:background="@drawable/radio_left_selector"
+                    android:textColor="@color/color_app_dark_gray"
+                    android:onClick="onRadioButtonClicked"/>
+
+
+                <RadioButton
+                    android:id="@+id/radGTNu"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/gt_nu"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:background="@drawable/radio_left_selector"
+                    android:textColor="@color/color_app_dark_gray"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/radGTKhac"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/gt_khac"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_left_selector"
+                    android:textColor="@color/color_app_dark_gray"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
         android:text="Nghề nghiệp"
         android:textColor="@color/color_app_black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView2"
-        tools:ignore="MissingConstraints" />
+        android:textSize="20sp"/>
 
-    <Spinner
-        android:id="@+id/spinnerJob"
-        android:layout_width="330dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_spinner"
-        android:textAlignment="center"
-        android:textColor="@color/color_app_dark_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/spinnerJob"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_spinner"
+            android:textColor="@color/color_app_dark_gray" />
 
-        android:layout_marginEnd="12dp"
-        android:src="@drawable/ic_drop_down"
-        app:layout_constraintBottom_toBottomOf="@+id/spinnerJob"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerJob"
-        app:layout_constraintTop_toTopOf="@+id/spinnerJob"
-        app:layout_constraintVertical_bias="0.521" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_drop_down"/>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/txtMarriage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
         android:text="Tình trạng hôn nhân"
         android:textColor="@color/color_app_black"
-        android:textSize="20sp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerJob"
-        tools:ignore="MissingConstraints" />
-
-    <Spinner
-        android:id="@+id/spinnerMarriage"
-        android:layout_width="330dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_spinner"
-        android:textAlignment="center"
-        android:textColor="@color/color_app_dark_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMarriage" />
-
-    <ImageView
-        android:layout_width="wrap_content"
+        android:textSize="20sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/spinnerMarriage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_spinner"
+            android:textColor="@color/color_app_dark_gray" />
 
-        android:src="@drawable/ic_drop_down"
-        app:layout_constraintBottom_toBottomOf="@+id/spinnerMarriage"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerMarriage"
-        app:layout_constraintTop_toTopOf="@+id/spinnerMarriage" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_drop_down"/>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/txtNoPeople"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
         android:text="Bạn ở chung với bao nhiêu người"
         android:textColor="@color/color_app_black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerMarriage"
-        tools:ignore="MissingConstraints" />
-
-    <Spinner
-        android:id="@+id/spinnerNoPeople"
-        android:layout_width="330dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_spinner"
-        android:textAlignment="center"
-        android:textColor="@color/color_app_dark_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNoPeople" />
-
-    <ImageView
-        android:layout_width="wrap_content"
+        android:textSize="20sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:src="@drawable/ic_drop_down"
-        app:layout_constraintBottom_toBottomOf="@+id/spinnerNoPeople"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerNoPeople"
-        app:layout_constraintTop_toTopOf="@+id/spinnerNoPeople" />
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/spinnerNoPeople"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_spinner"
+            android:textColor="@color/color_app_dark_gray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_drop_down"/>
+    </FrameLayout>
+
 
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="10dp"
         android:background="@drawable/button"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerNoPeople" />
+        android:layout_gravity="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

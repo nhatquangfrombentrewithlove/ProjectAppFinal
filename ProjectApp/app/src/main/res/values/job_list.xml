@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="job_list">
+        <item>Lao động tự do</item>
+        <item>Học sinh</item>
+        <item>Sinh viên</item>
+        <item>Nhân viên văn phòng</item>
+        <item>Giáo viên</item>
+        <item>Ngành nghề khác</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="marriage_list">
+    <item>Độc thân</item>
+    <item>Có người yêu</item>
+    <item>Đã lập gia đình</item>
+    </string-array>
+</resources>
