@@ -106,9 +106,22 @@
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.22" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/signup_screen.xml" value="0.12" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_call_screen.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment_dialog.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_choose_user.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/bnloading_2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment_layout.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml" value="0.24351851851851852" />
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml" value="0.2" />

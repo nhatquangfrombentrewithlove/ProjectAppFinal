@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/background_color"
     tools:context=".Canceled_appointment">
@@ -17,14 +20,15 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/ic_button_back"
+            android:padding="10dp"
             android:gravity="start" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginEnd="40dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -55,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
+        android:layout_marginStart="10dp"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="36dp"
@@ -75,8 +80,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp">
+                android:paddingTop="5dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -106,125 +110,134 @@
         android:padding="10dp" >
     </ListView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="00dp"
-        android:background="@drawable/round_bg">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/btnTrangchu"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:background="@drawable/iconhome" />
-
-            <TextView
-                android:id="@+id/txtTrangchu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/Trangchu"
-                android:textColor="@color/color_app_black"
-                android:textSize="13sp" />
-        </LinearLayout>
+        android:layout_height="100dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/round_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-            <ImageButton
-                android:id="@+id/btnTutrilieu"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:background="@drawable/icontutrilieu" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/Tutrilieu"
-                android:textColor="@color/color_app_black"
-                android:textSize="13sp" />
-        </LinearLayout>
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btnTrangchu"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/iconhome" />
 
-            <ImageButton
-                android:id="@+id/btnCantuvan"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:background="@drawable/iconcantuvanx" />
+                <TextView
+                    android:id="@+id/txtTrangchu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Trangchu"
+                    android:textColor="@color/color_app_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/Cantuvan"
-                android:textColor="@color/color_high_light_blue"
-                android:textSize="13sp" />
-        </LinearLayout>
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btnTutrilieu"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icontutrilieu" />
 
-            <ImageButton
-                android:id="@+id/btnBangtin"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:background="@drawable/iconbangtin" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Tutrilieu"
+                    android:textColor="@color/color_app_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/Bangtin"
-                android:textColor="@color/color_app_black"
-                android:textSize="13sp" />
-        </LinearLayout>
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btnCantuvan"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/iconcantuvanx" />
 
-            <ImageButton
-                android:id="@+id/btnTaikhoan"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_gravity="center"
-                android:background="@drawable/icontaikhoan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Cantuvan"
+                    android:textColor="@color/color_high_light_blue"
+                    android:textSize="13sp" />
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/Taikhoan"
-                android:textColor="@color/color_app_black"
-                android:textSize="13sp" />
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnBangtin"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/iconbangtin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Bangtin"
+                    android:textColor="@color/color_app_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnTaikhoan"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icontaikhoan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Taikhoan"
+                    android:textColor="@color/color_app_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
+</ScrollView>
