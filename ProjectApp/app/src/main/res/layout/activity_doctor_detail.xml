@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,8 +11,6 @@
     tools:context=".Doctor_detail"
     android:orientation="vertical"
     android:padding="15dp">
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,8 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 bạn chung đã từng khám Bs.Giang"
-            />
+            android:text="4 bạn chung đã từng khám Bs.Giang" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -87,14 +88,17 @@
             android:layout_height="wrap_content"
             android:text="Kinh nghiệm"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chi phí điều trị"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txt1"
@@ -122,21 +126,21 @@
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:text="Chuyên gia về"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/txt1"
-            android:layout_marginTop="15dp"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chứng lo âu, chứng ám ảnh sợ hãi, rối loạn giấc ngủ, rối loạn tâm lý"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/text2"
             android:layout_marginTop="5dp"
+            android:text="Chứng lo âu, chứng ám ảnh sợ hãi, rối loạn giấc ngủ, rối loạn tâm lý"
             android:textColor="@color/color_app_black"
-            />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
         android:id="@+id/txtNhan"
@@ -230,13 +234,45 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
+            android:id="@+id/lvReview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:paddingTop="15dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
-            tools:listitem="@layout/review"/>
+            tools:listitem="@layout/review"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem thêm"
+            android:textColor="@color/color_app_black"
+            android:backgroundTint="@color/color_app_white_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lvReview"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Đặt khám"
+            android:textSize="24sp"
+            android:background="@drawable/button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 </LinearLayout>
+</ScrollView>
