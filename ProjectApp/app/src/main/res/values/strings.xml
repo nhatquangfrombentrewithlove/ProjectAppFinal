@@ -98,4 +98,8 @@
     <string name="Bangtin">Bảng tin</string>
     <string name="Taikhoan">Tài khoản</string>
 
+    <string name="huybuoihenko">Bạn có chắc chắn sẽ hủy buổi hẹn này</string>
+    <string name="Yes">CÓ</string>
+    <string name="No">KHÔNG</string>
+
 </resources>
