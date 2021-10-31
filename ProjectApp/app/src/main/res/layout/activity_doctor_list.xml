@@ -32,7 +32,7 @@
     </LinearLayout>
 
     <TabHost
-        android:id="@android:id/tabhost"
+        android:id="@+id/tabHost"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="5dp">
@@ -53,10 +53,9 @@
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent">
+                    <include layout="@layout/activity_doctor_list2"/>
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"

@@ -12,11 +12,7 @@
         <activity
             android:name="com.example.Dialog.CancelAppointmentDialog"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BN_Loading_screen"
@@ -25,21 +21,34 @@
             android:name=".Doctor_detail"
             android:exported="true" />
         <activity
+
             android:name=".SelfHelpQS_03"
             android:exported="true" />
         <activity
             android:name=".SelfHelpQS_02"
             android:exported="true" />
+        
+
         <activity
             android:name=".Homepage_screen"
             android:exported="true" />
+
         <activity
             android:name=".FindTheraphyQS_02"
             android:exported="true" />
-        <activity android:name=".DoctorList2" />
+
+    <activity android:name=".DoctorList2"
+            android:exported="true" />
+
         <activity
             android:name=".DoctorList"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".note"
             android:exported="true" />

@@ -74,7 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 bạn chung đã từng khám Bs.Giang" />
+            android:text="@string/ban_chung" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,7 +86,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kinh nghiệm"
+            android:text="@string/exp"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -95,7 +95,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chi phí điều trị"
+            android:text="@string/fee"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -104,7 +104,7 @@
             android:id="@+id/txt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="800.000đ/lần"
+            android:text="@string/fee_value"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView4"
             android:textSize="16sp"
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 năm"
+            android:text="@string/exp_value"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView3"
             android:textSize="16sp"
@@ -127,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Chuyên gia về"
+            android:text="@string/major"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt1" />
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Chứng lo âu, chứng ám ảnh sợ hãi, rối loạn giấc ngủ, rối loạn tâm lý"
+            android:text="@string/major_detail"
             android:textColor="@color/color_app_black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Nhãn"
+        android:text="@string/tag"
         android:textColor="@color/color_app_white_gray"
         android:textSize="16sp"/>
 
@@ -229,7 +229,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đánh giá của mọi người"
+            android:text="@string/review"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -249,7 +249,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Xem thêm"
+            android:text="@string/more_detail"
             android:textColor="@color/color_app_black"
             android:backgroundTint="@color/color_app_white_gray"
             android:textSize="16sp"
@@ -264,7 +264,7 @@
         <Button
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Đặt khám"
+            android:text="@string/book"
             android:textSize="24sp"
             android:background="@drawable/button"
             app:layout_constraintBottom_toBottomOf="parent"

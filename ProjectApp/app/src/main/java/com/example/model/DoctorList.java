@@ -3,12 +3,12 @@ package com.example.model;
 public class DoctorList {
     private int doctorImage;
     private String doctorName;
-    private String doctorSubinfo;
+    private String doctorInfo;
 
-    public DoctorList(int doctorImage, String doctorName, String doctorSubinfo) {
+    public DoctorList(int doctorImage, String doctorName, String doctorInfo) {
         this.doctorImage = doctorImage;
         this.doctorName = doctorName;
-        this.doctorSubinfo = doctorSubinfo;
+        this.doctorInfo = doctorInfo;
     }
 
     public int getDoctorImage() {
@@ -27,11 +27,11 @@ public class DoctorList {
         this.doctorName = doctorName;
     }
 
-    public String getDoctorSubinfo() {
-        return doctorSubinfo;
+    public String getDoctorInfo() {
+        return doctorInfo;
     }
 
-    public void setDoctorSubinfo(String doctorSubinfo) {
-        this.doctorSubinfo = doctorSubinfo;
+    public void setDoctorInfo(String doctorInfo) {
+        this.doctorInfo = doctorInfo;
     }
 }

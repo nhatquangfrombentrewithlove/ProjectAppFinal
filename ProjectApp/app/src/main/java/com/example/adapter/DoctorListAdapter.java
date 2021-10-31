@@ -14,6 +14,8 @@ import com.example.projectapp.R;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class DoctorListAdapter extends BaseAdapter {
 
     Activity context;
@@ -28,12 +30,12 @@ public class DoctorListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return doctorList.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return doctorList.get(i);
     }
 
     @Override
@@ -43,7 +45,36 @@ public class DoctorListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+        ViewHolder holder;
+        if( view == null){
+            //Link view
+            holder = new ViewHolder();
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(item_listview, null);
+            holder.imvDoctor = view.findViewById(R.id.imvDoctor);
+            holder.txtDoctorName = view.findViewById(R.id.txtDoctorName);
+            holder.txtDoctorInfo = view.findViewById(R.id.txtDoctorInfo);
+
+            view.setTag(holder);
+
+        }
+        else {
+            holder = (ViewHolder) view.getTag();
+        }
+
+        //Binding data
+        DoctorList d = doctorList.get(i);
+        holder.imvDoctor.setImageResource(d.getDoctorImage());
+        holder.txtDoctorName.setText(d.getDoctorName());
+        holder.txtDoctorInfo.setText(d.getDoctorInfo());
+
+        return view;
+    }
+
+    //class quản lý item
+    public static class ViewHolder{
+        CircleImageView imvDoctor;
+        TextView txtDoctorName, txtDoctorInfo;
     }
 
 }
