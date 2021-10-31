@@ -54,14 +54,15 @@
         android:text="Khả năng tập trung"
         android:textSize="20sp"
         android:textColor="@color/color_app_black" />
+
     <com.google.android.material.slider.Slider
         android:id="@+id/sliderKhaNangTapTrung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:valueFrom="1"
-        android:valueTo="3"
         android:stepSize="1"
-        android:theme="@style/MyMaterialTheme"/>
+        android:theme="@style/MyMaterialTheme"
+        android:valueFrom="1"
+        android:valueTo="3" />
 
     <TextView
         android:layout_width="match_parent"

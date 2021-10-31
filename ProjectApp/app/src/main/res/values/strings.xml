@@ -10,7 +10,7 @@
     <string name="facebook">Facebook</string>
 
     <string name="taikhoan">Tài Khoản</string>
-    <string name="name_bacsi">BS.Phan Giang</string>
+    <string name="name_bacsi">Bs.Phan Giang</string>
     <string name="name_subinfor">Bác sĩ tâm lý</string>
     <string name="ngayhen">Ngày hẹn</string>
     <string name="Date_time_ngayhen">02/11/2021</string>
@@ -47,9 +47,7 @@
     <string name="Date_time_Giohentruoctruocdo">3:00 CH</string>
     <string name="Date_time_Ngayhentruoctruocdo">08/10/2021</string>
 
-
     <string name="Lichhendabihuy">Lịch hẹn đã bị hủy</string>
-
 
     <string name="ten_ban">Tên bạn là</string>
     <string name="email_cua_ban">Email</string>
@@ -77,7 +75,6 @@
     <string name="tu_van_ao">Tư vấn ảo</string>
     <string name="chi_phi_re">Chi phí rẻ</string>
 
-
     <string name="tep_am_thanh">Tệp âm thanh bạn đang nghe</string>
     <string name="xem_them"><u>Xem thêm</u></string>
     <string name="daytime_appointment">14:00 PM, 22/11/2021</string>
@@ -89,5 +86,10 @@
     <string name="note">Ghi chú buổi trị liệu</string>
     <string name="note1">Ghi chú</string>
 
+    <string name="Trangchu">Trang chủ</string>
+    <string name="Tutrilieu">Tự trị liệu</string>
+    <string name="Cantuvan">Cần tư vấn</string>
+    <string name="Bangtin">Bảng tin</string>
+    <string name="Taikhoan">Tài khoản</string>
 
 </resources>
