@@ -115,6 +115,7 @@
     <string name="huybuoihenko">Bạn có chắc chắn sẽ hủy buổi hẹn này</string>
     <string name="Yes">CÓ</string>
     <string name="No">KHÔNG</string>
+
     <string name="tim_kiem">Tìm kiếm</string>
     <string name="moi_chu_de">Mọi chủ đề</string>
     <string name="ap_luc">Áp lực</string>
@@ -127,5 +128,13 @@
     <string name="sub_blog_1">dịch bệnh đã để lại những nỗi sợ vô hình</string>
     <string name="tac_gia">Tác giả</string>
     <string name="time_reading">3 phút đọc</string>
+
+    <string name="apointment">2:00 CH, 02/11/2021</string>
+    <string name="name_bacsi1">BS. Quang Huỳnh</string>
+    <string name="doctor_info">Nhà tâm lý học lâm sàng</string>
+    <string name="appointment">Lịch hẹn sắp tới</string>
+    <string name="your_doctor">Bác sĩ của bạn</string>
+    <string name="loc">Lọc</string>
+
 
 </resources>

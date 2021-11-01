@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+
             android:name=".BlogScreen"
             android:exported="true" >
             <intent-filter>
@@ -19,8 +20,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.Dialog.CancelAppointmentDialog"
+            android:name=".AppointmentList"
             android:exported="true" />
+
+        <activity
+            android:name="com.example.Dialog.CancelAppointmentDialog"
+            android:exported="true">
+
+        </activity>
+
+
         <activity
             android:name=".BN_Loading_screen"
             android:exported="true" >

@@ -1,13 +1,23 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.widget.ListView;
 import android.widget.TabHost;
+
+import com.example.adapter.DoctorListAdapter;
+import com.example.fragment.DoctorListFragment;
+
+import java.util.ArrayList;
 
 public class DoctorList extends AppCompatActivity {
 
     TabHost tabHost;
+
+//    private FragmentManager manager;
 
 
     @Override
@@ -15,8 +25,31 @@ public class DoctorList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_list);
 
+//        manager = getSupportFragmentManager();
+//        FragmentTransaction transaction = manager.beginTransaction();
+//        transaction.replace(R.id.layoutContainer, new DoctorListFragment());
+//        transaction.commit();
+
+
+
+
         linkViews();
         loadTab();
+        initData();
+        loadData();
+    }
+
+    private void linkViews() {
+        tabHost = findViewById(R.id.tabHost);
+
+    }
+
+    private void loadData() {
+
+    }
+
+    private void initData() {
+
     }
 
     private void loadTab() {
@@ -33,9 +66,5 @@ public class DoctorList extends AppCompatActivity {
         tab2.setContent(R.id.tab2);
         tab2.setIndicator("Lịch hẹn");
         tabHost.addTab(tab2);
-    }
-
-    private void linkViews() {
-        tabHost = findViewById(R.id.tabHost);
     }
 }

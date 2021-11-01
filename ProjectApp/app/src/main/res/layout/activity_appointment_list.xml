@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/your_doctor"
+                android:text="@string/appointment"
                 android:textSize="16sp"
                 />
 
@@ -34,16 +34,7 @@
             android:gravity="end"
             android:layout_weight="1"
             android:paddingTop="20dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/loc"
-                android:textSize="16sp"
-                android:paddingRight="10dp"/>
-            <Button
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/iconloc"/>
+
         </LinearLayout>
     </LinearLayout>
 
@@ -52,54 +43,54 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imvDoctor"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/avabsgiang"
-        android:gravity="center">
-    </de.hdodenhof.circleimageview.CircleImageView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvDoctor"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/avabsgiang"
+            android:gravity="center">
+        </de.hdodenhof.circleimageview.CircleImageView>
 
-    <LinearLayout android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginLeft="10dp"
-        android:paddingStart="10dp">
-
-        <TextView
-            android:id="@+id/txtDoctorName"
-            android:layout_width="wrap_content"
+        <LinearLayout android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/name_bacsi"
-            android:layout_marginBottom="15dp"
-            android:textSize="16sp"
-            android:textColor="@color/color_app_black"
-            />
-        <TextView
-            android:id="@+id/txtDoctorInfo"
-            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/txtDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_bacsi"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_app_black"
+                />
+            <TextView
+                android:id="@+id/txtApointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apointment"
+                android:textColor="@color/color_app_black"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name_subinfor"
-            android:textColor="@color/color_app_black"
-            android:textSize="12sp"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="end"
-        >
-        <Button
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:background="@drawable/ic_button_next"
-            android:gravity="end"/>
-    </LinearLayout>
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="end"
+            >
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_button_next"
+                android:gravity="end"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -131,10 +122,10 @@
                 android:textColor="@color/color_app_black"
                 />
             <TextView
-                android:id="@+id/txtDoctorInfo1"
+                android:id="@+id/txtApointment1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/doctor_info"
+                android:text="@string/apointment"
                 android:textColor="@color/color_app_black"
                 android:textSize="12sp"
                 />
@@ -156,11 +147,11 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/lvDoctorList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:listSelector="@color/color_app_white_gray"
-        />
+<!--    <ListView-->
+<!--        android:id="@+id/lvDoctorList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:listSelector="@color/color_app_white_gray"-->
+<!--        />-->
 
 </LinearLayout>

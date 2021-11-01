@@ -6,27 +6,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.model.DoctorList;
 import com.example.projectapp.R;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DoctorListAdapter extends BaseAdapter {
 
-    Activity context;
+    Context context;
     int item_listview;
-    List<DoctorList> doctorList;
+    ArrayList<DoctorList> doctorList;
 
-    public DoctorListAdapter(Activity context, int item_listview, List<DoctorList> doctorList) {
+    public DoctorListAdapter(Context context, int item_listview, ArrayList<DoctorList> doctorList) {
         this.context = context;
         this.item_listview = item_listview;
         this.doctorList = doctorList;
     }
+
+
 
     @Override
     public int getCount() {
@@ -72,7 +73,7 @@ public class DoctorListAdapter extends BaseAdapter {
     }
 
     //class quản lý item
-    public static class ViewHolder{
+    private static class ViewHolder{
         CircleImageView imvDoctor;
         TextView txtDoctorName, txtDoctorInfo;
     }
