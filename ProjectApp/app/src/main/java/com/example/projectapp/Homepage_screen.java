@@ -1,15 +1,25 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.AppointmentListAdapter.AppointmentListAdapter;
 import com.example.AudioAdapter.AudioAdapter;
+import com.example.adapter.BlogListAdapter;
+import com.example.adapter.ChooseListAdapter;
 import com.example.model.AppointmentList;
 import com.example.model.AudioList;
+import com.example.model.BlogList;
+import com.example.model.ChooseList;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -24,6 +34,9 @@ public class Homepage_screen extends AppCompatActivity {
     AppointmentListAdapter adapter;
     AudioAdapter audioAdapter;
 
+    RecyclerView rcvBlog;
+    ArrayList<BlogList> blogLists;
+    BlogListAdapter blogListAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +46,7 @@ public class Homepage_screen extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        configRecyclerView();
     }
 
     private void loadData() {
@@ -56,10 +70,28 @@ public class Homepage_screen extends AppCompatActivity {
         audioLists.add(new AudioList(R.drawable.bnhomedangnghe1,"BS. Ngân Võ","Kiểm soát phiền muộn", "Bản ghi 2", R.drawable.ic_button_next));
         audioLists.add(new AudioList(R.drawable.bnhomedangnghe2,"BS. Cọc Cằn","Cải thiện giá trị cá nhân", "Bản ghi 4", R.drawable.ic_button_next));
         audioLists.add(new AudioList(R.drawable.bnhomedangnghe3,"BS. Xịn Sò","Kiểm soát giấc ngủ", "Bản ghi 1", R.drawable.ic_button_next));
+
+        //Blog
+        blogLists = new ArrayList<>();
+
+        blogLists.add(new BlogList(R.drawable.bndexuat1, "Chứng hoang tưởng ảo giác Paranioa","Dịch bệnh đã để lại những nỗi sợ vô hình?","Tác giả","3 phút đọc"));
+        blogLists.add(new BlogList(R.drawable.bndexuat2, "Những nỗi lo","Những tình huống khiến bạn lo lắng sợ hãi?","Tác giả","8 phút đọc"));
+        blogLists.add(new BlogList(R.drawable.bndexuat3, "Áp lực","Những thói quen tốt để giải tỏa căng thẳng","Tác giả","6 phút đọc"));
+
+        blogListAdapter = new BlogListAdapter(getApplicationContext(),blogLists);
+        rcvBlog.setAdapter(blogListAdapter);
+    }
+
+    private void configRecyclerView() {
+        LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rcvBlog.setLayoutManager(manager);
+        rcvBlog.setHasFixedSize(true);
+        rcvBlog.setItemAnimator(new DefaultItemAnimator());
     }
 
     private void linkViews() {
         lvAppointment=findViewById(R.id.lvAppointment);
         lvAudio = findViewById(R.id.lvAudio);
+        rcvBlog = findViewById(R.id.rcvBlog);
     }
 }

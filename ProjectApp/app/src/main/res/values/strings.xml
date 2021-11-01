@@ -122,5 +122,10 @@
     <string name="cang_thang">Căng thẳng</string>
     <string name="mat_ngu">Mất ngủ</string>
     <string name="thieu_tap_trung">Thiếu tập trung</string>
+    <string name="de_xuat">Đề xuất cho bạn</string>
+    <string name="title_blog_1">Chứng hoang tưởng ảo giác Paranoia</string>
+    <string name="sub_blog_1">dịch bệnh đã để lại những nỗi sợ vô hình</string>
+    <string name="tac_gia">Tác giả</string>
+    <string name="time_reading">3 phút đọc</string>
 
 </resources>

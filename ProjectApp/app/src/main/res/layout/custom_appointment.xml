@@ -5,7 +5,8 @@
     android:orientation="horizontal"
     android:padding="10dp"
     android:gravity="center_vertical"
-    android:background="@drawable/button_listivew">
+    android:background="@drawable/button_listivew"
+    android:layout_margin="10dp">
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imvAva"
         android:layout_width="50dp"
