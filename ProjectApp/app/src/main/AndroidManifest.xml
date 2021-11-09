@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+<<<<<<< Updated upstream
             android:name=".FindTheraphyQS_02"
+=======
+            android:name=".Therapist_CreateProfile_01"
+>>>>>>> Stashed changes
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< Updated upstream
         <activity
             android:name=".FindTheraphyQS_01"
             android:exported="true">
         </activity>
+=======
+        <activity
+            android:name=".BlogScreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".AppointmentList"
+            android:exported="true" />
+        <activity
+            android:name="com.example.Dialog.CancelAppointmentDialog"
+            android:exported="true"></activity>
+        <activity
+            android:name=".BN_Loading_screen"
+            android:exported="true"></activity>
+>>>>>>> Stashed changes
         <activity
             android:name=".SelfHelpQS_04"
             android:exported="true" />
@@ -61,7 +80,14 @@
         <activity
             android:name=".SelfHelpQS"
             android:exported="true" />
+<<<<<<< Updated upstream
 
+=======
+        <activity
+            android:name=".Turn_on_screen"
+            android:exported="true"
+            android:theme="@style/Splash"></activity>
+>>>>>>> Stashed changes
         <activity
             android:name=".Appointment_call_screen"
             android:exported="true" />
@@ -84,9 +110,14 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+<<<<<<< Updated upstream
             android:name=".SignupActivity"
             android:exported="true" />
 
+=======
+            android:name=".Canceled_appointment"
+            android:exported="true" />
+>>>>>>> Stashed changes
     </application>
 
 </manifest>
