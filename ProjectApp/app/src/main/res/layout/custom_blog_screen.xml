@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/button_listivew">
+    <ImageView
+        android:id="@+id/imvAudioBN"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bntin1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giải tỏa áp lực"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 mẹo giúp bạn kiểm soát thói quen hằng ngày"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.model;
 
 public class AppointmentList {
+
     private int imvAva;
     private String txtName;
     private String txtAppointmentDay;

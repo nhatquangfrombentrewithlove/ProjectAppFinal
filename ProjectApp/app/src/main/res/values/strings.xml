@@ -10,7 +10,7 @@
     <string name="facebook">Facebook</string>
 
     <string name="taikhoan">Tài Khoản</string>
-    <string name="name_bacsi">BS.Phan Giang</string>
+    <string name="name_bacsi">Bs.Phan Giang</string>
     <string name="name_subinfor">Bác sĩ tâm lý</string>
     <string name="ngayhen">Ngày hẹn</string>
     <string name="Date_time_ngayhen">02/11/2021</string>
@@ -75,9 +75,66 @@
     <string name="tu_van_ao">Tư vấn ảo</string>
     <string name="chi_phi_re">Chi phí rẻ</string>
 
-
     <string name="tep_am_thanh">Tệp âm thanh bạn đang nghe</string>
     <string name="xem_them"><u>Xem thêm</u></string>
     <string name="daytime_appointment">14:00 PM, 22/11/2021</string>
+
+    <string name="help">Chúng tôi có thể giúp gì được cho bạn?</string>
+    <string name="self_help">TỰ TRỊ LIỆU</string>
+    <string name="doctor_help">TÌM BÁC SĨ</string>
+
+    <string name="note">Ghi chú buổi trị liệu</string>
+    <string name="note1">Ghi chú</string>
+
+    <string name="intro1">Chúng tôi sẽ giúp bạn tự trị liệu</string>
+    <string name="description1">Công cụ chẩn đoán của chúng tôi sẽ đưa ra các liệu pháp tốt nhấ để giải quyết các vấn đề về tâm lý cho bạn</string>
+    <string name="intro2">Tìm bác sĩ tâm lý phù hợp cho bạn</string>
+    <string name="description2">Chúng tôi sẽ đưa ra các danh sách bác sĩ tâm lý phù hợp với yêu cầu và cung cấp dịch vụ tư vấn ảo cho bạn</string>
+    <string name="intro3">Thông tin bạn nhận được</string>
+    <string name="description3">Chúng tôi sẽ cung cấp, chọn lọc các bài báo và tin tức tốt nhất nhằm giúp bạn luôn cập nhật đầy đủ thông tin về sức khỏe tinh thần</string>
+
+    <string name="Trangchu">Trang chủ</string>
+    <string name="Tutrilieu">Tự trị liệu</string>
+    <string name="Cantuvan">Cần tư vấn</string>
+    <string name="Bangtin">Bảng tin</string>
+    <string name="Taikhoan">Tài khoản</string>
+
+    <string name="ban_chung">4 bạn chung đã từng khám Bs.Giang</string>
+    <string name="exp">Kinh nghiệm</string>
+    <string name="fee">Chi phí điều trị</string>
+    <string name="fee_value">800.000đ/lần</string>
+    <string name="exp_value">4 năm</string>
+    <string name="major">Chuyên gia về</string>
+    <string name="major_detail">Chứng lo âu, chứng ám ảnh sợ hãi, rối loạn giấc ngủ, rối loạn tâm lý</string>
+    <string name="tag">Nhãn</string>
+    <string name="review">Đánh giá của mọi người</string>
+    <string name="more_detail">Xem thêm</string>
+    <string name="book">Đặt khám</string>
+
+
+    <string name="huybuoihenko">Bạn có chắc chắn sẽ hủy buổi hẹn này</string>
+    <string name="Yes">CÓ</string>
+    <string name="No">KHÔNG</string>
+
+    <string name="tim_kiem">Tìm kiếm</string>
+    <string name="moi_chu_de">Mọi chủ đề</string>
+    <string name="ap_luc">Áp lực</string>
+    <string name="lo_au">Lo âu</string>
+    <string name="cang_thang">Căng thẳng</string>
+    <string name="mat_ngu">Mất ngủ</string>
+    <string name="thieu_tap_trung">Thiếu tập trung</string>
+    <string name="de_xuat">Đề xuất cho bạn</string>
+    <string name="title_blog_1">Chứng hoang tưởng ảo giác Paranoia</string>
+    <string name="sub_blog_1">dịch bệnh đã để lại những nỗi sợ vô hình</string>
+    <string name="tac_gia">Tác giả</string>
+    <string name="time_reading">3 phút đọc</string>
+
+    <string name="apointment">2:00 CH, 02/11/2021</string>
+    <string name="name_bacsi1">BS. Quang Huỳnh</string>
+    <string name="doctor_info">Nhà tâm lý học lâm sàng</string>
+    <string name="appointment">Lịch hẹn sắp tới</string>
+    <string name="your_doctor">Bác sĩ của bạn</string>
+    <string name="loc">Lọc</string>
+
 
 </resources>
