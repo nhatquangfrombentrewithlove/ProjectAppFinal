@@ -135,6 +135,7 @@
     <string name="appointment">Lịch hẹn sắp tới</string>
     <string name="your_doctor">Bác sĩ của bạn</string>
     <string name="loc">Lọc</string>
+    <string name="create_profile_therapist">Tạo hồ sơ</string>
 
 
 </resources>
