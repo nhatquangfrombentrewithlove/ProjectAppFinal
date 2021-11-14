@@ -10,21 +10,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+
             android:name=".BlogScreen"
             android:exported="true" >
         </activity>
         <activity
             android:name=".AppointmentList"
+
+            android:name=".FindTheraphyQS_02"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Therapist_CreateProfile_01"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FindTheraphyQS_01"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".BlogScreen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AppointmentList"
+            android:exported="true" />
+        <activity
+            android:name="com.example.Dialog.CancelAppointmentDialog"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".BN_Loading_screen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SelfHelpQS_04"
+
             android:exported="true" />
 
         <activity
             android:name="com.example.Dialog.CancelAppointmentDialog"
             android:exported="true">
-
         </activity>
         <activity
+
             android:name=".BN_Loading_screen"
             android:exported="true" >
+
+
+            android:name=".SelfHelpQS_02"
+            android:exported="true">
 
         </activity>
         <activity
@@ -38,7 +77,12 @@
             android:exported="true" />
         <activity
             android:name=".Homepage_screen"
+
             android:exported="true" />
+
+            android:exported="true">
+        </activity>
+
         <activity
             android:name=".FindTheraphyQS_02"
             android:exported="true" />
@@ -61,6 +105,7 @@
             android:name=".SelfHelpQS_04"
             android:exported="true" />
         <activity
+
             android:name=".account_screen"
             android:exported="true" />
         <activity
@@ -72,6 +117,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            android:name=".Turn_on_screen"
+            android:exported="true"
+            android:theme="@style/Splash">
+
         </activity>
         <activity
             android:name=".SelfHelpQS"
@@ -101,6 +151,7 @@
             android:name=".SignupActivity"
             android:exported="true" />
         <activity
+
             android:name=".BookConfirmation_screen"
             android:exported="true" />
         <activity
@@ -108,6 +159,10 @@
             android:exported="true">
 
         </activity>
+
+            android:name=".Canceled_appointment"
+            android:exported="true" />
+
     </application>
 
 </manifest>
