@@ -70,7 +70,7 @@ public class BN_Loading_screen extends AppCompatActivity {
 
     }
     private void launchHomeScreen() {
-        startActivity(new Intent(BN_Loading_screen.this, Homepage_screen.class));
+        startActivity(new Intent(BN_Loading_screen.this, MainActivity.class));
     }
 
     private void addBottomDots(int currentPage) {

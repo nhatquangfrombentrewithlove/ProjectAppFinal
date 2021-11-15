@@ -18,10 +18,10 @@ import com.example.projectapp.R;
 import java.util.List;
 
 public class AudioAdapter extends BaseAdapter {
-    Activity context;
+    Context context;
     int item_listview;
     List<AudioList> audioLists;
-    public AudioAdapter(Activity context, int item_listview, List<AudioList> audioList){
+    public AudioAdapter(Context context, int item_listview, List<AudioList> audioList){
         this.context = context;
         this.item_listview = item_listview;
         this.audioLists = audioList;

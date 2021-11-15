@@ -136,5 +136,12 @@
     <string name="your_doctor">Bác sĩ của bạn</string>
     <string name="loc">Lọc</string>
 
-
+    //Menu Navigation
+    <string name="title_home">Trang chủ</string>
+    <string name="title_self_help">Tự trị liệu</string>
+    <string name="title_advise">Cần tư vấn</string>
+    <string name="title_newsfeed">Bảng tin</string>
+    <string name="title_account">Tài khoản</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
