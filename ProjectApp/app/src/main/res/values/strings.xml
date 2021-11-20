@@ -41,6 +41,7 @@
     <string name="Call">GỌI</string>
     <string name="Huylich">HỦY LỊCH</string>
     <string name="Ghichu">GHI CHÚ</string>
+    <string name="Danhgia">ĐÁNH GIÁ</string>
     <string name="Lichhentruocdo">Lịch hẹn trước đó</string>
     <string name="Date_time_Giohentruocdo">5:00 CH</string>
     <string name="Date_time_Ngayhentruocdo">15/10/2021</string>
@@ -144,4 +145,6 @@
     <string name="title_account">Tài khoản</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Danhgiacuaban">Đánh giá của bạn</string>
+    <string name="HintDanhgiacuaban">Hãy viết đánh giá của bạn</string>
 </resources>

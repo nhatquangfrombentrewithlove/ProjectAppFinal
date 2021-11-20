@@ -249,7 +249,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/more_detail"
+            android:text="@string/xem_them"
             android:textColor="@color/color_app_black"
             android:backgroundTint="@color/color_app_white_gray"
             android:textSize="16sp"

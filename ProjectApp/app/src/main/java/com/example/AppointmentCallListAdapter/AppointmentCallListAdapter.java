@@ -26,7 +26,6 @@ public class AppointmentCallListAdapter extends BaseAdapter {
         this.appointment_Call_List = appointment_Call_List;
     }
 
-
     @Override
     public int getCount() {
         return appointment_Call_List.size();
@@ -55,6 +54,7 @@ public class AppointmentCallListAdapter extends BaseAdapter {
             holder.txtGiotruoc = view.findViewById(R.id.txtGiotruoc);
             holder.txtNgaytruoc = view.findViewById(R.id.txtNgaytruoc);
             holder.btnGhichu = view.findViewById(R.id.btnGhichu);
+            holder.btnDanhgia=view.findViewById(R.id.btnDanhgia);
 
             view.setTag(holder);
         }else {
@@ -68,11 +68,16 @@ public class AppointmentCallListAdapter extends BaseAdapter {
         holder.txtNgaytruoc.setText(ac.getNgaytruoc());
         holder.btnGhichu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 //do sth
             }
         });
-
+        holder.btnDanhgia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //do sth...
+            }
+        });
         return view;
     }
 
@@ -80,7 +85,7 @@ public class AppointmentCallListAdapter extends BaseAdapter {
     public static class ViewHolder {
         ImageView imvCalendarIcon;
         TextView txtLichtruoc, txtGiotruoc, txtNgaytruoc;
-        Button btnGhichu;
+        Button btnGhichu,btnDanhgia;
         }
     }
 

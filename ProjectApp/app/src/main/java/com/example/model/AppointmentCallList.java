@@ -5,14 +5,15 @@ import android.widget.Button;
 public class AppointmentCallList {
     private int Calendaricon;
     private String Lichtruoc,Giotruoc,Ngaytruoc;
-    private Button Ghichubtn;
+    private Button Ghichubtn,Danhgiabtn;
 
-    public AppointmentCallList(int calendaricon, String lichtruoc, String giotruoc, String ngaytruoc, Button ghichubtn) {
+    public AppointmentCallList(int calendaricon, String lichtruoc, String giotruoc, String ngaytruoc, Button ghichubtn, Button danhgiabtn) {
         Calendaricon = calendaricon;
         Lichtruoc = lichtruoc;
         Giotruoc = giotruoc;
         Ngaytruoc = ngaytruoc;
         Ghichubtn = ghichubtn;
+        Danhgiabtn = danhgiabtn;
     }
 
     public int getCalendaricon() {
@@ -51,5 +52,6 @@ public class AppointmentCallList {
         Ghichubtn = ghichubtn;
     }
 
+    public void setDanhgiabtn(Button danhgiabtn) { Danhgiabtn = danhgiabtn; }
 }
 

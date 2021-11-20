@@ -49,6 +49,9 @@
                     android:textColor="@color/color_app_light_gray"
                     android:layout_marginStart="5dp"/>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <Button
                 android:id="@+id/btnGhichu"
                 android:layout_width="92dp"
@@ -57,7 +60,18 @@
                 android:button="@android:color/transparent"
                 android:background="@drawable/radio_selected"
                 android:textColor="@color/color_app_black"
+                android:gravity="center"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btnDanhgia"
+                android:layout_width="92dp"
+                android:layout_height="32dp"
+                android:text="@string/Danhgia"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/color_app_black"
                 android:gravity="center" />
+        </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     <View
