@@ -2,18 +2,18 @@ package com.example.model;
 
 import android.widget.Button;
 
-public class AppointmentCallList {
+public class AppointmentNeedPay {
     private int Calendaricon;
     private String Lichtruoc,Giotruoc,Ngaytruoc;
-    private Button Ghichubtn,Danhgiabtn;
+    private Button btnThanhtoan, btnHuylich;
 
-    public AppointmentCallList(int calendaricon, String lichtruoc, String giotruoc, String ngaytruoc, Button ghichubtn, Button danhgiabtn) {
+    public AppointmentNeedPay (int calendaricon, String lichtruoc, String giotruoc, String ngaytruoc, Button btnthanhtoan, Button btnhuylich) {
         Calendaricon = calendaricon;
         Lichtruoc = lichtruoc;
         Giotruoc = giotruoc;
         Ngaytruoc = ngaytruoc;
-        Ghichubtn = ghichubtn;
-        Danhgiabtn = danhgiabtn;
+        btnThanhtoan = btnthanhtoan;
+        btnHuylich = btnhuylich;
     }
 
     public int getCalendaricon() {
@@ -48,10 +48,19 @@ public class AppointmentCallList {
         Ngaytruoc = ngaytruoc;
     }
 
-    public void setGhichubtn(Button ghichubtn) {
-        Ghichubtn = ghichubtn;
+    public Button getBtnThanhtoan() {
+        return btnThanhtoan;
     }
 
-    public void setDanhgiabtn(Button danhgiabtn) { Danhgiabtn = danhgiabtn; }
-}
+    public void setBtnThanhtoan(Button btnThanhtoan) {
+        this.btnThanhtoan = btnThanhtoan;
+    }
 
+    public Button getBtnHuylich() {
+        return btnHuylich;
+    }
+
+    public void setBtnHuylich(Button btnHuylich) {
+        this.btnHuylich = btnHuylich;
+    }
+}

@@ -15,11 +15,11 @@ import com.example.projectapp.R;
 import java.util.List;
 
 public class AppointmentListAdapter extends BaseAdapter {
-    Activity context;
+    Context context;
     int item_listview;
     List<AppointmentList> appointmentLists;
 
-    public AppointmentListAdapter(Activity context, int item_listview, List<AppointmentList> appointmentLists){
+    public AppointmentListAdapter(Context context, int item_listview, List<AppointmentList> appointmentLists){
         this.context = context;
         this.item_listview = item_listview;
         this.appointmentLists = appointmentLists;

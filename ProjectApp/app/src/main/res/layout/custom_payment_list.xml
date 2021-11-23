@@ -52,26 +52,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btnGhichu"
-                android:layout_width="92dp"
-                android:layout_height="32dp"
-                android:text="@string/Ghichu"
-                android:button="@android:color/transparent"
-                android:background="@drawable/radio_selected"
-                android:textColor="@color/color_app_black"
-                android:gravity="center"
-                android:layout_marginRight="10dp"/>
-            <Button
-                android:id="@+id/btnDanhgia"
-                android:layout_width="92dp"
-                android:layout_height="32dp"
-                android:text="@string/Danhgia"
-                android:button="@android:color/transparent"
-                android:background="@drawable/radio_selected"
-                android:textColor="@color/color_app_black"
-                android:gravity="center" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/btnThanhtoan"
+                    android:layout_width="92dp"
+                    android:layout_height="32dp"
+                    android:text="@string/btn_pay"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"/>
+                <Button
+                    android:id="@+id/btnHuylich"
+                    android:layout_width="92dp"
+                    android:layout_height="32dp"
+                    android:text="@string/btn_cancel"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selected"
+                    android:textColor="@color/color_app_black"
+                    android:gravity="center" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     <View

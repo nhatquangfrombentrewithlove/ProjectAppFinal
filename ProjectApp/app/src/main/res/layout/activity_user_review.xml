@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Doctor_detail"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_button_back"
+                android:gravity="start" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/avabsgiang"
+                    android:gravity="center">
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="@string/name_bacsi"
+                    android:textColor="@color/color_app_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/name_subinfor"
+                    android:textColor="@color/color_app_black"/>
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.001"
+                    android:theme="@style/RatingBar"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDanhgiacuamoinguoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ListView
+                android:id="@+id/lvReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDanhgiacuamoinguoi"
+                tools:listitem="@layout/review"
+                />
+
+            <Button
+                android:id="@+id/btnXemthem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xem_them"
+                android:textColor="@color/color_app_black"
+                android:backgroundTint="@color/background_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lvReview"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDanhgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Danhgiacuaban"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="10dp"/>
+
+            <RatingBar
+                android:id="@+id/yourratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.001"
+                android:theme="@style/RatingBar" />
+
+            <EditText
+                android:id="@+id/edtDanhgia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/HintDanhgiacuaban"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnDanhgia"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Danhgia"
+                android:textSize="24sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
