@@ -31,9 +31,7 @@
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.165625" />
-
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile02.xml" value="0.22" />
-
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2692307692307692" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button.xml" value="0.2692307692307692" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button_listivew.xml" value="0.2692307692307692" />
@@ -91,6 +89,7 @@
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/review.xml" value="0.3359073359073359" />
+        <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable-v24/seekbar_thumb.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stoke.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/edit_text.xml" value="0.16574074074074074" />
@@ -114,13 +113,17 @@
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_screen.xml" value="0.11388888888888889" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.1796875" />
+        <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_selfhelp_suggestion.xml" value="0.11388888888888889" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.22" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/background.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_screen.xml" value="0.1796875" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.22" />
+        <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_selfhelp_suggestion.xml" value="0.11388888888888889" />
+        <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment__selfhelp__suggestion.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/signup_screen.xml" value="0.12" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.19166666666666668" />

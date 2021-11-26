@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:weightSum="4"
+    android:background="@drawable/button_listivew"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtAudioInfo"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Kiểm soát phiền muộn"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtNameBS"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="7 tệp âm thanh"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_app_light_gray"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bnsession1"/>
+
+
+</LinearLayout>
