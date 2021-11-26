@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class ReviewList {
+public class ReviewList implements Comparable<ReviewList> {
     private int rating;
     private String date,reviews,name;
 
@@ -10,6 +10,12 @@ public class ReviewList {
         this.reviews = reviews;
         this.name = name;
     }
+
+    @Override
+    public int compareTo(ReviewList other) {
+        return this.name.compareTo(other.name);
+    }
+
 
     public float getRating() {
         return rating;
