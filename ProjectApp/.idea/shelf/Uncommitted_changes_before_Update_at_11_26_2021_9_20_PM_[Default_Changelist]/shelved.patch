@@ -1,0 +1,521 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_screen.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment_layout.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/File Code/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_payment_list.xml\" value=\"0.265625\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_checked.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_none_checked.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/check_box_theraphy.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_checked.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_none_checked.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button_theraphy.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_as02.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs01.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs03.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml\" value=\"0.165625\" />\r\n\r\n        <entry key=\"..\\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile02.xml\" value=\"0.22\" />\r\n\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button_listivew.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button_press.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/check_box_checked.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/check_box_none_checked.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/check_box_theraphy.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/custom_devider.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/edit_button_click.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/edit_spinner.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/edit_text.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/ic_add.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/ic_button_back.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/ic_drop_down.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/ic_launcher_background.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/ic_search.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_left_selected.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_left_selector.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_normal.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_right_selected.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_right_selector.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_selected.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/drawable/radio_selector.xml\" value=\"0.2692307692307692\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_appointment_list.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_call_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_cancel_appointment.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_cancel_appointment_dialog.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_choose_user.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_list2.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs01.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_payment_method.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs03.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_signin.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/appointment_list_layout.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/background.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_appointment.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_audio.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml\" value=\"0.24166666666666667\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/fragment_profile.xml\" value=\"0.25729166666666664\" />\r\n        <entry key=\"..\\:/Project/android/project/ProjectApp/app/src/main/res/layout/review.xml\" value=\"0.3359073359073359\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stoke.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/edit_text.xml\" value=\"0.16574074074074074\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_facebook.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_google.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_button.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selected.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selector.xml\" value=\"0.18518518518518517\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_normal.xml\" value=\"0.19583333333333333\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selected.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selector.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selector.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_textcolor.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_blog_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml\" value=\"0.3333333333333333\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml\" value=\"0.4466666666666667\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/background.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_screen.xml\" value=\"0.1796875\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/signup_screen.xml\" value=\"0.12\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.18611111111111112\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml\" value=\"0.19166666666666668\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_list.xml\" value=\"0.18611111111111112\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_blog_screen.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_call_screen.xml\" value=\"0.19166666666666668\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment.xml\" value=\"0.19166666666666668\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_cancel_appointment_dialog.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml\" value=\"0.19166666666666668\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_choose_user.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml\" value=\"0.18611111111111112\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml\" value=\"0.1814814814814815\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml\" value=\"0.25025641025641027\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_user_review.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/appointment_list_layout.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/bnloading_1.xml\" value=\"0.25462962962962965\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/bnloading_2.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment_layout.xml\" value=\"0.2490740740740741\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_audio.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_offer.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml\" value=\"0.2490740740740741\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/review.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/menu/navigation.xml\" value=\"0.27447916666666666\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml\" value=\"0.24351851851851852\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_listivew.xml\" value=\"0.1787037037037037\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stroke_only.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circle_imageview.xml\" value=\"0.19537037037037036\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/circleimage.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/custom_devider.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml\" value=\"0.21666666666666667\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/ic_button_back.xml\" value=\"0.1787037037037037\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_normal.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selected.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_left_selector.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_normal.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selected.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_selector.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selector.xml\" value=\"0.21333333333333335\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_blog_screen.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_call_screen.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml\" value=\"0.19743589743589743\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/bnloading_2.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/bnloading_3.xml\" value=\"0.12129629629629629\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_appointment_layout.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_audio.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_offer.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_screen.xml\" value=\"0.20052083333333334\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml\" value=\"0.16666666666666666\" />\r\n        <entry key=\"..\\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_profile.xml\" value=\"0.19743589743589743\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/.idea/misc.xml	(date 1637935325474)
+@@ -31,9 +31,7 @@
+         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml" value="0.1796875" />
+         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile.xml" value="0.1796875" />
+         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.165625" />
+-
+         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile02.xml" value="0.22" />
+-
+         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2692307692307692" />
+         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button.xml" value="0.2692307692307692" />
+         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button_listivew.xml" value="0.2692307692307692" />
+@@ -136,10 +134,14 @@
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25025641025641027" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.25025641025641027" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.25416666666666665" />
++        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list2.xml" value="0.27447916666666666" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.264" />
++        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25025641025641027" />
++        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.24722222222222223" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.18611111111111112" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.1814814814814815" />
++        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_reviews.xml" value="0.27447916666666666" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.25025641025641027" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_user_review.xml" value="0.264" />
+         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/appointment_list_layout.xml" value="0.27447916666666666" />
+Index: app/src/main/res/layout/review.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <androidx.constraintlayout.widget.ConstraintLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\">\r\n\r\n        <RatingBar\r\n            android:id=\"@+id/ratingBar\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_gravity=\"center\"\r\n            android:numStars=\"5\"\r\n            android:rating=\"3\"\r\n            android:stepSize=\"0.001\"\r\n            android:theme=\"@style/RatingBar\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtDate\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"dd/mm/yy\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\"\r\n            android:textSize=\"16sp\"/>\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtReviews\"\r\n            android:layout_width=\"308dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:paddingTop=\"10dp\"\r\n            android:text=\"Chữa trị tốt nhưng ava kì quá nên 3 sao thôi\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toBottomOf=\"@+id/ratingBar\"\r\n            android:textColor=\"@color/color_app_black\"/>\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtName\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Quân Nguyễn\"\r\n            android:textColor=\"@color/color_app_black\"\r\n            android:textSize=\"16sp\"\r\n            android:textStyle=\"bold\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toBottomOf=\"@+id/txtReviews\"\r\n            android:paddingTop=\"15dp\"/>\r\n\r\n    </androidx.constraintlayout.widget.ConstraintLayout>\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/review.xml b/app/src/main/res/layout/review.xml
+--- a/app/src/main/res/layout/review.xml	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/app/src/main/res/layout/review.xml	(date 1637932486429)
+@@ -13,11 +13,9 @@
+         <RatingBar
+             android:id="@+id/ratingBar"
+             android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:layout_gravity="center"
++            android:layout_height="50dp"
+             android:numStars="5"
+             android:rating="3"
+-            android:stepSize="0.001"
+             android:theme="@style/RatingBar"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -45,7 +43,7 @@
+             android:id="@+id/txtName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:text="Quân Nguyễn"
++            android:text="Name"
+             android:textColor="@color/color_app_black"
+             android:textSize="16sp"
+             android:textStyle="bold"
+Index: app/src/main/res/layout/activity_therapist_reviews.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_therapist_reviews.xml b/app/src/main/res/layout/activity_therapist_reviews.xml
+new file mode 100644
+--- /dev/null	(date 1637932486420)
++++ b/app/src/main/res/layout/activity_therapist_reviews.xml	(date 1637932486420)
+@@ -0,0 +1,155 @@
++<?xml version="1.0" encoding="utf-8"?>
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:fillViewport="false"
++    android:background="@color/background_color">
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        tools:context=".Doctor_detail"
++        android:orientation="vertical"
++        android:padding="15dp">
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:orientation="horizontal">
++            <Button
++                android:id="@+id/btnBack"
++                android:layout_width="40dp"
++                android:layout_height="40dp"
++                android:background="@drawable/ic_button_back"
++                android:gravity="start" />
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:layout_marginEnd="40dp"
++                android:orientation="vertical">
++                <ImageView
++                    android:id="@+id/imageView"
++                    android:layout_width="match_parent"
++                    android:layout_height="60dp"
++                    android:layout_marginTop="8dp"
++                    android:src="@drawable/logo" />
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:textSize="24sp"
++                    android:text="@string/Danhgiatrungbinh"
++                    android:textColor="@color/color_app_black"/>
++                <RatingBar
++                    android:id="@+id/ratingBar"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:numStars="5"
++                    android:rating="3"
++                    android:stepSize="0.001"
++                    android:theme="@style/RatingBar"
++                    android:layout_gravity="center" />
++
++            </LinearLayout>
++        </LinearLayout>
++
++        <androidx.constraintlayout.widget.ConstraintLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content">
++
++            <androidx.appcompat.widget.Toolbar
++                android:id="@+id/Sorttoolbar"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                tools:ignore="MissingConstraints"
++                tools:layout_editor_absoluteX="-61dp"
++                tools:layout_editor_absoluteY="-1dp">
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:orientation="vertical">
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:orientation="horizontal"
++                    android:weightSum="3">
++                <TextView
++                    android:id="@+id/txtBenhnhanreview"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:gravity="start"
++                    android:text="@string/Benhnhannoigiveban"
++                    android:textSize="16sp" />
++
++                <LinearLayout
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:gravity="end"
++                    android:orientation="horizontal"
++                    android:layout_weight="3">
++
++                    <TextView
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:paddingEnd="10dp"
++                        android:text="@string/sapxep"
++                        android:textSize="16sp" />
++
++                    <Button
++                        android:id="@+id/btnSapxep"
++                        android:layout_width="20dp"
++                        android:layout_height="20dp"
++                        android:background="@drawable/iconloc" />
++                </LinearLayout>
++                </LinearLayout>
++
++                    <LinearLayout
++                        android:id="@+id/Sort"
++                        android:layout_width="match_parent"
++                        android:layout_height="wrap_content"
++                        android:orientation="horizontal"
++                        android:gravity="right">
++
++                        <Button
++                            android:id="@+id/btnSortByName"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="@string/SortByName" />
++                        <Button
++                            android:id="@+id/btnSortByDate"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:text="@string/SortByDate"/>
++                    </LinearLayout>
++                </LinearLayout>
++            </androidx.appcompat.widget.Toolbar>
++
++
++            <ListView
++                android:id="@+id/lvTherapistReview"
++                android:layout_width="match_parent"
++                android:layout_height="400dp"
++                android:layout_marginTop="12dp"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="1.0"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/Sorttoolbar"
++                tools:listitem="@layout/review"
++                >
++
++
++            </ListView>
++        </androidx.constraintlayout.widget.ConstraintLayout>
++            <Button
++                android:layout_width="250dp"
++                android:layout_height="wrap_content"
++                android:text="@string/xemthemwithoutU"
++                android:button="@android:color/transparent"
++                android:background="@drawable/radio_selected"
++                android:textColor="@color/color_app_black"
++                android:textSize="24sp"
++                android:layout_gravity="center" />
++
++    </LinearLayout>
++</ScrollView>
+\ No newline at end of file
+Index: app/src/main/java/com/example/projectapp/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.projectapp;\r\n\r\nimport android.app.Activity;\r\nimport android.app.ActivityManager;\r\nimport android.os.Bundle;\r\nimport android.view.MenuItem;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.ActionBar;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.fragment.app.Fragment;\r\nimport androidx.fragment.app.FragmentTransaction;\r\n\r\nimport com.google.android.material.bottomnavigation.BottomNavigationView;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n    private ActionBar toolbar;\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n\r\n        toolbar = getSupportActionBar();\r\n\r\n        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);\r\n        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);\r\n\r\n        toolbar.setTitle(\"Shop\");\r\n        loadFragment(new Homepage_screen());\r\n    }\r\n    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener\r\n            = new BottomNavigationView.OnNavigationItemSelectedListener() {\r\n\r\n        @Override\r\n        public boolean onNavigationItemSelected(@NonNull MenuItem item) {\r\n            Fragment fragment;\r\n            switch (item.getItemId()) {\r\n                case R.id.navigation_home:\r\n                    toolbar.setTitle(\"Trang chủ\");\r\n                    fragment = new Homepage_screen();\r\n                    loadFragment(fragment);\r\n                    return true;\r\n                case R.id.navigation_self_help:\r\n                    toolbar.setTitle(\"Tự trị liệu\");\r\n\r\n                    return true;\r\n                case R.id.navigation_advise:\r\n                    toolbar.setTitle(\"Cần tư vấn\");\r\n                    return true;\r\n                case R.id.navigation_newsfeed:\r\n                    toolbar.setTitle(\"Bảng tin\");\r\n                    return true;\r\n                case R.id.navigation_account:\r\n                    toolbar.setTitle(\"Tài khoản\");\r\n                    fragment = new account_screen();\r\n                    loadFragment(fragment);\r\n                    return true;\r\n            }\r\n            return false;\r\n        }\r\n    };\r\n    private void loadFragment(Fragment fragment) {\r\n        // load fragment\r\n        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();\r\n        transaction.replace(R.id.frame_container, fragment);\r\n        transaction.addToBackStack(null);\r\n        transaction.commit();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/projectapp/MainActivity.java b/app/src/main/java/com/example/projectapp/MainActivity.java
+--- a/app/src/main/java/com/example/projectapp/MainActivity.java	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/app/src/main/java/com/example/projectapp/MainActivity.java	(date 1637934652205)
+@@ -49,6 +49,8 @@
+                     return true;
+                 case R.id.navigation_newsfeed:
+                     toolbar.setTitle("Bảng tin");
++                    fragment = new BlogScreen();
++                    loadFragment(fragment);
+                     return true;
+                 case R.id.navigation_account:
+                     toolbar.setTitle("Tài khoản");
+Index: app/src/main/java/com/example/projectapp/Therapist_reviews.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/projectapp/Therapist_reviews.java b/app/src/main/java/com/example/projectapp/Therapist_reviews.java
+new file mode 100644
+--- /dev/null	(date 1637935293576)
++++ b/app/src/main/java/com/example/projectapp/Therapist_reviews.java	(date 1637935293576)
+@@ -0,0 +1,128 @@
++package com.example.projectapp;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++import android.view.View;
++import android.widget.ArrayAdapter;
++import android.widget.Button;
++import android.widget.LinearLayout;
++import android.widget.ListView;
++import android.widget.RatingBar;
++
++import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
++import com.example.ReviewAdapter.ReviewAdapter;
++import com.example.model.ReviewList;
++
++import java.util.ArrayList;
++import java.util.Collection;
++import java.util.Collections;
++import java.util.Comparator;
++
++
++public class Therapist_reviews extends AppCompatActivity {
++
++    ListView lvTherapistReview;
++    ArrayList<ReviewList> Review_list;
++    ReviewAdapter reviewAdapter;
++    RatingBar ratingBar;
++    Button btnSapxep,btnSortByName,btnSortByDate;
++    LinearLayout Sort;
++
++    boolean sortAscending = true;
++    boolean unSorted = true;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_therapist_reviews);
++
++        linkViews();
++        initData();
++        loadData();
++        addEvents();
++
++//        hideSort();
++//        showSort();
++    }
++
++    private void linkViews() {
++        lvTherapistReview=findViewById(R.id.lvTherapistReview);
++        ratingBar=findViewById(R.id.ratingBar);
++
++        btnSortByName=findViewById(R.id.btnSortByName);
++        btnSortByDate=findViewById(R.id.btnSortByDate);
++        btnSapxep=findViewById(R.id.btnSapxep);
++        Sort=findViewById(R.id.Sort);
++    }
++
++    private void initData() {
++        Review_list=new ArrayList<>();
++        Review_list.add(new ReviewList(R.id.ratingBar,"08/10/2021","Chữa trị tốt nhưng ava kì quá nên 3 sao thôi","Quân Nguyễn"));
++        Review_list.add(new ReviewList(R.id.ratingBar,"15/10/2021","Tư vấn buồn ngủ quá má","Đạt Nguyễn"));
++        Review_list.add(new ReviewList(R.id.ratingBar,"15/10/2021","Bác sĩ xịn xò quá nè. Nhưng xin lỗi mình không có thói quen đánh giá 5 sao","Ánh Nguyễn"));
++
++
++    }
++
++    private void loadData() {
++        reviewAdapter = new ReviewAdapter(Therapist_reviews.this, Review_list, R.layout.review);
++        lvTherapistReview.setAdapter(reviewAdapter);
++    }
++
++    private void addEvents() {
++        btnSortByName.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Collections.sort(Review_list);
++                reviewAdapter.notifyDataSetChanged();
++            }
++        });
++        btnSortByDate.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                Collections.sort(Review_list, new Comparator<ReviewList>() {
++                    @Override
++                    public int compare(ReviewList o1, ReviewList o2) {
++
++                        return 0;
++                    }
++                });
++                reviewAdapter.notifyDataSetChanged();
++            }
++        });
++
++    }
++
++//    private void sortData() {
++//        if (unSorted) {
++//            Collections.sort(Review_list);
++//        } else {
++//            Collections.reverse(Review_list);
++//
++//            sortAscending = !sortAscending;
++//            unSorted=false;
++//
++//            reviewAdapter=new ReviewAdapter(Therapist_reviews.this, Review_list, R.layout.review);
++//        }
++//    }
++//
++//    private void showSort() {
++//        Sort.setVisibility(View.VISIBLE);
++//
++//    }
++//
++//    private void hideSort() {
++//        Sort.setVisibility(View.INVISIBLE);
++//
++//    }
++
++//    public void showSortTapped(View view){
++//        if (sortHidden==true) {
++//            showSort();
++//        }else{
++//            hideSort();
++//        }
++//    }
++}
++
+Index: app/src/main/java/com/example/projectapp/BlogScreen.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.projectapp;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.recyclerview.widget.DefaultItemAnimator;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport com.example.adapter.BlogListAdapter;\r\nimport com.example.model.AppointmentList;\r\nimport com.example.model.AudioList;\r\nimport com.example.model.BlogList;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class BlogScreen extends AppCompatActivity {\r\n    RecyclerView rcvBlog;\r\n    ArrayList<BlogList> blogLists;\r\n    BlogListAdapter blogListAdapter;\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_blog_screen);\r\n\r\n        linkViews();\r\n        initData();\r\n        configRecyclerView();\r\n    }\r\n    private void initData() {\r\n        blogLists = new ArrayList<>();\r\n\r\n        blogLists.add(new BlogList(R.drawable.bndexuat1, \"Chứng hoang tưởng ảo giác Paranioa\",\"Dịch bệnh đã để lại những nỗi sợ vô hình?\",\"Tác giả\",\"3 phút đọc\"));\r\n        blogLists.add(new BlogList(R.drawable.bndexuat2, \"Những nỗi lo\",\"Những tình huống khiến bạn lo lắng sợ hãi?\",\"Tác giả\",\"8 phút đọc\"));\r\n        blogLists.add(new BlogList(R.drawable.bndexuat3, \"Áp lực\",\"Những thói quen tốt để giải tỏa căng thẳng\",\"Tác giả\",\"6 phút đọc\"));\r\n\r\n        blogListAdapter = new BlogListAdapter(getApplicationContext(),blogLists);\r\n        rcvBlog.setAdapter(blogListAdapter);\r\n    }\r\n    private void configRecyclerView() {\r\n        LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);\r\n        rcvBlog.setLayoutManager(manager);\r\n        rcvBlog.setHasFixedSize(true);\r\n        rcvBlog.setItemAnimator(new DefaultItemAnimator());\r\n    }\r\n\r\n    private void linkViews() {\r\n        rcvBlog = findViewById(R.id.rcvBlog);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/projectapp/BlogScreen.java b/app/src/main/java/com/example/projectapp/BlogScreen.java
+--- a/app/src/main/java/com/example/projectapp/BlogScreen.java	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/app/src/main/java/com/example/projectapp/BlogScreen.java	(date 1637934504559)
+@@ -1,11 +1,15 @@
+ package com.example.projectapp;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
++import androidx.fragment.app.Fragment;
+ import androidx.recyclerview.widget.DefaultItemAnimator;
+ import androidx.recyclerview.widget.LinearLayoutManager;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
+ 
+ import com.example.adapter.BlogListAdapter;
+ import com.example.model.AppointmentList;
+@@ -14,37 +18,40 @@
+ 
+ import java.util.ArrayList;
+ 
+-public class BlogScreen extends AppCompatActivity {
++public class BlogScreen extends Fragment {
+     RecyclerView rcvBlog;
+     ArrayList<BlogList> blogLists;
+     BlogListAdapter blogListAdapter;
++
+     @Override
+-    protected void onCreate(Bundle savedInstanceState) {
++    public View onCreateView(LayoutInflater inflater, ViewGroup container,
++                             Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+-        setContentView(R.layout.activity_blog_screen);
++        View view = inflater.inflate(R.layout.activity_blog_screen, container, false);
++
++        rcvBlog = view.findViewById(R.id.rcvBlog);
+ 
+-        linkViews();
++
+         initData();
+         configRecyclerView();
++        return view;
+     }
++
+     private void initData() {
+         blogLists = new ArrayList<>();
+ 
+-        blogLists.add(new BlogList(R.drawable.bndexuat1, "Chứng hoang tưởng ảo giác Paranioa","Dịch bệnh đã để lại những nỗi sợ vô hình?","Tác giả","3 phút đọc"));
+-        blogLists.add(new BlogList(R.drawable.bndexuat2, "Những nỗi lo","Những tình huống khiến bạn lo lắng sợ hãi?","Tác giả","8 phút đọc"));
+-        blogLists.add(new BlogList(R.drawable.bndexuat3, "Áp lực","Những thói quen tốt để giải tỏa căng thẳng","Tác giả","6 phút đọc"));
++        blogLists.add(new BlogList(R.drawable.bndexuat1, "Chứng hoang tưởng ảo giác Paranioa", "Dịch bệnh đã để lại những nỗi sợ vô hình?", "Tác giả", "3 phút đọc"));
++        blogLists.add(new BlogList(R.drawable.bndexuat2, "Những nỗi lo", "Những tình huống khiến bạn lo lắng sợ hãi?", "Tác giả", "8 phút đọc"));
++        blogLists.add(new BlogList(R.drawable.bndexuat3, "Áp lực", "Những thói quen tốt để giải tỏa căng thẳng", "Tác giả", "6 phút đọc"));
+ 
+-        blogListAdapter = new BlogListAdapter(getApplicationContext(),blogLists);
++        blogListAdapter = new BlogListAdapter(getContext(), blogLists);
+         rcvBlog.setAdapter(blogListAdapter);
+     }
++
+     private void configRecyclerView() {
+-        LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
++        LinearLayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+         rcvBlog.setLayoutManager(manager);
+         rcvBlog.setHasFixedSize(true);
+         rcvBlog.setItemAnimator(new DefaultItemAnimator());
+     }
+-
+-    private void linkViews() {
+-        rcvBlog = findViewById(R.id.rcvBlog);
+-    }
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_doctor_list2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".DoctorList2\"\r\n    android:orientation=\"vertical\"\r\n    android:padding=\"10dp\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"horizontal\">\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:layout_weight=\"1\"\r\n            android:paddingTop=\"20dp\"\r\n            android:gravity=\"start\">\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"@string/your_doctor\"\r\n                android:textSize=\"16sp\"\r\n                />\r\n\r\n        </LinearLayout>\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"horizontal\"\r\n            android:gravity=\"end\"\r\n            android:layout_weight=\"1\"\r\n            android:paddingTop=\"20dp\">\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"@string/loc\"\r\n                android:textSize=\"16sp\"\r\n                android:paddingRight=\"10dp\"/>\r\n            <Button\r\n                android:layout_width=\"20dp\"\r\n                android:layout_height=\"20dp\"\r\n                android:background=\"@drawable/iconloc\"/>\r\n        </LinearLayout>\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"horizontal\"\r\n        android:layout_marginTop=\"10dp\">\r\n    <de.hdodenhof.circleimageview.CircleImageView\r\n        android:id=\"@+id/imvDoctor\"\r\n        android:layout_width=\"70dp\"\r\n        android:layout_height=\"70dp\"\r\n        android:src=\"@drawable/avabsgiang\"\r\n        android:gravity=\"center\">\r\n    </de.hdodenhof.circleimageview.CircleImageView>\r\n\r\n    <LinearLayout android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        android:layout_gravity=\"center\"\r\n        android:layout_marginLeft=\"10dp\"\r\n        android:paddingStart=\"10dp\">\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtDoctorName\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/name_bacsi\"\r\n            android:layout_marginBottom=\"15dp\"\r\n            android:textSize=\"16sp\"\r\n            android:textColor=\"@color/color_app_black\"\r\n            />\r\n        <TextView\r\n            android:id=\"@+id/txtDoctorInfo\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/name_subinfor\"\r\n            android:textColor=\"@color/color_app_black\"\r\n            android:textSize=\"12sp\"\r\n            />\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"horizontal\"\r\n        android:layout_gravity=\"center\"\r\n        android:gravity=\"end\"\r\n        >\r\n        <Button\r\n            android:layout_width=\"36dp\"\r\n            android:layout_height=\"36dp\"\r\n            android:background=\"@drawable/ic_button_next\"\r\n            android:gravity=\"end\"/>\r\n    </LinearLayout>\r\n    </LinearLayout>\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"horizontal\"\r\n        android:layout_marginTop=\"10dp\">\r\n        <de.hdodenhof.circleimageview.CircleImageView\r\n            android:id=\"@+id/imvDoctor1\"\r\n            android:layout_width=\"70dp\"\r\n            android:layout_height=\"70dp\"\r\n            android:src=\"@drawable/avabsquang\"\r\n            android:gravity=\"center\">\r\n        </de.hdodenhof.circleimageview.CircleImageView>\r\n\r\n        <LinearLayout android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:layout_gravity=\"center\"\r\n            android:layout_marginLeft=\"10dp\"\r\n            android:paddingStart=\"10dp\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/txtDoctorName1\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"@string/name_bacsi1\"\r\n                android:layout_marginBottom=\"15dp\"\r\n                android:textSize=\"16sp\"\r\n                android:textColor=\"@color/color_app_black\"\r\n                />\r\n            <TextView\r\n                android:id=\"@+id/txtDoctorInfo1\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"@string/doctor_info\"\r\n                android:textColor=\"@color/color_app_black\"\r\n                android:textSize=\"12sp\"\r\n                />\r\n\r\n        </LinearLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"horizontal\"\r\n            android:layout_gravity=\"center\"\r\n            android:gravity=\"end\"\r\n            >\r\n            <Button\r\n                android:layout_width=\"36dp\"\r\n                android:layout_height=\"36dp\"\r\n                android:background=\"@drawable/ic_button_next\"\r\n                android:gravity=\"end\"/>\r\n        </LinearLayout>\r\n    </LinearLayout>\r\n\r\n    <ListView\r\n        android:id=\"@+id/lvDoctorList\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:listSelector=\"@color/color_app_white_gray\"\r\n        />\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_doctor_list2.xml b/app/src/main/res/layout/activity_doctor_list2.xml
+--- a/app/src/main/res/layout/activity_doctor_list2.xml	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/app/src/main/res/layout/activity_doctor_list2.xml	(date 1637932486404)
+@@ -37,7 +37,7 @@
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:text="@string/loc"
++                android:text="@string/sapxep"
+                 android:textSize="16sp"
+                 android:paddingRight="10dp"/>
+             <Button
+Index: app/src/main/java/com/example/model/ReviewList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.model;\r\n\r\npublic class ReviewList {\r\n    private int rating;\r\n    private String date,reviews,name;\r\n\r\n    public ReviewList(int rating, String date, String reviews, String name) {\r\n        this.rating = rating;\r\n        this.date = date;\r\n        this.reviews = reviews;\r\n        this.name = name;\r\n    }\r\n\r\n    public float getRating() {\r\n        return rating;\r\n    }\r\n\r\n    public void setRating(int rating) {\r\n        this.rating = rating;\r\n    }\r\n\r\n    public String getDate() {\r\n        return date;\r\n    }\r\n\r\n    public void setDate(String date) {\r\n        this.date = date;\r\n    }\r\n\r\n    public String getReviews() {\r\n        return reviews;\r\n    }\r\n\r\n    public void setReviews(String reviews) {\r\n        this.reviews = reviews;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/model/ReviewList.java b/app/src/main/java/com/example/model/ReviewList.java
+--- a/app/src/main/java/com/example/model/ReviewList.java	(revision 7370898da2a140909b23abf25350dc33881ea1e0)
++++ b/app/src/main/java/com/example/model/ReviewList.java	(date 1637932486388)
+@@ -1,6 +1,6 @@
+ package com.example.model;
+ 
+-public class ReviewList {
++public class ReviewList implements Comparable<ReviewList> {
+     private int rating;
+     private String date,reviews,name;
+ 
+@@ -11,6 +11,12 @@
+         this.name = name;
+     }
+ 
++    @Override
++    public int compareTo(ReviewList other) {
++        return this.name.compareTo(other.name);
++    }
++
++
+     public float getRating() {
+         return rating;
+     }

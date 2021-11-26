@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_newsfeed:
                     toolbar.setTitle("Bảng tin");
+                    fragment = new BlogScreen();
+                    loadFragment(fragment);
                     return true;
                 case R.id.navigation_account:
                     toolbar.setTitle("Tài khoản");

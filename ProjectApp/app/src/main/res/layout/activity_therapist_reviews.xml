@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Doctor_detail"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_button_back"
+                android:gravity="start" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/logo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="@string/Danhgiacuaban"
+                    android:textColor="@color/color_app_black"/>
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.001"
+                    android:theme="@style/RatingBar"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Sorttoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-61dp"
+                tools:layout_editor_absoluteY="-1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                <TextView
+                    android:id="@+id/txtBenhnhanreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/Benhnhannoigiveban"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/loc"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btnSapxep"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/iconloc" />
+                </LinearLayout>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Sort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/btnSortByName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SortByName" />
+                        <Button
+                            android:id="@+id/btnSortByDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SortByDate"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <ListView
+                android:id="@+id/lvTherapistReview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Sorttoolbar"
+                tools:listitem="@layout/review"
+                >
+
+
+            </ListView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selected"
+                android:textColor="@color/color_app_black"
+                android:textSize="24sp"
+                android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

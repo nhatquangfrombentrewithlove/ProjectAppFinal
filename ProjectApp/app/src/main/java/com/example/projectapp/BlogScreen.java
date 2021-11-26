@@ -1,11 +1,15 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.adapter.BlogListAdapter;
 import com.example.model.AppointmentList;
@@ -14,37 +18,40 @@ import com.example.model.BlogList;
 
 import java.util.ArrayList;
 
-public class BlogScreen extends AppCompatActivity {
+public class BlogScreen extends Fragment {
     RecyclerView rcvBlog;
     ArrayList<BlogList> blogLists;
     BlogListAdapter blogListAdapter;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blog_screen);
 
-        linkViews();
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        View view = inflater.inflate(R.layout.activity_blog_screen, container, false);
+
+        rcvBlog = view.findViewById(R.id.rcvBlog);
+
+
         initData();
         configRecyclerView();
+        return view;
     }
+
     private void initData() {
         blogLists = new ArrayList<>();
 
-        blogLists.add(new BlogList(R.drawable.bndexuat1, "Chứng hoang tưởng ảo giác Paranioa","Dịch bệnh đã để lại những nỗi sợ vô hình?","Tác giả","3 phút đọc"));
-        blogLists.add(new BlogList(R.drawable.bndexuat2, "Những nỗi lo","Những tình huống khiến bạn lo lắng sợ hãi?","Tác giả","8 phút đọc"));
-        blogLists.add(new BlogList(R.drawable.bndexuat3, "Áp lực","Những thói quen tốt để giải tỏa căng thẳng","Tác giả","6 phút đọc"));
+        blogLists.add(new BlogList(R.drawable.bndexuat1, "Chứng hoang tưởng ảo giác Paranioa", "Dịch bệnh đã để lại những nỗi sợ vô hình?", "Tác giả", "3 phút đọc"));
+        blogLists.add(new BlogList(R.drawable.bndexuat2, "Những nỗi lo", "Những tình huống khiến bạn lo lắng sợ hãi?", "Tác giả", "8 phút đọc"));
+        blogLists.add(new BlogList(R.drawable.bndexuat3, "Áp lực", "Những thói quen tốt để giải tỏa căng thẳng", "Tác giả", "6 phút đọc"));
 
-        blogListAdapter = new BlogListAdapter(getApplicationContext(),blogLists);
+        blogListAdapter = new BlogListAdapter(getContext(), blogLists);
         rcvBlog.setAdapter(blogListAdapter);
     }
+
     private void configRecyclerView() {
-        LinearLayoutManager manager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         rcvBlog.setLayoutManager(manager);
         rcvBlog.setHasFixedSize(true);
         rcvBlog.setItemAnimator(new DefaultItemAnimator());
-    }
-
-    private void linkViews() {
-        rcvBlog = findViewById(R.id.rcvBlog);
     }
 }
