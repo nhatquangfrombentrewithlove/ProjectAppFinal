@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="@string/Danhgiatrungbinh"
+                    android:text="@string/Danhgiacuaban"
                     android:textColor="@color/color_app_black"/>
                 <RatingBar
                     android:id="@+id/ratingBar"
@@ -93,7 +93,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingEnd="10dp"
-                        android:text="@string/sapxep"
+                        android:text="@string/loc"
                         android:textSize="16sp" />
 
                     <Button
@@ -144,7 +144,7 @@
             <Button
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="@string/xemthemwithoutU"
+                android:text="Xem thêm"
                 android:button="@android:color/transparent"
                 android:background="@drawable/radio_selected"
                 android:textColor="@color/color_app_black"

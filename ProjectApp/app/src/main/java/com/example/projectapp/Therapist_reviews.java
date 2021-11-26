@@ -84,7 +84,8 @@ public class Therapist_reviews extends AppCompatActivity {
                 Collections.sort(Review_list, new Comparator<ReviewList>() {
                     @Override
                     public int compare(ReviewList o1, ReviewList o2) {
-                        return o1.getDate() - o2.getDate();
+
+                        return 0;
                     }
                 });
                 reviewAdapter.notifyDataSetChanged();

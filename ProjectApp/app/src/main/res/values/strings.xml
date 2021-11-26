@@ -152,4 +152,7 @@
     <string name="title_payment">Các lịch hẹn cần thanh toán</string>
     <string name="btn_pay">Thanh toán</string>
     <string name="btn_cancel">Hủy Lịch</string>
+    <string name="Benhnhannoigiveban">Bênh nhân nói gì về bạn</string>
+    <string name="SortByName">Theo tên</string>
+    <string name="SortByDate">Theo ngày</string>
 </resources>
