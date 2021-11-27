@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="@string/Danhgiacuaban"
+                    android:text="@string/Danhgiatrungbinh"
                     android:textColor="@color/color_app_black"/>
                 <RatingBar
                     android:id="@+id/ratingBar"
@@ -54,17 +54,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/Sorttoolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="-61dp"
-                tools:layout_editor_absoluteY="-1dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,8 +61,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:orientation="horizontal">
                 <TextView
                     android:id="@+id/txtBenhnhanreview"
                     android:layout_width="wrap_content"
@@ -104,28 +92,32 @@
                 </LinearLayout>
                 </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/Sort"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="right">
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/Sort"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:gravity="right">-->
 
-                        <Button
-                            android:id="@+id/btnSortByName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/SortByName" />
-                        <Button
-                            android:id="@+id/btnSortByDate"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/SortByDate"/>
-                    </LinearLayout>
+<!--                        <Button-->
+<!--                            android:id="@+id/btnSortByName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/SortByName" />-->
+<!--                        <Button-->
+<!--                            android:id="@+id/btnSortByDate"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/SortByDate"/>-->
+<!--                    </LinearLayout>-->
                 </LinearLayout>
-            </androidx.appcompat.widget.Toolbar>
 
 
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"/>
             <ListView
                 android:id="@+id/lvTherapistReview"
                 android:layout_width="match_parent"
@@ -140,7 +132,7 @@
 
 
             </ListView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
             <Button
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"

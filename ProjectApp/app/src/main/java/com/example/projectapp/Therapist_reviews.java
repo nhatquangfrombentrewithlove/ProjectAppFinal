@@ -26,11 +26,11 @@ public class Therapist_reviews extends AppCompatActivity {
     ArrayList<ReviewList> Review_list;
     ReviewAdapter reviewAdapter;
     RatingBar ratingBar;
-    Button btnSapxep,btnSortByName,btnSortByDate;
-    LinearLayout Sort;
-
-    boolean sortAscending = true;
-    boolean unSorted = true;
+//    Button btnSapxep,btnSortByName,btnSortByDate;
+//    LinearLayout Sort;
+//
+//    boolean sortAscending = true;
+//    boolean unSorted = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class Therapist_reviews extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
-        addEvents();
+//        addEvents();
 
 //        hideSort();
 //        showSort();
@@ -50,10 +50,10 @@ public class Therapist_reviews extends AppCompatActivity {
         lvTherapistReview=findViewById(R.id.lvTherapistReview);
         ratingBar=findViewById(R.id.ratingBar);
 
-        btnSortByName=findViewById(R.id.btnSortByName);
-        btnSortByDate=findViewById(R.id.btnSortByDate);
-        btnSapxep=findViewById(R.id.btnSapxep);
-        Sort=findViewById(R.id.Sort);
+//        btnSortByName=findViewById(R.id.btnSortByName);
+//        btnSortByDate=findViewById(R.id.btnSortByDate);
+//        btnSapxep=findViewById(R.id.btnSapxep);
+//        Sort=findViewById(R.id.Sort);
     }
 
     private void initData() {
@@ -70,59 +70,28 @@ public class Therapist_reviews extends AppCompatActivity {
         lvTherapistReview.setAdapter(reviewAdapter);
     }
 
-    private void addEvents() {
-        btnSortByName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Collections.sort(Review_list);
-                reviewAdapter.notifyDataSetChanged();
-            }
-        });
-        btnSortByDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Collections.sort(Review_list, new Comparator<ReviewList>() {
-                    @Override
-                    public int compare(ReviewList o1, ReviewList o2) {
-
-                        return 0;
-                    }
-                });
-                reviewAdapter.notifyDataSetChanged();
-            }
-        });
+//    private void addEvents() {
+//        btnSortByName.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Collections.sort(Review_list);
+//                reviewAdapter.notifyDataSetChanged();
+//            }
+//        });
+//        btnSortByDate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Collections.sort(Review_list, new Comparator<ReviewList>() {
+//                    @Override
+//                    public int compare(ReviewList o1, ReviewList o2) {
+//
+//                        return 0;
+//                    }
+//                });
+//                reviewAdapter.notifyDataSetChanged();
+//            }
+//        });
 
     }
 
-//    private void sortData() {
-//        if (unSorted) {
-//            Collections.sort(Review_list);
-//        } else {
-//            Collections.reverse(Review_list);
-//
-//            sortAscending = !sortAscending;
-//            unSorted=false;
-//
-//            reviewAdapter=new ReviewAdapter(Therapist_reviews.this, Review_list, R.layout.review);
-//        }
-//    }
-//
-//    private void showSort() {
-//        Sort.setVisibility(View.VISIBLE);
-//
-//    }
-//
-//    private void hideSort() {
-//        Sort.setVisibility(View.INVISIBLE);
-//
-//    }
-
-//    public void showSortTapped(View view){
-//        if (sortHidden==true) {
-//            showSort();
-//        }else{
-//            hideSort();
-//        }
-//    }
-}
 

@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_advise:
                     toolbar.setTitle("Cần tư vấn");
-                    fragment = new Appointment_call_screen();
-                    loadFragment(fragment);
+
+
                     return true;
                 case R.id.navigation_newsfeed:
                     toolbar.setTitle("Bảng tin");
