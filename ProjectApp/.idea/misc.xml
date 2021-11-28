@@ -99,6 +99,10 @@
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/review.xml" value="0.3359073359073359" />
+
+        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/menu/navigation.xml" value="0.25729166666666664" />
+
+
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable-v24/seekbar_thumb.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stoke.xml" value="0.19583333333333333" />
@@ -137,7 +141,7 @@
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/signup_screen.xml" value="0.12" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_list.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_list.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_blog_screen.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml" value="0.25025641025641027" />
