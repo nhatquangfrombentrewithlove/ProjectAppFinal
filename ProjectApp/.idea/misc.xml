@@ -21,10 +21,17 @@
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_selected.xml" value="0.19583333333333333" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_account_screen.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_backstack.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_booking.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_choose_user.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.16666666666666666" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list2.xml" value="0.22" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_as02.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs01.xml" value="0.1796875" />
-        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.16666666666666666" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.22" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_therapist.xml" value="0.1" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.16666666666666666" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs03.xml" value="0.1796875" />
@@ -32,6 +39,9 @@
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.165625" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile02.xml" value="0.22" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment__selfhelp__suggestion.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_01.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_02.xml" value="0.165625" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2692307692307692" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button.xml" value="0.2692307692307692" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button_listivew.xml" value="0.2692307692307692" />
@@ -60,7 +70,6 @@
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_account_screen.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_appointment_call_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_appointment_list.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_blog_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_bn_loading_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_book_confirmation_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_call_screen.xml" value="0.25729166666666664" />
@@ -69,39 +78,31 @@
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_canceled_appointment.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_choose_user.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.24166666666666667" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.264" />
+        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.2" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_doctor_list2.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs01.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_note.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_payment_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs02.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs03.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.24166666666666667" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_signup.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/appointment_list_layout.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/background.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/bnloading_1.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/bnloading_2.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/bnloading_3.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_appointment.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_appointment_layout.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_audio.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_blog_offer.xml" value="0.25729166666666664" />
-        <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_blog_screen.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.24166666666666667" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.25729166666666664" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/layout/review.xml" value="0.3359073359073359" />
+
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/menu/navigation.xml" value="0.25729166666666664" />
+
+
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable-v24/seekbar_thumb.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/ACER/Documents/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/button_stoke.xml" value="0.19583333333333333" />
@@ -152,14 +153,10 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list2.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.264" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25025641025641027" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_reviews.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_user_review.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/appointment_list_layout.xml" value="0.27447916666666666" />
