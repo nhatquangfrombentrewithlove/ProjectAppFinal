@@ -38,7 +38,7 @@ public class Choose_user extends AppCompatActivity {
 
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.layoutChooseUser, fragment);
+        transaction.add(R.id.layoutChooseUser, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }
