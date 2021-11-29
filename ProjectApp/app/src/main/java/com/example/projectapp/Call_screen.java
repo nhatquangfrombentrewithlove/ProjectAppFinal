@@ -38,7 +38,7 @@ public class Call_screen extends Fragment {
     }
     private void loadFragmentCall(Fragment fragment) {
         FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.layoutCancelAppointment, fragment);
+        transaction.replace(R.id.layoutCallScreen, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

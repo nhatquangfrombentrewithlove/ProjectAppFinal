@@ -8,7 +8,7 @@
     tools:context=".Appointment_call_screen">
 
     <LinearLayout
-        android:id="@+id/layoutCallScreen"
+        android:id="@+id/layoutAppointmentCallScreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"/>
@@ -116,24 +116,23 @@
                 android:layout_marginTop="2dp">
 
                 <Button
-                    android:id="@+id/btnGoi1"
+                    android:id="@+id/btnGoiAppointment"
                     android:layout_width="92dp"
                     android:layout_height="32dp"
-                    android:background="@drawable/button"
+                    android:background="@drawable/button_press_has_color"
                     android:text="@string/Call"
-                    android:textColor="@color/white"
+                    android:textColor="@color/color_app_black"
                     android:textSize="13sp" />
 
                 <Button
-                    android:id="@+id/btnHuyLich1"
+                    android:id="@+id/btnHuyLichAppointment"
                     android:layout_width="92dp"
                     android:layout_height="32dp"
                     android:text="@string/Huylich"
-                    android:button="@android:color/transparent"
-                    android:background="@drawable/radio_selected"
+                    android:background="@drawable/button_press_has_color"
                     android:textColor="@color/color_app_black"
-                    android:gravity="center"
-                    android:layout_marginStart="10dp" />
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

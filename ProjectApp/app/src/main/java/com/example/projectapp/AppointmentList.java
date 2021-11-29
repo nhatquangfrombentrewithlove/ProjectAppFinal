@@ -20,7 +20,7 @@ public class AppointmentList extends AppCompatActivity {
         setContentView(R.layout.activity_appointment_list);
 
         linkViews();
-        addEvents();
+//        addEvents();
     }
 
     private void linkViews() {
@@ -29,15 +29,15 @@ public class AppointmentList extends AppCompatActivity {
 
     }
 
-    private void addEvents() {
-        btnTiep1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment=new Appointment_call_screen();
-                loadFragment(fragment);
-            }
-        });
-    }
+//    private void addEvents() {
+//        btnTiep1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                fragment=new Appointment_call_screen();
+//                loadFragment(fragment);
+//            }
+//        });
+//}
 
     public void loadFragment(Fragment fragment) {
         // load fragment

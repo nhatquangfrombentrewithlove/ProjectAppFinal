@@ -58,7 +58,9 @@
             android:exported="true" />
         <activity
             android:name=".Choose_user"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
@@ -76,14 +78,13 @@
 
         </activity>
         <activity
-            android:name=".Cancel_appointment"
+            android:name=".Appointment_call_screen"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".SigninActivity"

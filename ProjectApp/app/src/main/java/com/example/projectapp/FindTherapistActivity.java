@@ -7,33 +7,34 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.fragment.FindTherapist_01Fragment;
 
-public class FindTherapistActivity extends AppCompatActivity {
+public class FindTherapistActivity extends Fragment {
 
     Button btnBack;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_therapist);
+        View view = inflater.inflate(R.layout.activity_find_therapist, container, false);
 
-        linkViews();
+        btnBack=view.findViewById(R.id.btnBack);
+
         addEvents();
         initData();
-    }
 
-    private void linkViews() {
-        btnBack = findViewById(R.id.btnBack);
-
+        return view;
     }
 
     private void initData() {
         FindTherapist_01Fragment fragment1 = new FindTherapist_01Fragment();
-        FragmentManager manager = getSupportFragmentManager();
+        FragmentManager manager = requireActivity().getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.container_body, fragment1);
         transaction.addToBackStack(null);
@@ -50,7 +51,7 @@ public class FindTherapistActivity extends AppCompatActivity {
     }
 
     protected void addFragment(Fragment fragment) {
-        FragmentManager fmgr = getSupportFragmentManager();
+        FragmentManager fmgr = requireActivity().getSupportFragmentManager();
         FragmentTransaction ft = fmgr.beginTransaction();
         ft.add(R.id.container_body, fragment);
         ft.addToBackStack(fragment.getClass().getSimpleName());

@@ -20,7 +20,7 @@ public class Canceled_appointment extends Fragment {
     ListView lvAppointmentCall;
     ArrayList<AppointmentCallList> appointment_Call_List;
     AppointmentCallListAdapter adapter;
-    Button btnGhichu,btnDanhgia;
+    Button btnGhichu,btnDanhgia,btnBack;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,6 +33,7 @@ public class Canceled_appointment extends Fragment {
 
         initData();
         loadData();
+//        addEvents();
 
         return view;
     }
@@ -49,5 +50,13 @@ public class Canceled_appointment extends Fragment {
         lvAppointmentCall.setAdapter(adapter);
     }
 
+//    private void addEvents() {
+//        btnBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //Quay lai man hinh Doctor list tab2 (Co the lay tu appointment_call.java)
+//            }
+//        });
+//    }
 
 }
