@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.TabHost;
 
 import com.example.adapter.DoctorListAdapter;
+import com.example.fragment.AppointmentListFragment;
 import com.example.fragment.DoctorListFragment;
 
 import java.util.ArrayList;
@@ -16,55 +17,45 @@ import java.util.ArrayList;
 public class DoctorList extends AppCompatActivity {
 
     TabHost tabHost;
-
-//    private FragmentManager manager;
-
+    private FragmentManager manager;
+    private FragmentManager manager1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_list);
 
-//        manager = getSupportFragmentManager();
-//        FragmentTransaction transaction = manager.beginTransaction();
-//        transaction.replace(R.id.layoutContainer, new DoctorListFragment());
-//        transaction.commit();
+        manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.tab1, new DoctorListFragment());
+        transaction.commit();
 
-
-
+        manager1 = getSupportFragmentManager();
+        FragmentTransaction transaction1 = manager1.beginTransaction();
+        transaction1.replace(R.id.tab2, new AppointmentListFragment());
+        transaction1.commit();
 
         linkViews();
-        loadTab();
-        initData();
-        loadData();
     }
 
     private void linkViews() {
         tabHost = findViewById(R.id.tabHost);
-
-    }
-
-    private void loadData() {
-
-    }
-
-    private void initData() {
-
-    }
-
-    private void loadTab() {
         tabHost.setup();
+        createTab();
+    }
 
-        //Tạo tab1
-        TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1");
-        tab1.setContent(R.id.tab1);
-        tab1.setIndicator("Bác sĩ");
-        tabHost.addTab(tab1);
-
-        //Tạo tab2
-        TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2");
-        tab2.setContent(R.id.tab2);
-        tab2.setIndicator("Lịch hẹn");
-        tabHost.addTab(tab2);
+    private void createTab() {
+        //tab 1
+        TabHost.TabSpec tabSpec1;
+        tabSpec1 = tabHost.newTabSpec("tab1");
+        tabSpec1.setContent(R.id.tab1);
+        tabSpec1.setIndicator("Bác sĩ");
+        tabHost.addTab(tabSpec1);
+        //tab 2
+        TabHost.TabSpec tabSpec2;
+        tabSpec2 = tabHost.newTabSpec("tab2");
+        tabSpec2.setContent(R.id.tab2);
+        tabSpec2.setIndicator("Lịch hẹn");
+        tabHost.addTab(tabSpec2);
     }
 }

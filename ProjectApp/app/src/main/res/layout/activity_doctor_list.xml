@@ -54,16 +54,15 @@
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <include layout="@layout/activity_doctor_list2"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <include layout="@layout/activity_appointment_list"/>
+                    android:orientation="vertical">
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
