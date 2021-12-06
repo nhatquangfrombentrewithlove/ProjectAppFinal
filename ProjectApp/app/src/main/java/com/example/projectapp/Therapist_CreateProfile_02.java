@@ -1,38 +1,43 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Therapist_CreateProfile_02 extends AppCompatActivity {
+public class Therapist_CreateProfile_02 extends Fragment {
 
     Spinner spAddress, spFeelComfortableOnline;
     ArrayAdapter<CharSequence> adapterAddress, adapterFeelComfortableOnline;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_therapist_create_profile02);
 
-        linkView();
+        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        spAddress = view.findViewById(R.id.spinnerAddress);
+        spFeelComfortableOnline = view.findViewById(R.id.spinnerFeelComfortableOnline);
+
         loadData();
+        return view;
     }
 
-    private void linkView() {
-        spAddress = findViewById(R.id.spinnerAddress);
-        spFeelComfortableOnline = findViewById(R.id.spinnerFeelComfortableOnline);
-    }
+
 
     private void loadData() {
         //Spinner Age
-        adapterAddress = ArrayAdapter.createFromResource(this, R.array.address_list, android.R.layout.simple_spinner_item);
+        adapterAddress = ArrayAdapter.createFromResource(getContext(), R.array.address_list, android.R.layout.simple_spinner_item);
         adapterAddress.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spAddress.setAdapter(adapterAddress);
 
         //Spinner Feel Comfortable Online
-        adapterFeelComfortableOnline = ArrayAdapter.createFromResource(this, R.array.yes_no_list, android.R.layout.simple_spinner_item);
+        adapterFeelComfortableOnline = ArrayAdapter.createFromResource(getContext(), R.array.yes_no_list, android.R.layout.simple_spinner_item);
         adapterFeelComfortableOnline.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spFeelComfortableOnline.setAdapter(adapterFeelComfortableOnline);
     }

@@ -1,9 +1,12 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,7 +23,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
-public class Therapist_reviews extends AppCompatActivity {
+public class Therapist_reviews extends Fragment {
 
     ListView lvTherapistReview;
     ArrayList<ReviewList> Review_list;
@@ -33,28 +36,32 @@ public class Therapist_reviews extends AppCompatActivity {
 //    boolean unSorted = true;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_therapist_reviews);
 
-        linkViews();
+        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        lvTherapistReview = view.findViewById(R.id.lvTherapistReview);
+        ratingBar = view.findViewById(R.id.ratingBar);
+
         initData();
         loadData();
 //        addEvents();
 
 //        hideSort();
 //        showSort();
+        return  view;
     }
 
-    private void linkViews() {
-        lvTherapistReview=findViewById(R.id.lvTherapistReview);
-        ratingBar=findViewById(R.id.ratingBar);
-
-//        btnSortByName=findViewById(R.id.btnSortByName);
-//        btnSortByDate=findViewById(R.id.btnSortByDate);
-//        btnSapxep=findViewById(R.id.btnSapxep);
-//        Sort=findViewById(R.id.Sort);
-    }
+//    private void linkViews() {
+//        lvTherapistReview=findViewById(R.id.lvTherapistReview);
+//        ratingBar=findViewById(R.id.ratingBar);
+//
+////        btnSortByName=findViewById(R.id.btnSortByName);
+////        btnSortByDate=findViewById(R.id.btnSortByDate);
+////        btnSapxep=findViewById(R.id.btnSapxep);
+////        Sort=findViewById(R.id.Sort);
+//    }
 
     private void initData() {
         Review_list=new ArrayList<>();
@@ -66,7 +73,7 @@ public class Therapist_reviews extends AppCompatActivity {
     }
 
     private void loadData() {
-        reviewAdapter = new ReviewAdapter(Therapist_reviews.this, Review_list, R.layout.review);
+        reviewAdapter = new ReviewAdapter(getContext(), Review_list, R.layout.review);
         lvTherapistReview.setAdapter(reviewAdapter);
     }
 
