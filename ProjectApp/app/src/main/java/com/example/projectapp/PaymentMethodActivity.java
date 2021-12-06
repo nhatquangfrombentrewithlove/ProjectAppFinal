@@ -2,6 +2,7 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -41,6 +42,8 @@ public class PaymentMethodActivity extends AppCompatActivity {
 
         adapter = new ChooseListAdapter(getApplicationContext(),chooseLists);
         rcvPayment.setAdapter(adapter);
+
+
     }
 
     private void configRecyclerView() {

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.model.ChooseList;
@@ -45,7 +46,7 @@ public class ChooseListAdapter extends RecyclerView.Adapter<ChooseListAdapter.Vi
     public int getItemCount(){
         return choose_lists.size();
     }
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView imvIcon;
         TextView txtDescription;
         ImageView imvNextButton;
@@ -54,6 +55,13 @@ public class ChooseListAdapter extends RecyclerView.Adapter<ChooseListAdapter.Vi
             imvIcon = itemView.findViewById(R.id.imvIcon);
             txtDescription = itemView.findViewById(R.id.txtDescription);
             imvNextButton = itemView.findViewById(R.id.imvNextButton);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            final Fragment fragment;
         }
     }
 

@@ -1,8 +1,12 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -11,27 +15,27 @@ import com.example.model.AppointmentCallList;
 
 import java.util.ArrayList;
 
-public class Canceled_appointment extends AppCompatActivity {
+public class Canceled_appointment extends Fragment {
 
     ListView lvAppointmentCall;
     ArrayList<AppointmentCallList> appointment_Call_List;
     AppointmentCallListAdapter adapter;
-    Button btnGhichu,btnDanhgia;
+    Button btnGhichu,btnDanhgia,btnBack;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_canceled_appointment);
-        linkViews();
+        View view = inflater.inflate(R.layout.activity_canceled_appointment, container, false);
+        lvAppointmentCall = view.findViewById(R.id.lvAppointmentCall);
+        btnGhichu=view.findViewById(R.id.btnGhichu);
+        btnDanhgia=view.findViewById(R.id.btnDanhgia);
+
         initData();
         loadData();
+//        addEvents();
 
-    }
-
-    private void linkViews() {
-        lvAppointmentCall = findViewById(R.id.lvAppointmentCall);
-        btnGhichu=findViewById(R.id.btnGhichu);
-        btnDanhgia=findViewById(R.id.btnDanhgia);
+        return view;
     }
 
     private void initData() {
@@ -42,9 +46,17 @@ public class Canceled_appointment extends AppCompatActivity {
     }
 
     private void loadData() {
-        adapter = new AppointmentCallListAdapter(Canceled_appointment.this,R.layout.custom_appointment_layout,appointment_Call_List);
+        adapter = new AppointmentCallListAdapter(getContext(),R.layout.custom_appointment_layout,appointment_Call_List);
         lvAppointmentCall.setAdapter(adapter);
     }
 
+//    private void addEvents() {
+//        btnBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //Quay lai man hinh Doctor list tab2 (Co the lay tu appointment_call.java)
+//            }
+//        });
+//    }
 
 }
