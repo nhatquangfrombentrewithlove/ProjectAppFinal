@@ -2,36 +2,38 @@ package com.example.projectapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.google.android.material.slider.LabelFormatter;
 import com.google.android.material.slider.Slider;
 
-public class SelfHelpQS_02 extends AppCompatActivity {
+public class SelfHelpQS_02 extends Fragment {
 
     Slider sliderGTBanThan, sliderKhaNangGQVD, sliderKhaNangKSAL;
     Button btnNext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_self_help_qs02);
 
-        linkView();
+        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        sliderGTBanThan = view.findViewById(R.id.sliderGTBanThan);
+        sliderKhaNangGQVD = view.findViewById(R.id.sliderKhaNangGQVD);
+        sliderKhaNangKSAL = view.findViewById(R.id.sliderKhaNangKSAL);
+
+        btnNext = view.findViewById(R.id.btnNext);
         initData();
-
-
+        return  view;
     }
 
-    private void linkView() {
-        sliderGTBanThan = findViewById(R.id.sliderGTBanThan);
-        sliderKhaNangGQVD = findViewById(R.id.sliderKhaNangGQVD);
-        sliderKhaNangKSAL = findViewById(R.id.sliderKhaNangKSAL);
 
-        btnNext = findViewById(R.id.btnNext);
-    }
 
     private void initData() {
         sliderGTBanThan.setLabelFormatter(new LabelFormatter() {

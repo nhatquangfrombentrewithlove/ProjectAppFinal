@@ -1,8 +1,12 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.RatingBar;
 
@@ -12,7 +16,7 @@ import com.example.model.ReviewList;
 
 import java.util.ArrayList;
 
-public class User_review extends AppCompatActivity {
+public class User_review extends Fragment {
 
     ListView lvReview;
     ArrayList<ReviewList> Review_list;
@@ -20,19 +24,19 @@ public class User_review extends AppCompatActivity {
     RatingBar ratingBar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_review);
 
-        linkViews();
+        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        lvReview = view.findViewById(R.id.lvReview);
+        ratingBar = view.findViewById(R.id.ratingBar);
         initData();
         loadData();
+        return view;
     }
 
-    private void linkViews() {
-        lvReview=findViewById(R.id.lvReview);
-        ratingBar=findViewById(R.id.ratingBar);
-    }
+
 
     private void initData() {
         Review_list=new ArrayList<>();
@@ -42,7 +46,7 @@ public class User_review extends AppCompatActivity {
     }
 
     private void loadData() {
-        reviewAdapter = new ReviewAdapter(User_review.this, Review_list, R.layout.review);
+        reviewAdapter = new ReviewAdapter(getContext(), Review_list, R.layout.review);
         lvReview.setAdapter(reviewAdapter);
     }
 }

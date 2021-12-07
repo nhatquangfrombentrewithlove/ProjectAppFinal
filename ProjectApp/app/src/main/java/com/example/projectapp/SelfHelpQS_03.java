@@ -2,35 +2,39 @@ package com.example.projectapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.google.android.material.slider.LabelFormatter;
 import com.google.android.material.slider.Slider;
 
-public class SelfHelpQS_03 extends AppCompatActivity {
+public class SelfHelpQS_03 extends Fragment {
     
     Slider sliderMucDoLoLang,sliderDongLucTHMT, sliderChatLuongGiacNgu, sliderNguonNLTT;
     Button btnNext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_self_help_qs03);
-        
-        linkView();
+
+        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        sliderMucDoLoLang = view.findViewById(R.id.sliderMucDoLoLang);
+        sliderDongLucTHMT = view.findViewById(R.id.sliderDongLucTHMT);
+        sliderChatLuongGiacNgu = view.findViewById(R.id.sliderChatLuongGiacNgu);
+        sliderNguonNLTT = view.findViewById(R.id.sliderNguonNLTT);
+
+        btnNext = view.findViewById(R.id.btnNext);
         initData();
+        return view;
     }
 
-    private void linkView() {
-        sliderMucDoLoLang = findViewById(R.id.sliderMucDoLoLang);
-        sliderDongLucTHMT = findViewById(R.id.sliderDongLucTHMT);
-        sliderChatLuongGiacNgu = findViewById(R.id.sliderChatLuongGiacNgu);
-        sliderNguonNLTT = findViewById(R.id.sliderNguonNLTT);
 
-        btnNext = findViewById(R.id.btnNext);
-    }
 
     private void initData() {
         sliderMucDoLoLang.setLabelFormatter(new LabelFormatter() {
