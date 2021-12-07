@@ -30,8 +30,8 @@ public class Choose_user extends AppCompatActivity {
         btnTimbacsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragment = new FindTherapistActivity();
-                loadFragment(fragment);
+
+
             }
         });
     }
