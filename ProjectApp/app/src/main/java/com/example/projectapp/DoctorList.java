@@ -5,16 +5,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.widget.ListView;
 import android.widget.TabHost;
 
-import com.example.adapter.DoctorListAdapter;
 import com.example.fragment.AppointmentListFragment;
-import com.example.fragment.DoctorDetailFragment;
 import com.example.fragment.DoctorListFragment;
 import com.example.model.DoctorClick;
-
-import java.util.ArrayList;
 
 public class DoctorList extends AppCompatActivity implements DoctorClick {
 
