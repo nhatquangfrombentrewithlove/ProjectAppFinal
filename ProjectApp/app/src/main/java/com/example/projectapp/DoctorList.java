@@ -10,11 +10,13 @@ import android.widget.TabHost;
 
 import com.example.adapter.DoctorListAdapter;
 import com.example.fragment.AppointmentListFragment;
+import com.example.fragment.DoctorDetailFragment;
 import com.example.fragment.DoctorListFragment;
+import com.example.model.DoctorClick;
 
 import java.util.ArrayList;
 
-public class DoctorList extends AppCompatActivity {
+public class DoctorList extends AppCompatActivity implements DoctorClick {
 
     TabHost tabHost;
     private FragmentManager manager;
@@ -58,4 +60,15 @@ public class DoctorList extends AppCompatActivity {
         tabSpec2.setIndicator("Lịch hẹn");
         tabHost.addTab(tabSpec2);
     }
+
+    @Override
+    public void click(com.example.model.DoctorList dr) {
+        manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+//        DoctorDetailFragment doctorDetailFragment = new DoctorDetailFragment();
+        transaction.replace(R.id.tab1, new DoctorDetailFragment());
+//        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
 }

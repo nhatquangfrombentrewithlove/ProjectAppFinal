@@ -4,14 +4,21 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.DoctorListAdapter;
+import com.example.model.DoctorClick;
 import com.example.model.DoctorList;
+import com.example.projectapp.MainActivity;
 import com.example.projectapp.R;
 
 import java.util.ArrayList;
@@ -22,6 +29,8 @@ public class DoctorListFragment extends Fragment {
     ArrayList<DoctorList> doctorList;
     DoctorListAdapter adapter;
 
+    DoctorClick doctorClick;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,8 +38,23 @@ public class DoctorListFragment extends Fragment {
         lvDoctor = view.findViewById(R.id.lvDoctorList);
         adapter = new DoctorListAdapter(getContext(), R.layout.doctor_list_layout, initData());
         lvDoctor.setAdapter(adapter);
+
+        lvDoctor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                doctorClick = (DoctorClick) getActivity();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+//        DoctorDetailFragment doctorDetailFragment = new DoctorDetailFragment();
+                transaction.replace(R.id.tab1, new DoctorDetailFragment());
+//        transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
         return view;
     }
+
     private ArrayList <DoctorList> initData(){
         doctorList = new ArrayList<>();
         doctorList.add(new DoctorList(R.drawable.avabsgiang, "BS Phan Giang", "Bác sĩ tâm lý"));
@@ -39,4 +63,5 @@ public class DoctorListFragment extends Fragment {
         return doctorList;
 
     }
+
 }
