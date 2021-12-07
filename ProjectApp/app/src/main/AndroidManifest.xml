@@ -11,6 +11,10 @@
         android:theme="@style/Theme.ProjectApp">
 
         <activity
+            android:name=".FindTherapistActivity"
+            android:exported="true"></activity>
+
+        <activity
             android:name=".Selfhelp_Suggestion"
             android:exported="true" />
 
@@ -18,21 +22,36 @@
             android:name=".BN_Loading_screen"
             android:exported="true" />
         <activity
+
             android:name=".Doctor_detail"
+
+            android:name=".SelfHelpQS_02"
+            android:exported="true" />
+        <activity
+            android:name=".SelfHelpQS_03"
+
             android:exported="true" />
         <activity
             android:name=".DoctorList"
-            android:exported="true" >
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".note"
             android:exported="true" />
         <activity
             android:name=".Choose_user"
+
             android:exported="true" >
 
         </activity>
+
+            android:exported="true"></activity>
+
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
@@ -48,14 +67,20 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".PaymentMethodActivity"
+
             android:exported="true" >
 
         </activity>
 
+
+
+            android:exported="true"></activity>
+        <activity
+            android:name=".Appointment_call_screen"
+            android:exported="true"></activity>
 
         <activity
             android:name=".SigninActivity"
@@ -63,6 +88,10 @@
 
         <activity
             android:name=".SignupActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".User_review"
             android:exported="true" />
 
     </application>

@@ -4,11 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.AppointmentListAdapter;
 import com.example.adapter.DoctorListAdapter;
@@ -24,13 +27,18 @@ public class AppointmentListFragment extends Fragment {
     ArrayList<DoctorAppointmentList> doctorAppointmentLists;
     AppointmentListAdapter adapter;
 
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_appointment_list, container, false);
+
+
         lvAppointment = view.findViewById(R.id.lvDoctorList2);
         adapter = new AppointmentListAdapter(getContext(), R.layout.appointment_list_layout, initData());
         lvAppointment.setAdapter(adapter);
+
         return view;
     }
 
@@ -41,4 +49,6 @@ public class AppointmentListFragment extends Fragment {
         doctorAppointmentLists.add(new DoctorAppointmentList(R.drawable.avabsngan, "BS Ngân Võ", "2:00 CH, 04/11/2021"));
         return doctorAppointmentLists;
     }
+
+
 }
