@@ -7,11 +7,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="10dp"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+id/imvCalendarIcon"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:src="@drawable/iconcalendar"
@@ -22,59 +22,32 @@
             android:layout_marginStart="10dp"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/txtLichtruoc"
+                android:id="@+id/txtLichhendahuy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Lichhentruocdo"
+                android:text="@string/Lichhendabihuy"
                 android:textSize="16sp"
-                android:textColor="@color/color_app_black"/>
+                android:textColor="@color/color_app_black" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp">
+                android:paddingTop="5dp">
                 <TextView
-                    android:id="@+id/txtGiotruoc"
+                    android:id="@+id/txtGiodahuy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Date_time_Giohentruocdo"
+                    android:text="@string/Date_time_thoigianhen"
                     android:textColor="@color/color_app_light_gray"
                     android:textSize="16sp"/>
                 <TextView
-                    android:id="@+id/txtNgaytruoc"
+                    android:id="@+id/txtNgaydahuy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Date_time_Ngayhentruocdo"
+                    android:text="@string/Date_time_ngayhen"
                     android:textSize="16sp"
                     android:textColor="@color/color_app_light_gray"
                     android:layout_marginStart="5dp"/>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btnGhichu"
-                android:layout_width="92dp"
-                android:layout_height="32dp"
-                android:text="@string/Ghichu"
-                android:background="@drawable/button_press_has_color"
-                android:textColor="@color/color_app_black"
-                android:gravity="center"
-                android:layout_marginEnd="10dp"/>
-            <Button
-                android:id="@+id/btnDanhgia"
-                android:layout_width="92dp"
-                android:layout_height="32dp"
-                android:text="@string/Danhgia"
-                android:background="@drawable/button_press_has_color"
-                android:textColor="@color/color_app_black"
-                android:gravity="center" />
-        </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <View
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="#c0c0c0"/>
 </LinearLayout>

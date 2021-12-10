@@ -156,4 +156,7 @@
     <string name="Benhnhannoigiveban">Bênh nhân nói gì về bạn</string>
     <string name="SortByName">Theo tên</string>
     <string name="SortByDate">Theo ngày</string>
+    <string name="Lichhenduocxacnhan">Lịch hẹn đã được xác nhận</string>
+    <string name="Giodaxacnhan">2:00 CH</string>
+    <string name="Ngaydaxacnhan">15/10/2021</string>
 </resources>
