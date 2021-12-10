@@ -30,18 +30,26 @@ public class DoctorListFragment extends Fragment {
     ArrayList<DoctorList> doctorList;
     DoctorListAdapter adapter;
 
+
     @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView( LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_doctor_list, container, false);
         lvDoctor = view.findViewById(R.id.lvDoctorList);
+
         adapter = new DoctorListAdapter(getContext(), R.layout.doctor_list_layout, initData());
         lvDoctor.setAdapter(adapter);
 
         lvDoctor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), DoctorDetailActivity.class);
+
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DoctorDetailActivity.class);
+
                 startActivity(intent);
             }
         });
@@ -51,9 +59,9 @@ public class DoctorListFragment extends Fragment {
 
     private ArrayList <DoctorList> initData(){
         doctorList = new ArrayList<>();
-        doctorList.add(new DoctorList(R.drawable.avabsgiang, "BS Phan Giang", "Bác sĩ tâm lý"));
-        doctorList.add(new DoctorList(R.drawable.avabsquang, "BS Quang Huỳnh", "Nhà tâm lý học lâm sàng"));
-        doctorList.add(new DoctorList(R.drawable.avabsngan, "BS Ngân Võ", "Bác sĩ tâm lý"));
+        doctorList.add(new DoctorList(R.drawable.avabsgiang, "BS Phan Giang", "Bác sĩ tâm lý",R.drawable.ic_button_next));
+        doctorList.add(new DoctorList(R.drawable.avabsquang, "BS Quang Huỳnh", "Nhà tâm lý học lâm sàng",R.drawable.ic_button_next));
+        doctorList.add(new DoctorList(R.drawable.avabsngan, "BS Ngân Võ", "Bác sĩ tâm lý",R.drawable.ic_button_next));
         return doctorList;
 
     }

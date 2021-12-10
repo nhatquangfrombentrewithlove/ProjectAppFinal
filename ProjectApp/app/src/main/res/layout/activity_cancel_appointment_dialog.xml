@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="320dp"
     android:layout_height="212dp"
-    tools:context="com.example.Dialog.CancelAppointmentDialog"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/radio_normal">

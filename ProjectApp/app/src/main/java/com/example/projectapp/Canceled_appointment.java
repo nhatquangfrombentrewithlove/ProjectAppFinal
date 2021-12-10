@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class Canceled_appointment extends Fragment {
 
-    ListView lvAppointmentCall;
+    ListView lvAppointmentCall,lv;
     ArrayList<AppointmentCallList> appointment_Call_List;
     AppointmentCallListAdapter adapter;
     Button btnGhichu,btnDanhgia,btnBack;

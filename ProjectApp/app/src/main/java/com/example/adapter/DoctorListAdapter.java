@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.model.DoctorList;
@@ -26,8 +27,6 @@ public class DoctorListAdapter extends BaseAdapter {
         this.item_listview = item_listview;
         this.doctorList = doctorList;
     }
-
-
 
     @Override
     public int getCount() {
@@ -56,6 +55,7 @@ public class DoctorListAdapter extends BaseAdapter {
             holder.txtDoctorName = view.findViewById(R.id.txtDoctorName);
             holder.txtDoctorInfo = view.findViewById(R.id.txtDoctorInfo);
 
+
             view.setTag(holder);
 
         }
@@ -69,6 +69,7 @@ public class DoctorListAdapter extends BaseAdapter {
         holder.txtDoctorName.setText(d.getDoctorName());
         holder.txtDoctorInfo.setText(d.getDoctorInfo());
 
+
         return view;
     }
 
@@ -76,6 +77,7 @@ public class DoctorListAdapter extends BaseAdapter {
     private static class ViewHolder{
         CircleImageView imvDoctor;
         TextView txtDoctorName, txtDoctorInfo;
+        Button btnOpenDetail;
     }
 
 }

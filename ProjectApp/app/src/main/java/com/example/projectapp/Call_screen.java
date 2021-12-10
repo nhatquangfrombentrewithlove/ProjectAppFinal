@@ -26,13 +26,13 @@ public class Call_screen extends Fragment {
 
         btnCallEnd=view.findViewById(R.id.btnCallend);
 
-        btnCallEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragment = new Appointment_call_screen();
-                loadFragmentCall(fragment);
-            }
-        });
+//        btnCallEnd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                fragment = new Appointment_call_screen();
+//                loadFragmentCall(fragment);
+//            }
+//        });
 
         return view;
     }
