@@ -1,5 +1,6 @@
 package com.example.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,8 +17,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.DoctorListAdapter;
-import com.example.model.DoctorClick;
 import com.example.model.DoctorList;
+import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.MainActivity;
 import com.example.projectapp.R;
 
@@ -28,8 +29,6 @@ public class DoctorListFragment extends Fragment {
     ListView lvDoctor;
     ArrayList<DoctorList> doctorList;
     DoctorListAdapter adapter;
-
-    DoctorClick doctorClick;
 
     @Nullable
     @Override
@@ -42,13 +41,8 @@ public class DoctorListFragment extends Fragment {
         lvDoctor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                doctorClick = (DoctorClick) getActivity();
-                FragmentManager manager = getActivity().getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-//        DoctorDetailFragment doctorDetailFragment = new DoctorDetailFragment();
-                transaction.replace(R.id.tab1, new DoctorDetailFragment());
-//        transaction.addToBackStack(null);
-                transaction.commit();
+                Intent intent = new Intent(getActivity(), DoctorDetailActivity.class);
+                startActivity(intent);
             }
         });
 

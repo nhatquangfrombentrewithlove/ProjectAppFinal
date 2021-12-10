@@ -9,9 +9,8 @@ import android.widget.TabHost;
 
 import com.example.fragment.AppointmentListFragment;
 import com.example.fragment.DoctorListFragment;
-import com.example.model.DoctorClick;
 
-public class DoctorList extends AppCompatActivity implements DoctorClick {
+public class DoctorList extends AppCompatActivity {
 
     TabHost tabHost;
     private FragmentManager manager;
@@ -56,14 +55,5 @@ public class DoctorList extends AppCompatActivity implements DoctorClick {
         tabHost.addTab(tabSpec2);
     }
 
-    @Override
-    public void click(com.example.model.DoctorList dr) {
-        manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-//        DoctorDetailFragment doctorDetailFragment = new DoctorDetailFragment();
-        transaction.replace(R.id.tab1, new DoctorDetailFragment());
-//        transaction.addToBackStack(null);
-        transaction.commit();
-    }
 
 }
