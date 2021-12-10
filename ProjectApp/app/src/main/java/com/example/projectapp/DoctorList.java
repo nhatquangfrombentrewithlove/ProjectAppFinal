@@ -9,7 +9,6 @@ import android.widget.TabHost;
 
 import com.example.fragment.AppointmentListFragment;
 import com.example.fragment.DoctorListFragment;
-import com.example.model.DoctorClick;
 
 public class DoctorList extends AppCompatActivity {
 
@@ -55,5 +54,6 @@ public class DoctorList extends AppCompatActivity {
         tabSpec2.setIndicator("Lịch hẹn");
         tabHost.addTab(tabSpec2);
     }
+
 
 }

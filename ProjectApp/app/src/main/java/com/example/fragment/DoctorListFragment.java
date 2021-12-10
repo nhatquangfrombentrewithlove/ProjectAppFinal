@@ -17,7 +17,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.DoctorListAdapter;
-import com.example.model.DoctorClick;
 import com.example.model.DoctorList;
 import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.MainActivity;
@@ -32,6 +31,8 @@ public class DoctorListFragment extends Fragment {
     DoctorListAdapter adapter;
 
 
+    @Nullable
+
     @Override
     public View onCreateView( LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_doctor_list, container, false);
@@ -42,8 +43,13 @@ public class DoctorListFragment extends Fragment {
 
         lvDoctor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(view.getContext(), DoctorDetailActivity.class);
+
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), DoctorDetailActivity.class);
+
                 startActivity(intent);
             }
         });

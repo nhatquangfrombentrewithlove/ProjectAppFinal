@@ -1,5 +1,6 @@
 package com.example.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,11 +15,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.projectapp.DoctorList;
 import com.example.projectapp.R;
 
 public class FindTherapist_02Fragment extends Fragment {
 
-    Button btnBack, btnFindTherapist;
+    Button btnFindTherapist;
 
     Spinner spAddress, spFeelComfortableOnline;
     ArrayAdapter<CharSequence> adapterAddress, adapterFeelComfortableOnline;
@@ -29,7 +31,6 @@ public class FindTherapist_02Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_find_therapist_02, container, false);
 
         //Link Views
-        btnBack = view.findViewById(R.id.btnBack);
         btnFindTherapist = view.findViewById(R.id.btnFindTherapist);
 
         spAddress = view.findViewById(R.id.spinnerAddress);
@@ -41,6 +42,7 @@ public class FindTherapist_02Fragment extends Fragment {
 
 
         loadData();
+        addEvent();
         return view;
     }
 
@@ -54,6 +56,16 @@ public class FindTherapist_02Fragment extends Fragment {
         adapterFeelComfortableOnline = ArrayAdapter.createFromResource(getActivity(), R.array.yes_no_list, android.R.layout.simple_spinner_item);
         adapterFeelComfortableOnline.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spFeelComfortableOnline.setAdapter(adapterFeelComfortableOnline);
+    }
+
+    private void addEvent() {
+        btnFindTherapist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DoctorList.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
