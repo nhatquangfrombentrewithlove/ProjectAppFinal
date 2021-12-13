@@ -46,10 +46,6 @@ public class DoctorListFragment extends Fragment {
 
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(view.getContext(), DoctorDetailActivity.class);
-
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), DoctorDetailActivity.class);
-
                 startActivity(intent);
             }
         });
