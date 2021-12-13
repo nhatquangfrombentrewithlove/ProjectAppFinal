@@ -1,9 +1,14 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.example.fragment.BookingTimeSlotFragment;
@@ -27,4 +32,6 @@ public class BookingActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
+
 }

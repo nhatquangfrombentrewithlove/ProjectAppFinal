@@ -1,7 +1,13 @@
 package com.example.utils;
 
+import java.util.Calendar;
+
 public class Common {
+    public static final String KEY_DISPLAY_TIME_SLOT = "DISPLAY_TIME_SLOT";
+    public static final Object DISABLE_TAG = "DISABLE";
     public static final int TIME_SLOT_TOTAL = 20;
+    public static String currentDoctor = "testdoc@testdoc.com";
+    //public static Calendar currentDate = Calendar.getInstance();
     public static String convertTimeSlotToString(int slot){
         switch(slot) {
             case 0:
