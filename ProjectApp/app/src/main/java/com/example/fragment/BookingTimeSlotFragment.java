@@ -39,6 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -78,6 +79,18 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
 
     private void loadAvailabelTimeSlotOfDoctor(String doctorId, String bookDate) {
         dialog.show();
+
+        List<TimeSlot> timeSlots = new ArrayList<>();
+        int min = 0;
+        int max = 20;
+        for (int i= 0; i<5; i++){
+            Random rd = new Random();
+            int slot = rd.nextInt(max - min) + min;
+            TimeSlot timeSlot = new TimeSlot();
+            timeSlot.setSlot(new Long(slot));
+            timeSlots.add(timeSlot);
+        }
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
 
 //        doctorDoc = FirebaseFirestore.getInstance()
 //                .collection("Doctor")
@@ -188,6 +201,14 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
             }
         });
         iTimeSlotLoadListener.onTimeSlotLoadEmpty();
+
+        List<TimeSlot> timeSlots = new ArrayList<>();
+        for (int i = 5; i < 10; i ++) {
+            TimeSlot timeSlot = new TimeSlot();
+            timeSlot.setSlot(new Long(i));
+            timeSlots.add(timeSlot);
+        }
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
     }
 
     @Override
