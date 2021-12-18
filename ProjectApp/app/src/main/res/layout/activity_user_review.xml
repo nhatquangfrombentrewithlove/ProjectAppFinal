@@ -90,22 +90,13 @@
                 tools:listitem="@layout/review"
                 />
 
-            <Button
-                android:id="@+id/btnXemthem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/xem_them"
-                android:textColor="@color/color_app_black"
-                android:backgroundTint="@color/background_color"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lvReview"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="20dp">
 
             <TextView
                 android:id="@+id/txtDanhgia"

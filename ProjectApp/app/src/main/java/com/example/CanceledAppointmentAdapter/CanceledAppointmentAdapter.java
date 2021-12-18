@@ -62,7 +62,7 @@ public class CanceledAppointmentAdapter extends BaseAdapter {
         }
         //Binding Data
         CanceledAppointmentList ca = canceledAppointmentLists.get(position);
-        holder.imvCalendarIcon.setImageResource(ca.getCalendaricon());
+         holder.imvCalendarIcon.setImageResource(ca.getCalendaricon());
         holder.txtLichdahuy.setText(ca.getLichhendahuy());
         holder.txtGiodahuy.setText(ca.getGiodahuy());
         holder.txtNgaydahuy.setText(ca.getNgaydahuy());

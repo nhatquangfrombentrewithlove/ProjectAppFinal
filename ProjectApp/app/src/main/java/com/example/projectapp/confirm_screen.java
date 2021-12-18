@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -15,24 +16,21 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
-public class confirm_screen extends Fragment {
+public class confirm_screen extends AppCompatActivity {
 
     RadioButton radTrucTiep, radTrucTuyen;
     Button btnChapnhan;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_confirm_screen, container, false);
+        setContentView(R.layout.activity_confirm_screen);
 
-        radTrucTiep=view.findViewById(R.id.radTrucTiep);
-        radTrucTuyen=view.findViewById(R.id.radTrucTuyen);
-        btnChapnhan=view.findViewById(R.id.btnChapnhan);
+        radTrucTiep=findViewById(R.id.radTrucTiep);
+        radTrucTuyen=findViewById(R.id.radTrucTuyen);
+        btnChapnhan=findViewById(R.id.btnChapnhan);
 
         addEvents();
-
-        return view;
     }
 
     public void onRadioButtonClicked(View view) {
@@ -57,15 +55,16 @@ public class confirm_screen extends Fragment {
         btnChapnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //load PaymentMethod fragment
+                Intent myIntent = new Intent(v.getContext(),PaymentMethodActivity.class);
+                v.getContext().startActivity(myIntent);
             }
         });
     }
 
-    private void loadFragment(Fragment fragment) {
-        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.layoutConfirmscreen, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+//    private void loadFragment(Fragment fragment) {
+//        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.layoutConfirmscreen, fragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 }

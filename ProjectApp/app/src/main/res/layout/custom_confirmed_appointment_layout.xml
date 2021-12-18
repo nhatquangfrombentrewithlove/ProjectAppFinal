@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <Button
-                    android:id="@+id/btnGoi"
+                    android:id="@+id/btnGoi1"
                     android:layout_width="92dp"
                     android:layout_height="32dp"
                     android:background="@drawable/button_press_has_color"

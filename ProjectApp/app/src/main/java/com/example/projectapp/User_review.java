@@ -2,13 +2,17 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RatingBar;
+import android.widget.Toast;
 
 import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
 import com.example.ReviewAdapter.ReviewAdapter;
@@ -16,26 +20,30 @@ import com.example.model.ReviewList;
 
 import java.util.ArrayList;
 
-public class User_review extends Fragment {
+public class User_review extends AppCompatActivity {
 
     ListView lvReview;
     ArrayList<ReviewList> Review_list;
     ReviewAdapter reviewAdapter;
     RatingBar ratingBar;
+    Button btnDanhgia;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user_review);
 
-        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
-        lvReview = view.findViewById(R.id.lvReview);
-        ratingBar = view.findViewById(R.id.ratingBar);
+        linkViews();
         initData();
         loadData();
-        return view;
+        addEvents();
     }
 
+    private void linkViews() {
+        lvReview = findViewById(R.id.lvReview);
+        ratingBar = findViewById(R.id.ratingBar);
+        btnDanhgia = findViewById(R.id.btnDanhgia);
+    }
 
 
     private void initData() {
@@ -46,7 +54,19 @@ public class User_review extends Fragment {
     }
 
     private void loadData() {
-        reviewAdapter = new ReviewAdapter(getContext(), Review_list, R.layout.review);
+        reviewAdapter = new ReviewAdapter(User_review.this, Review_list, R.layout.review);
         lvReview.setAdapter(reviewAdapter);
     }
+
+    private void addEvents() {
+        btnDanhgia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(User_review.this, "Cảm ơn lượt đánh giá của bạn", Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(User_review.this,DoctorList.class);
+                startActivity(myIntent);
+            }
+        });
+    }
+
 }

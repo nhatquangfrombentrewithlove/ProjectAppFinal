@@ -1,5 +1,6 @@
 package com.example.projectapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
@@ -8,8 +9,10 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.MotionEvent;
 
 import com.example.adapter.ChooseListAdapter;
 import com.example.model.ChooseList;
@@ -27,10 +30,33 @@ public class PaymentMethodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_method);
 
+//
+//        addEvents();
         linkViews();
         configRecyclerView();
         initData();
     }
+
+//    private void addEvents() {
+//        rcvPayment.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+//            @Override
+//            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
+//                return false;
+//            }
+//
+//            @Override
+//            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
+//                Intent myIntent = new Intent(PaymentMethodActivity.this,BookConfirmation_screen.class);
+//                startActivity(myIntent);
+//            }
+//
+//            @Override
+//            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+//
+//            }
+//        });
+//    }
+
     private void initData() {
         chooseLists = new ArrayList<>();
 
@@ -60,4 +86,5 @@ public class PaymentMethodActivity extends AppCompatActivity {
     private void linkViews() {
         rcvPayment = findViewById(R.id.rcvPayment);
     }
+
 }

@@ -3,19 +3,30 @@ package com.example.projectapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-public class BookConfirmation_screen extends Fragment {
+public class BookConfirmation_screen extends AppCompatActivity {
+
+    Button btnBackToDocList;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_book_confirmation_screen, container, false);
+        setContentView(R.layout.activity_book_confirmation_screen);
 
-        return view;
+        btnBackToDocList=findViewById(R.id.btnBackToDocList);
+
+        btnBackToDocList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BookConfirmation_screen.this,DoctorList.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,9 +1,11 @@
 package com.example.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -17,13 +19,15 @@ import com.example.adapter.AppointmentListAdapter;
 import com.example.adapter.DoctorListAdapter;
 import com.example.model.DoctorAppointmentList;
 import com.example.model.DoctorList;
+import com.example.projectapp.Appointment_call_screen;
+import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.R;
 
 import java.util.ArrayList;
 
 public class AppointmentListFragment extends Fragment {
 
-    ListView lvAppointment;
+    ListView lvDoctorList2;
     ArrayList<DoctorAppointmentList> doctorAppointmentLists;
     AppointmentListAdapter adapter;
 
@@ -35,10 +39,18 @@ public class AppointmentListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_appointment_list, container, false);
 
 
-        lvAppointment = view.findViewById(R.id.lvDoctorList2);
+        lvDoctorList2 = view.findViewById(R.id.lvDoctorList2);
         adapter = new AppointmentListAdapter(getContext(), R.layout.appointment_list_layout, initData());
-        lvAppointment.setAdapter(adapter);
+        lvDoctorList2.setAdapter(adapter);
 
+        lvDoctorList2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Appointment_call_screen fragmentAppointmentCall = new Appointment_call_screen();
+                loadFragment(fragmentAppointmentCall);
+            }
+        });
         return view;
     }
 
@@ -50,5 +62,11 @@ public class AppointmentListFragment extends Fragment {
         return doctorAppointmentLists;
     }
 
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.layoutDoctorList, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
 
 }

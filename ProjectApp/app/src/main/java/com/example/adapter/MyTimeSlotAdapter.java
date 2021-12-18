@@ -60,7 +60,7 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        myViewHolder.txt_time_slot.setText(new StringBuilder(Common.convertTimeSlotToString(i)).toString());
+        myViewHolder.txt_time_slot.setText(Common.convertTimeSlotToString(i));
         if(timeSlotList.size()==0){ //if all position is available, just show list
             myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.background_color,context.getTheme()));
             myViewHolder.txt_time_slot_description.setText("Còn trống");
@@ -115,7 +115,11 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
         return Common.TIME_SLOT_TOTAL;
     }
 
+
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
+
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
         TextView txt_time_slot, txt_time_slot_description;
         CardView card_time_slot;
 
@@ -129,6 +133,9 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
             super(itemView);
             card_time_slot = (CardView)itemView.findViewById(R.id.card_time_slot);
             txt_time_slot = (TextView)itemView.findViewById(R.id.txt_time_slot);
+
+            txt_time_slot_description = (TextView) itemView.findViewById(R.id.txt_time_slot_description);
+
             txt_time_slot_description = (TextView)itemView.findViewById(R.id.txt_time_slot_description);
             itemView.setOnClickListener(this);
         }
@@ -136,6 +143,7 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
         @Override
         public void onClick(View view) {
             iRecyclerItemSelectedListener.onItemSelectedListener(view,getAdapterPosition());
+
         }
     }
 }
