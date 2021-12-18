@@ -1,5 +1,7 @@
 package com.example.adapter;
 
+import static android.R.color.background_light;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,20 +52,21 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         myViewHolder.txt_time_slot.setText(new StringBuilder(Common.convertTimeSlotToString(i)).toString());
         if(timeSlotList.size()==0){ //if all position is available, just show list
-            myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(android.R.color.background_light,context.getTheme()));
+            myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.background_color,context.getTheme()));
             myViewHolder.txt_time_slot_description.setText("Còn trống");
-            myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(android.R.color.black, context.getTheme()));
-            myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(android.R.color.black,context.getTheme()));
+            myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
+            myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.black,context.getTheme()));
 
         }else{//If position is full booked
             for (TimeSlot slotValue:timeSlotList){
                 int slot = Integer.parseInt(slotValue.getSlot().toString());
                 if(slot == i){ //if slot = position
                     myViewHolder.card_time_slot.setTag(Common.DISABLE_TAG);
-                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(android.R.color.darker_gray,context.getTheme()));
+                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray,context.getTheme()));
+
                     myViewHolder.txt_time_slot_description.setText("Đã được đặt");
-                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(android.R.color.white,context.getTheme()));
-                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(android.R.color.white,context.getTheme()));
+                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.white,context.getTheme()));
+                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.white,context.getTheme()));
                 }
             }
         }

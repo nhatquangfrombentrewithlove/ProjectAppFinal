@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -69,56 +70,57 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
         @Override
         public void onReceive(Context context, Intent intent) {
             Calendar date = Calendar.getInstance();
-            date.add(Calendar.DATE,0); //Add current date
+            date.add(Calendar.DATE,0);
             loadAvailabelTimeSlotOfDoctor(Common.currentDoctor,simpleDateFormat.format(date.getTime()));
+
         }
     };
 
     private void loadAvailabelTimeSlotOfDoctor(String doctorId, String bookDate) {
         dialog.show();
 
-        doctorDoc = FirebaseFirestore.getInstance()
-                .collection("Doctor")
-                .document(Common.currentDoctor);
-        doctorDoc.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if(task.isSuccessful())
-                {
-                    DocumentSnapshot documentSnapshot = task.getResult();
-                    if(documentSnapshot.exists()){
-                        CollectionReference date =FirebaseFirestore.getInstance()
-                                .collection("Doctor")
-                                .document(Common.currentDoctor)
-                                .collection(bookDate);
-
-                        date.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                                if (task.isSuccessful())
-                                {
-                                    QuerySnapshot querySnapshot = task.getResult();
-                                    if (querySnapshot.isEmpty())
-                                    {
-                                        iTimeSlotLoadListener.onTimeSlotLoadEmpty();
-                                    }else {
-                                        List<TimeSlot> timeSlots = new ArrayList<>();
-                                        for (QueryDocumentSnapshot document:task.getResult())
-                                            timeSlots.add(document.toObject(TimeSlot.class));
-                                        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
-                                    }
-                                }
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                iTimeSlotLoadListener.onTimeSlotLoadFailed(e.getMessage());
-                            }
-                        });
-                    }
-                }
-            }
-        });
+//        doctorDoc = FirebaseFirestore.getInstance()
+//                .collection("Doctor")
+//                .document(Common.currentDoctor);
+//        doctorDoc.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                if(task.isSuccessful())
+//                {
+//                    DocumentSnapshot documentSnapshot = task.getResult();
+//                    if(documentSnapshot.exists()){
+//                        CollectionReference date =FirebaseFirestore.getInstance()
+//                                .collection("Doctor")
+//                                .document(Common.currentDoctor)
+//                                .collection(bookDate);
+//
+//                        date.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                                if (task.isSuccessful())
+//                                {
+//                                    QuerySnapshot querySnapshot = task.getResult();
+//                                    if (querySnapshot.isEmpty())
+//                                    {
+//                                        iTimeSlotLoadListener.onTimeSlotLoadEmpty();
+//                                    }else {
+//                                        List<TimeSlot> timeSlots = new ArrayList<>();
+//                                        for (QueryDocumentSnapshot document:task.getResult())
+//                                            timeSlots.add(document.toObject(TimeSlot.class));
+//                                        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
+//                                    }
+//                                }
+//                            }
+//                        }).addOnFailureListener(new OnFailureListener() {
+//                            @Override
+//                            public void onFailure(@NonNull Exception e) {
+//                                iTimeSlotLoadListener.onTimeSlotLoadFailed(e.getMessage());
+//                            }
+//                        });
+//                    }
+//                }
+//            }
+//        });
     }
 
 
@@ -127,6 +129,8 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
         super.onCreate(savedInstanceState);
 
         iTimeSlotLoadListener = this;
+
+
 
         localBroadcastManager = LocalBroadcastManager.getInstance(getContext());
         localBroadcastManager.registerReceiver(displayTimeSlot,new IntentFilter(Common.KEY_DISPLAY_TIME_SLOT));
@@ -149,6 +153,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_booking_time_slot, container, false);
+        recycler_time_slot = view.findViewById(R.id.recycle_time_slot);
         unbinder = ButterKnife.bind(this,view);
 
         init(view);
@@ -182,6 +187,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
                 }
             }
         });
+        iTimeSlotLoadListener.onTimeSlotLoadEmpty();
     }
 
     @Override
