@@ -1,6 +1,7 @@
 package com.example.AppointmentCallListAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.model.AppointmentCallList;
+import com.example.projectapp.Call_screen;
 import com.example.projectapp.R;
+import com.example.projectapp.User_review;
+import com.example.projectapp.note;
 
 import java.util.ArrayList;
 
@@ -69,13 +73,15 @@ public class AppointmentCallListAdapter extends BaseAdapter {
         holder.btnGhichu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //do sth
+                Intent myIntent = new Intent(view.getContext(), note.class);
+                view.getContext().startActivity(myIntent);
             }
         });
         holder.btnDanhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //do sth...
+                Intent intent = new Intent(view.getContext(), User_review.class);
+                view.getContext().startActivity(intent);
             }
         });
         return view;
@@ -87,5 +93,6 @@ public class AppointmentCallListAdapter extends BaseAdapter {
         TextView txtLichtruoc, txtGiotruoc, txtNgaytruoc;
         Button btnGhichu,btnDanhgia;
         }
+
     }
 

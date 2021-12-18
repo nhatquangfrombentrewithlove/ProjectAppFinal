@@ -15,11 +15,12 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnBackToDocList"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/ic_button_back"
-            android:gravity="start"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:gravity="start" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

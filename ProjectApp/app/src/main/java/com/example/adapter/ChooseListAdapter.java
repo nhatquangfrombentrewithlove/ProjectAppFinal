@@ -1,6 +1,7 @@
 package com.example.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +10,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.model.ChooseList;
+import com.example.projectapp.BookConfirmation_screen;
+import com.example.projectapp.PaymentMethodActivity;
 import com.example.projectapp.R;
 
 import java.util.ArrayList;
@@ -61,7 +65,8 @@ public class ChooseListAdapter extends RecyclerView.Adapter<ChooseListAdapter.Vi
 
         @Override
         public void onClick(View v) {
-            final Fragment fragment;
+            Intent myIntent = new Intent(v.getContext(), BookConfirmation_screen.class);
+            v.getContext().startActivity(myIntent);
         }
     }
 

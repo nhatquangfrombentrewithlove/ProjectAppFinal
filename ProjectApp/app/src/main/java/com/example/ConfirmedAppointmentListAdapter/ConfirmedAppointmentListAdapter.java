@@ -145,43 +145,6 @@ public class ConfirmedAppointmentListAdapter extends BaseAdapter {
         ListView lvCanceledAppointment;
     }
 
-//    void showCustomDialog(){
-//        final Dialog dialog=new Dialog(context);
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        dialog.setCancelable(true);
-//        dialog.setContentView(R.layout.activity_cancel_appointment_dialog);
-//
-//        TextView txtDialogHuyhen=dialog.findViewById(R.id.txtDialogHuyhen);
-//        Button btnYes = dialog.findViewById(R.id.btnYes);
-//        Button btnNo = dialog.findViewById(R.id.btnNo);
-//
-//        btnYes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                confirmed_Appointment_list.remove("removed");
-//                Intent intent = new Intent(v.getContext(),Call_screen.class);
-//                v.getContext().startActivity(intent);
-//                Canceled_appointment fragmentCanceled=new Canceled_appointment();
-////                loadFragment(fragmentCanceled);
-//                dialog.dismiss();
-//            }
-//        });
-//        btnNo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                dialog.dismiss();
-//            }
-//        });
-//        dialog.show();
-//    }
-//    private void loadFragment(Fragment fragment) {
-//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//        transaction.replace(R.id.layoutAppointmentCallScreen, fragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-//    }
-
 }
 
 

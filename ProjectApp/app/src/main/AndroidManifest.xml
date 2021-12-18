@@ -69,6 +69,14 @@
         <activity
             android:name=".SignupActivity"
             android:exported="true" />
+        <activity android:name="User_review"
+            android:exported="true"/>
+        <activity
+            android:name=".BookConfirmation_screen"
+            android:exported="true"/>
+        <activity
+            android:name=".confirm_screen"
+            android:exported="true"/>
     </application>
 
 </manifest>

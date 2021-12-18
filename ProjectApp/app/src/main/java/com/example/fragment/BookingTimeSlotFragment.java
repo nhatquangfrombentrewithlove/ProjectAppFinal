@@ -11,6 +11,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,12 +20,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.Interface.ITimeSlotLoadListener;
 import com.example.adapter.MyTimeSlotAdapter;
 import com.example.model.TimeSlot;
+import com.example.projectapp.PaymentMethodActivity;
 import com.example.projectapp.R;
+import com.example.projectapp.confirm_screen;
 import com.example.utils.Common;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -41,6 +45,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,6 +62,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
     DocumentReference doctorDoc;
     ITimeSlotLoadListener iTimeSlotLoadListener;
     AlertDialog dialog;
+    Button btnConfirm;
 
     Unbinder unbinder;
     LocalBroadcastManager localBroadcastManager;
@@ -80,6 +86,19 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
 
     private void loadAvailabelTimeSlotOfDoctor(String doctorId, String bookDate) {
         dialog.show();
+
+        List<TimeSlot> timeSlots = new ArrayList<>();
+        int min = 0;
+        int max = 20;
+        for (int i= 0; i<5; i++){
+            Random rd = new Random();
+            int slot = rd.nextInt(max - min) + min;
+            TimeSlot timeSlot = new TimeSlot();
+            timeSlot.setSlot(new Long(slot));
+            timeSlots.add(timeSlot);
+        }
+
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
 
         doctorDoc = FirebaseFirestore.getInstance()
                 .collection("Doctor")
@@ -180,7 +199,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
         iTimeSlotLoadListener = this;
 
         localBroadcastManager = LocalBroadcastManager.getInstance(requireContext());
-        
+
         localBroadcastManager = LocalBroadcastManager.getInstance(getContext());
 
         localBroadcastManager.registerReceiver(displayTimeSlot,new IntentFilter(Common.KEY_DISPLAY_TIME_SLOT));
@@ -205,6 +224,15 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
         View view = inflater.inflate(R.layout.fragment_booking_time_slot, container, false);
         recycler_time_slot = view.findViewById(R.id.recycle_time_slot);
         unbinder = ButterKnife.bind(this,view);
+        btnConfirm = view.findViewById(R.id.btnConfirm);
+
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), confirm_screen.class);
+                v.getContext().startActivity(myIntent);
+            }
+        });
 
         init(view);
         return view;
@@ -238,6 +266,14 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
             }
         });
         iTimeSlotLoadListener.onTimeSlotLoadEmpty();
+
+        List<TimeSlot> timeSlots = new ArrayList<>();
+        for (int i = 5; i < 10; i ++) {
+            TimeSlot timeSlot = new TimeSlot();
+            timeSlot.setSlot(new Long(i));
+            timeSlots.add(timeSlot);
+        }
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
     }
 
     @Override
@@ -259,4 +295,5 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
         recycler_time_slot.setAdapter(adapter);
         dialog.dismiss();
     }
+
 }
