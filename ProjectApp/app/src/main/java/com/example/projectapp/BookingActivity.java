@@ -8,11 +8,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.example.fragment.BookingTimeSlotFragment;
 import com.example.fragment.FindTherapist_01Fragment;
+import com.example.utils.Common;
 
 public class BookingActivity extends AppCompatActivity {
 
@@ -32,6 +34,7 @@ public class BookingActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
 
 
 }
