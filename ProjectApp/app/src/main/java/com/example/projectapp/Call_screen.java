@@ -13,31 +13,31 @@ import android.widget.Button;
 
 import java.util.Objects;
 
-public class Call_screen extends Fragment {
+public class Call_screen extends AppCompatActivity {
 
     Button btnCallEnd;
     Fragment fragment;
 
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_call_screen, container, false);
+        setContentView(R.layout.activity_call_screen);
 
-        btnCallEnd=view.findViewById(R.id.btnCallend);
+        btnCallEnd=findViewById(R.id.btnCallend);
 
-//        btnCallEnd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                fragment = new Appointment_call_screen();
-//                loadFragmentCall(fragment);
-//            }
-//        });
+        btnCallEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragment = new Appointment_call_screen();
+                loadFragment(fragment);
+            }
+        });
 
-        return view;
+
     }
-    private void loadFragmentCall(Fragment fragment) {
-        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.layoutCallScreen, fragment);
         transaction.addToBackStack(null);
         transaction.commit();

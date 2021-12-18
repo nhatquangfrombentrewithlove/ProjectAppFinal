@@ -1,5 +1,6 @@
 package com.example.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -38,6 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -86,6 +88,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
                 if(task.isSuccessful())
                 {
                     DocumentSnapshot documentSnapshot = task.getResult();
+                    assert documentSnapshot != null;
                     if(documentSnapshot.exists()){
                         CollectionReference date =FirebaseFirestore.getInstance()
                                 .collection("Doctor")
@@ -98,6 +101,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
                                 if (task.isSuccessful())
                                 {
                                     QuerySnapshot querySnapshot = task.getResult();
+                                    assert querySnapshot != null;
                                     if (querySnapshot.isEmpty())
                                     {
                                         iTimeSlotLoadListener.onTimeSlotLoadEmpty();
@@ -122,13 +126,14 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
     }
 
 
+    @SuppressLint("SimpleDateFormat")
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         iTimeSlotLoadListener = this;
 
-        localBroadcastManager = LocalBroadcastManager.getInstance(getContext());
+        localBroadcastManager = LocalBroadcastManager.getInstance(requireContext());
         localBroadcastManager.registerReceiver(displayTimeSlot,new IntentFilter(Common.KEY_DISPLAY_TIME_SLOT));
         simpleDateFormat = new SimpleDateFormat("dd_MM_yyyy");
 
