@@ -44,7 +44,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
 import java.util.Objects;
+
 import java.util.Random;
 
 import butterknife.BindView;
@@ -98,6 +100,7 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
             timeSlots.add(timeSlot);
         }
 
+
         iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
 
         doctorDoc = FirebaseFirestore.getInstance()
@@ -144,6 +147,10 @@ public class BookingTimeSlotFragment extends Fragment implements ITimeSlotLoadLi
                 }
             }
         });
+
+
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
+
 
 //        doctorDoc = FirebaseFirestore.getInstance()
 //                .collection("Doctor")
