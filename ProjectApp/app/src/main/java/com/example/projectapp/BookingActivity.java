@@ -15,6 +15,7 @@ import android.os.Bundle;
 import com.example.fragment.BookingTimeSlotFragment;
 import com.example.fragment.FindTherapist_01Fragment;
 import com.example.utils.Common;
+import android.os.Bundle;
 
 public class BookingActivity extends AppCompatActivity {
 
@@ -37,4 +38,4 @@ public class BookingActivity extends AppCompatActivity {
 
 
 
-}
+    }

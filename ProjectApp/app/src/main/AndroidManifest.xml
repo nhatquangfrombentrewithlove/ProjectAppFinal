@@ -11,15 +11,49 @@
         android:theme="@style/Theme.ProjectApp">
         <activity
             android:name=".BookingActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true"/>
+        <activity
+            android:name=".Selfhelp_Suggestion"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Therapist_CreateProfile_02"
+            android:exported="true" />
+        <activity
+            android:name=".BlogScreen"
+            android:exported="true" />
+        <activity
+            android:name=".AppointmentList"
+            android:exported="true" />
+        <activity
+            android:name=".Therapist_CreateProfile_01"
+            android:exported="true" />
+        <activity
+            android:name=".SelfHelpQS_04"
+            android:exported="true" />
         <activity
             android:name=".DoctorDetailActivity"
             android:exported="true" />
         <activity
             android:name=".FindTherapistActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".BN_Loading_screen"
+            android:exported="true" />
+        <activity
+            android:name=".SelfHelpQS_02"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor_detail"
+            android:exported="true"/>
         <activity
             android:name=".BN_Loading_screen"
             android:exported="true" />
@@ -64,12 +98,16 @@
             android:name=".PaymentMethodActivity"
             android:exported="true"/>
         <activity
+            android:name=".Call_screen"
+            android:exported="true" />
+        <activity
             android:name=".SigninActivity"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
             android:exported="true" />
-        <activity android:name="User_review"
+        <activity
+            android:name="User_review"
             android:exported="true"/>
         <activity
             android:name=".BookConfirmation_screen"
@@ -77,5 +115,11 @@
         <activity
             android:name=".confirm_screen"
             android:exported="true"/>
+        <activity
+            android:name=".Canceled_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".User_review"
+            android:exported="true" />
     </application>
 </manifest>

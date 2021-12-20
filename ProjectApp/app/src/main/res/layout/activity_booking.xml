@@ -9,7 +9,6 @@
     android:orientation="vertical"
     android:background="@color/background_color"
     android:padding="10dp">
-
     <FrameLayout
         android:id="@+id/container_body"
         android:layout_width="match_parent"
