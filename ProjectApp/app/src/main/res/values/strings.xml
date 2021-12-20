@@ -69,7 +69,7 @@
     <string name="gt_khac">Khác</string>
 
     <string name="co_chung_chi">Có chứng chỉ</string>
-    <string name="find_therapist">TÌM BÁC SĨ</string>
+    <string name="find_theraphy">TÌM BÁC SĨ</string>
     <string name="co_kinh_nghiem">Có kinh nghiệm</string>
     <string name="than_thien">Thân thiện</string>
     <string name="binh_dang_gioi">Bình đẳng giới</string>
@@ -136,7 +136,6 @@
     <string name="appointment">Lịch hẹn sắp tới</string>
     <string name="your_doctor">Bác sĩ của bạn</string>
     <string name="loc">Lọc</string>
-    <string name="create_profile_therapist">Tạo hồ sơ</string>
 
     //Menu Navigation
     <string name="title_home">Trang chủ</string>
@@ -146,18 +145,16 @@
     <string name="title_account">Tài khoản</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Danhgiatrungbinh">Đánh giá trung bình</string>
     <string name="Danhgiacuaban">Đánh giá của bạn</string>
     <string name="HintDanhgiacuaban">Hãy viết đánh giá của bạn</string>
     <string name="user_name">Quân Nguyễn</string>
     <string name="title_payment">Các lịch hẹn cần thanh toán</string>
     <string name="btn_pay">Thanh toán</string>
     <string name="btn_cancel">Hủy Lịch</string>
-    <string name="Benhnhannoigiveban">Bênh nhân nói gì về bạn</string>
-    <string name="SortByName">Theo tên</string>
-    <string name="SortByDate">Theo ngày</string>
-    <string name="Lichhenduocxacnhan">Lịch hẹn đã được xác nhận</string>
-    <string name="Giodaxacnhan">2:00 CH</string>
-    <string name="Ngaydaxacnhan">15/10/2021</string>
-    <string name="Confirm">Xác nhận</string>
+    <string name="forget_password"><u>Quên mật khẩu?</u></string>
+    <string name="title_forgot_password">KHÔI PHỤC TÀI KHOẢN</string>
+    <string name="Insert_forgot_email">Nhập Email/SĐT</string>
+    <string name="hint_email">Nhập Email hoặc Số điện thoại</string>
+    <string name="introduction_reset_password">Mật khẩu mới sẽ được gửi đến Email hoặc SĐT mà bạn đã xác nhận. Hãy đổi mật khẩu sau khi đăng nhập lại.</string>
+    <string name="gui_ma"><u>Gửi mã</u></string>
 </resources>
