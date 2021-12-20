@@ -116,7 +116,7 @@
         android:theme="@style/MyMaterialTheme"/>
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnQS3Next"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:text="Tiếp theo"

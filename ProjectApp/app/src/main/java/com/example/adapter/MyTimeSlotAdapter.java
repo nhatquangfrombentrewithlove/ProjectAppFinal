@@ -119,9 +119,13 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
         return Common.TIME_SLOT_TOTAL;
     }
 
+
+//    public static class MyViewHolder extends RecyclerView.ViewHolder{
+
     public boolean containsSlot(final int slotNumber) {
         return this.timeSlotList.stream().anyMatch(o -> o.getSlot() == slotNumber);
     }
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 

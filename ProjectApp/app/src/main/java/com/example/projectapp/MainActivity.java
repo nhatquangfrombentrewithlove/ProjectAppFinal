@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_self_help:
                     toolbar.setTitle("Tự trị liệu");
-
+                    fragment = new Selfhelp_Suggestion();
+                    loadFragment(fragment);
                     return true;
                 case R.id.navigation_advise:
                     toolbar.setTitle("Cần tư vấn");

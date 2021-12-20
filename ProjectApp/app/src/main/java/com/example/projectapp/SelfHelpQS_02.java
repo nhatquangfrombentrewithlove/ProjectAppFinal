@@ -16,7 +16,7 @@ import com.google.android.material.slider.Slider;
 public class SelfHelpQS_02 extends Fragment {
 
     Slider sliderGTBanThan, sliderKhaNangGQVD, sliderKhaNangKSAL;
-    Button btnNext;
+    Button btnQS2Next;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,7 +28,7 @@ public class SelfHelpQS_02 extends Fragment {
         sliderKhaNangGQVD = view.findViewById(R.id.sliderKhaNangGQVD);
         sliderKhaNangKSAL = view.findViewById(R.id.sliderKhaNangKSAL);
 
-        btnNext = view.findViewById(R.id.btnNext);
+        btnQS2Next = view.findViewById(R.id.btnNext);
         initData();
         return  view;
     }

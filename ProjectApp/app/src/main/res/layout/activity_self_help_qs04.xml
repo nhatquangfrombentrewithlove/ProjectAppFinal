@@ -119,7 +119,7 @@
         android:textColor="@color/color_app_black" />
 
     <Button
-        android:id="@+id/btnComplete"
+        android:id="@+id/btnQS4Complete"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:text="Hoàn thành"
