@@ -92,12 +92,13 @@
             android:textSize="16sp"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/edtUserName"
             android:layout_marginTop="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40sp"
-            android:hint="@string/ten"
             android:background="@drawable/edit_text"/>
+<!--            android:hint="@string/ten"-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -107,12 +108,13 @@
             android:textColor="@color/black"
             android:layout_marginTop="10dp"/>
         <EditText
+            android:id="@+id/edtUserEmail"
             android:layout_marginTop="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40sp"
-            android:hint="@string/email"
             android:background="@drawable/edit_text"/>
+<!--        android:hint="@string/email"-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -123,13 +125,14 @@
             android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/edtUserPW"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="@string/password_hint"
             android:layout_marginTop="5dp"
             android:inputType="textPassword"
             android:padding="10dp"
             android:background="@drawable/edit_text"/>
+<!--        android:hint="@string/password_hint"-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -141,14 +144,17 @@
 
 
         <EditText
+            android:id="@+id/edtUserConfirmPW"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="@string/password_hint"
             android:layout_marginTop="5dp"
             android:inputType="textPassword"
             android:padding="10dp"
             android:background="@drawable/edit_text"/>
+<!--            android:hint="@string/password_hint"-->
+
         <Button
+            android:id="@+id/btnCreateAccount"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -157,15 +163,17 @@
             android:textSize="20dp"
             android:textColor="@color/white"
             android:background="@drawable/button"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/da_co_tai_khoan"
-            android:textColor="@color/black"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
-            android:textSize="16dp"/>
+            android:text="@string/da_co_tai_khoan"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
         <TextView
+            android:id="@+id/txtDangNhap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_in"
@@ -174,7 +182,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:textSize="16dp"/>
-
     </LinearLayout>
 
 </LinearLayout>

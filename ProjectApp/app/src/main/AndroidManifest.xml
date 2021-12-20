@@ -19,15 +19,7 @@
         <activity
             android:name=".FindTherapistActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
-        <activity
-            android:name=".Selfhelp_Suggestion"
-            android:exported="true" />
         <activity
             android:name=".BN_Loading_screen"
             android:exported="true" />
@@ -52,14 +44,22 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
-            android:theme="@style/Splash" />
+            android:theme="@style/Splash">
+
+        </activity>
         <activity
             android:name=".SelfHelpQS"
             android:exported="true" >
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".PaymentMethodActivity"
             android:exported="true"/>
@@ -78,5 +78,4 @@
             android:name=".confirm_screen"
             android:exported="true"/>
     </application>
-
 </manifest>

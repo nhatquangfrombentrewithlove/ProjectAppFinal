@@ -51,6 +51,7 @@
         android:padding="5dp">
         
         <Button
+            android:id="@+id/btnTuTriLieu"
             android:layout_width="220dp"
             android:layout_height="120dp"
             android:text="@string/self_help"

@@ -4,13 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class Choose_user extends AppCompatActivity {
 
-    Button btnTimbacsi;
+    Button btnTimbacsi, btnTuTriLieu;
     Fragment fragment;
 
     @Override
@@ -24,6 +25,7 @@ public class Choose_user extends AppCompatActivity {
 
     private void linkViews() {
         btnTimbacsi=findViewById(R.id.btnTimbacsi);
+        btnTuTriLieu = findViewById(R.id.btnTuTriLieu);
     }
 
     private void addEvents() {
@@ -31,7 +33,13 @@ public class Choose_user extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+            }
+        });
+        btnTuTriLieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Choose_user.this, SelfHelpQS.class);
+                startActivity(intent);
             }
         });
     }

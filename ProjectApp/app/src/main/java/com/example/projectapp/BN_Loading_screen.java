@@ -70,7 +70,7 @@ public class BN_Loading_screen extends AppCompatActivity {
 
     }
     private void launchHomeScreen() {
-        startActivity(new Intent(BN_Loading_screen.this, MainActivity.class));
+        startActivity(new Intent(BN_Loading_screen.this, SignupActivity.class));
     }
 
     private void addBottomDots(int currentPage) {
@@ -105,13 +105,13 @@ public class BN_Loading_screen extends AppCompatActivity {
             addBottomDots(position);
 
             // changing the next button text 'NEXT' / 'GOT IT'
-            if (position == layouts.length - 1) {
-                // last page. make button text to GOT IT
-                btnSkip.setVisibility(View.GONE);
-            } else {
-                // still pages are left
+//            if (position == layouts.length - 1) {
+//                // last page. make button text to GOT IT
+//                btnSkip.setVisibility(View.GONE);
+//            } else {
+//                // still pages are left
                 btnSkip.setVisibility(View.VISIBLE);
-            }
+//            }
         }
 
         @Override

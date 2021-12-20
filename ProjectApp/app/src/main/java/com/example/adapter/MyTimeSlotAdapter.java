@@ -116,7 +116,7 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
     }
 
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+//    public static class MyViewHolder extends RecyclerView.ViewHolder{
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
