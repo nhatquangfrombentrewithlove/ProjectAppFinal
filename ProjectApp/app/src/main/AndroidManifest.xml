@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
+
         <activity
             android:name=".SelfHelpContainer"
             android:exported="true" />
         <activity
             android:name=".BookingActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".AppointmentList"
             android:exported="true" />
@@ -29,13 +30,15 @@
             android:exported="true" />
         <activity
             android:name=".Doctor_detail"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Call_screen"
             android:exported="true" />
         <activity
             android:name=".DoctorList"
+
             android:exported="true"/>
+
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
@@ -48,7 +51,13 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
-            android:theme="@style/Splash">
+
+            android:theme="@style/Splash"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,11 +65,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
-        <activity
             android:name=".PaymentMethodActivity"
             android:exported="true" />
+
         <activity
             android:name=".SigninActivity"
             android:exported="true" />
