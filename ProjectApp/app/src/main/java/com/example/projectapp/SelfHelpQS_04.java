@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,16 +24,26 @@ public class SelfHelpQS_04 extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        View view = inflater.inflate(R.layout.activity_self_help_qs04, container, false);
         sliderKhaNangTapTrung = view.findViewById(R.id.sliderKhaNangTapTrung);
         sliderNhanThucVBT = view.findViewById(R.id.sliderNhanThucVBT);
         sliderKhaNangGTVLVN = view.findViewById(R.id.sliderKhaNangGTVLVN);
 
-
+        btnComplete = view.findViewById(R.id.btnQS4Complete);
         initData();
+        addEvents();
         return view;
     }
 
+    private void addEvents() {
+        btnComplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
 
     private void initData() {

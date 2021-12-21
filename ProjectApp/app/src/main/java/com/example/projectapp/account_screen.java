@@ -62,5 +62,4 @@ public class account_screen extends Fragment {
         rcvProfile.setHasFixedSize(true);
         rcvProfile.setItemAnimator(new DefaultItemAnimator());
     }
-
 }

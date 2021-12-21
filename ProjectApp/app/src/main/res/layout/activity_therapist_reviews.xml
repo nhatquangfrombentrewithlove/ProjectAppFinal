@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="@string/Danhgiatrungbinh"
+                    android:text="ĐÁNH GIÁ TRUNG BÌNH"
                     android:textColor="@color/color_app_black"/>
                 <RatingBar
                     android:id="@+id/ratingBar"
@@ -67,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="@string/Benhnhannoigiveban"
+                    android:text="Bình luận"
                     android:textSize="16sp" />
 
                 <LinearLayout

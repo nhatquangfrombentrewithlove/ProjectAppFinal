@@ -3,6 +3,8 @@ package com.example.projectapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,30 +12,45 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.fragment.FindTherapist_02Fragment;
 import com.google.android.material.slider.LabelFormatter;
 import com.google.android.material.slider.Slider;
 
 public class SelfHelpQS_03 extends Fragment {
     
     Slider sliderMucDoLoLang,sliderDongLucTHMT, sliderChatLuongGiacNgu, sliderNguonNLTT;
-    Button btnNext;
+    Button btnQS3Next;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        View view = inflater.inflate(R.layout.activity_self_help_qs03, container, false);
         sliderMucDoLoLang = view.findViewById(R.id.sliderMucDoLoLang);
         sliderDongLucTHMT = view.findViewById(R.id.sliderDongLucTHMT);
         sliderChatLuongGiacNgu = view.findViewById(R.id.sliderChatLuongGiacNgu);
         sliderNguonNLTT = view.findViewById(R.id.sliderNguonNLTT);
 
-        btnNext = view.findViewById(R.id.btnNext);
+        btnQS3Next = view.findViewById(R.id.btnQS3Next);
         initData();
+        addEvents();
         return view;
     }
 
+    private void addEvents() {
+        btnQS3Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SelfHelpQS_04 fragmentQS4 = new SelfHelpQS_04();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.containerQS_body, fragmentQS4);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+    }
 
 
     private void initData() {
