@@ -4,12 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hygge_ic"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/hygge_ic"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+            android:name=".MainActivity_Bs"
             android:name=".TherapistBusyCalendarActivity"
             android:exported="true" >
         <intent-filter>
@@ -25,22 +26,16 @@
             android:name=".Selfhelp_Suggestion"
             android:exported="true" />
         <activity
-            android:name=".PaymentScreen"
+            android:name=".ForgotPW_activity"
             android:exported="true" />
         <activity
-            android:name=".Therapist_CreateProfile_02"
+            android:name=".SelfHelpContainer"
             android:exported="true" />
         <activity
-            android:name=".BlogScreen"
+            android:name=".BookingActivity"
             android:exported="true" />
         <activity
             android:name=".AppointmentList"
-            android:exported="true" />
-        <activity
-            android:name=".Therapist_CreateProfile_01"
-            android:exported="true" />
-        <activity
-            android:name=".SelfHelpQS_04"
             android:exported="true" />
         <activity
             android:name=".DoctorDetailActivity"
@@ -53,7 +48,7 @@
             android:name=".BN_Loading_screen"
             android:exported="true" />
         <activity
-            android:name=".SelfHelpQS_02"
+            android:name=".BN_Loading_screen"
             android:exported="true" />
         <activity
             android:name=".Doctor_detail"
@@ -66,6 +61,7 @@
             android:exported="true" />
         <activity
             android:name=".DoctorList"
+            android:exported="true" />
             android:exported="true"></activity>
         <activity
             android:name=".Canceled_appointment"
@@ -79,6 +75,7 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
+            android:theme="@style/Splash">
             android:theme="@style/Splash"></activity>
         <activity
             android:name=".SelfHelpQS"
@@ -93,10 +90,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
             android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
-            android:name=".Call_screen"
+            android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
             android:name=".SigninActivity"
@@ -117,7 +116,7 @@
             android:name=".Canceled_appointment"
             android:exported="true" />
         <activity
-            android:name=".User_review"
+            android:name=".confirm_screen"
             android:exported="true" />
     </application>
 

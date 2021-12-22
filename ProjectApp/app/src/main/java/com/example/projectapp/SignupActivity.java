@@ -16,7 +16,6 @@ import android.widget.Toast;
 public class SignupActivity extends AppCompatActivity {
     TextView txtDangNhap;
     Button btnCreateAccount;
-    RadioButton rbLeft,rbRight;
     EditText edtUserName, edtUserEmail, edtUserPW, edtUserConfirmPW;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +61,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void linkViews() {
-        rbLeft = findViewById(R.id.rbLeft);
-        rbRight = findViewById(R.id.rbRight);
         txtDangNhap = findViewById(R.id.txtDangNhap);
         btnCreateAccount  =findViewById(R.id.btnCreateAccount);
         edtUserName = findViewById(R.id.edtUserName);
@@ -73,22 +70,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
 
-    public void onRadioButtonClicked(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-        switch (view.getId()){
-            case R.id.rbLeft:
-                if (checked){
-                    rbLeft.setTextColor(Color.WHITE);
-                    rbRight.setTextColor(Color.BLACK);
-                }
-                break;
-            case R.id.rbRight:
-                if (checked){
-                    rbRight.setTextColor(Color.WHITE);
-                    rbLeft.setTextColor(Color.BLACK);
-                break;
-                }
-            }
-    }
+
 
 }

@@ -91,7 +91,5 @@ public class FindTherapist_01Fragment extends Fragment {
                 transaction.commit();
             }
         });
-
-
     }
 }

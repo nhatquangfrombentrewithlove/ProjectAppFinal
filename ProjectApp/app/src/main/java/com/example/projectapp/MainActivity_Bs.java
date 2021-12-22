@@ -1,25 +1,22 @@
 package com.example.projectapp;
 
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.os.Bundle;
-import android.view.MenuItem;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_Bs extends AppCompatActivity {
     private ActionBar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_main_bs);
         toolbar = getSupportActionBar();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -41,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_self_help:
-                    toolbar.setTitle("Tự trị liệu");
+                    toolbar.setTitle("Bệnh nhân");
                     fragment = new Selfhelp_Suggestion();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_advise:
-                    toolbar.setTitle("Cần tư vấn");
+                    toolbar.setTitle("Đánh giá");
 
 
                     return true;
@@ -67,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_container, fragment);
+        transaction.replace(R.id.frame_container_bs, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

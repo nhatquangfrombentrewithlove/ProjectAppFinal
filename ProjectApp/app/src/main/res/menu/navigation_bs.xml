@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/iconhome"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_patient"
+        android:icon="@drawable/iconbenhnhan"
+        android:title="@string/title_patient" />
+
+    <item
+        android:id="@+id/navigation_rate"
+        android:icon="@drawable/icondanhgia"
+        android:title="@string/title_rate" />
+
+    <item
+        android:id="@+id/navigation_newsfeed"
+        android:icon="@drawable/iconbangtin"
+        android:title="@string/title_newsfeed" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/icontaikhoan"
+        android:title="@string/title_account" />
+</menu>

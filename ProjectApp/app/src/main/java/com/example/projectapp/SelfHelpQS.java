@@ -2,6 +2,8 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,10 +16,12 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
+import com.example.fragment.FindTherapist_02Fragment;
+
 public class SelfHelpQS extends Fragment {
 
     RadioButton radGTNam, radGTNu, radGTKhac;
-    Button btnQS1Next;
+    Button btnQS1Next, btnSHBack01;
     Spinner spAge, spJob, spMarriage, spNoPeople;
     ArrayAdapter<CharSequence> adapterAge, adapterJob, adapterMarriage, adapterNoPeople;
 
@@ -35,8 +39,34 @@ public class SelfHelpQS extends Fragment {
         spMarriage = view.findViewById(R.id.spinnerMarriage);
         spNoPeople = view.findViewById(R.id.spinnerNoPeople);
 
+        btnQS1Next = view.findViewById(R.id.btnQS1Next);
+        btnSHBack01 = view.findViewById(R.id.btnSHBack01);
+
         loadData();
+        addEvents();
         return view;
+    }
+
+    private void addEvents() {
+        btnQS1Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SelfHelpQS_02 fragmentQS2 = new SelfHelpQS_02();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.containerQS_body, fragmentQS2);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        btnSHBack01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Choose_user.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void loadData() {

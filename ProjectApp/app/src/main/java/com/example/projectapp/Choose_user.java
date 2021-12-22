@@ -32,13 +32,14 @@ public class Choose_user extends AppCompatActivity {
         btnTimbacsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Choose_user.this, FindTherapistActivity.class);
+                startActivity(intent);
             }
         });
         btnTuTriLieu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Choose_user.this, SelfHelpQS.class);
+                Intent intent = new Intent(Choose_user.this, SelfHelpContainer.class);
                 startActivity(intent);
             }
         });

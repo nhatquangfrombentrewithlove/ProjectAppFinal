@@ -21,45 +21,46 @@ import com.example.model.ChooseList;
 
 import java.util.ArrayList;
 
-public class account_screen extends Fragment {
+public class TherapistProfile extends Fragment {
 
-    RecyclerView rcvProfile;
+    RecyclerView rcvTherapistProfile;
     ArrayList<ChooseList> choose_list;
     ChooseListAdapter adapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_account_screen, container, false);
-        rcvProfile = view.findViewById(R.id.rcvProfile);
+        View view = inflater.inflate(R.layout.activity_therapist_profile, container, false);
+        rcvTherapistProfile = view.findViewById(R.id.rcvTherapistProfile);
 
 
         initData();
         configRecyclerView();
 
         adapter = new ChooseListAdapter(getContext(),choose_list);
-        rcvProfile.setAdapter(adapter);
+        rcvTherapistProfile.setAdapter(adapter);
         return view;
     }
 
     private ArrayList<ChooseList> initData() {
         choose_list = new ArrayList<>();
         choose_list.add(new ChooseList(R.drawable.icontaikhoan, "Tài khoản", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.icontutrilieu, "Tự trị liệu", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconcantuvan, "Bác sĩ yêu thích", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthongbao, "Thông báo nhắc nhở", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthanhtoan, "Thanh toán", R.drawable.ic_button_next));
+        choose_list.add(new ChooseList(R.drawable.icontutrilieu, "Thêm tệp âm thanh", R.drawable.ic_button_next));
+        choose_list.add(new ChooseList(R.drawable.iconcantuvan, "Thêm tin văn bản", R.drawable.ic_button_next));
+        choose_list.add(new ChooseList(R.drawable.iconthongbao, "Cập nhập lịch rảnh và bận", R.drawable.ic_button_next));
+        choose_list.add(new ChooseList(R.drawable.iconthanhtoan, "Thông báo và nhắc nhở", R.drawable.ic_button_next));
         choose_list.add(new ChooseList(R.drawable.iconhotro, "Hỗ trợ", R.drawable.ic_button_next));
         return choose_list;
     }
 
     private void configRecyclerView() {
         LinearLayoutManager manager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
-        rcvProfile.setLayoutManager(manager);
-        DividerItemDecoration divider = new DividerItemDecoration(rcvProfile.getContext(), DividerItemDecoration.VERTICAL);
+        rcvTherapistProfile.setLayoutManager(manager);
+        DividerItemDecoration divider = new DividerItemDecoration(rcvTherapistProfile.getContext(), DividerItemDecoration.VERTICAL);
         Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.custom_devider);
         divider.setDrawable(drawable);
-        rcvProfile.addItemDecoration(divider);
-        rcvProfile.setHasFixedSize(true);
-        rcvProfile.setItemAnimator(new DefaultItemAnimator());
+        rcvTherapistProfile.addItemDecoration(divider);
+        rcvTherapistProfile.setHasFixedSize(true);
+        rcvTherapistProfile.setItemAnimator(new DefaultItemAnimator());
     }
+
 }
