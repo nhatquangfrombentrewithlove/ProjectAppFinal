@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjectApp</string>
+    <string name="app_name">Hygge</string>
     <string name="name">Nhập tên của bạn</string>
     <string name="ten">Nhập tên của bạn</string>
     <string name="email">Nhập email của bạn</string>
@@ -157,4 +157,6 @@
     <string name="hint_email">Nhập Email hoặc Số điện thoại</string>
     <string name="introduction_reset_password">Mật khẩu mới sẽ được gửi đến Email hoặc SĐT mà bạn đã xác nhận. Hãy đổi mật khẩu sau khi đăng nhập lại.</string>
     <string name="gui_ma"><u>Gửi lại</u></string>
+    <string name="title_patient">Bệnh nhân</string>
+    <string name="title_rate">Đánh giá</string>
 </resources>
