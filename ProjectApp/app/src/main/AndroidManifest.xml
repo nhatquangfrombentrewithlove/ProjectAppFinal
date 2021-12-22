@@ -4,16 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hygge_ic"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/hygge_ic"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
-            android:name=".forgot_password_ResetPassword"
-            android:exported="true" />
-        <activity
-            android:name=".forgot_password_OTP"
+            android:name=".ForgotPW_activity"
             android:exported="true" />
         <activity
             android:name=".SelfHelpContainer"
@@ -83,9 +80,6 @@
             android:exported="true" />
         <activity
             android:name=".confirm_screen"
-            android:exported="true" />
-        <activity
-            android:name=".Forgot_password"
             android:exported="true" />
     </application>
 

@@ -3,6 +3,8 @@ package com.example.projectapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +19,7 @@ import com.google.android.material.slider.Slider;
 public class SelfHelpQS_04 extends Fragment {
 
     Slider sliderKhaNangTapTrung, sliderNhanThucVBT, sliderKhaNangGTVLVN;
-    Button btnComplete;
+    Button btnComplete, btnSHBack04;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,6 +32,7 @@ public class SelfHelpQS_04 extends Fragment {
         sliderKhaNangGTVLVN = view.findViewById(R.id.sliderKhaNangGTVLVN);
 
         btnComplete = view.findViewById(R.id.btnQS4Complete);
+        btnSHBack04 = view.findViewById(R.id.btnSHBack04);
         initData();
         addEvents();
         return view;
@@ -41,6 +44,17 @@ public class SelfHelpQS_04 extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
+            }
+        });
+        btnSHBack04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SelfHelpQS_03 fragmentQS3 = new SelfHelpQS_03();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.containerQS_body, fragmentQS3);
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
     }

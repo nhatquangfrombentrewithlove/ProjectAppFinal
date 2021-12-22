@@ -19,7 +19,7 @@ import com.google.android.material.slider.Slider;
 public class SelfHelpQS_03 extends Fragment {
     
     Slider sliderMucDoLoLang,sliderDongLucTHMT, sliderChatLuongGiacNgu, sliderNguonNLTT;
-    Button btnQS3Next;
+    Button btnQS3Next, btnSHBack03;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,6 +33,7 @@ public class SelfHelpQS_03 extends Fragment {
         sliderNguonNLTT = view.findViewById(R.id.sliderNguonNLTT);
 
         btnQS3Next = view.findViewById(R.id.btnQS3Next);
+        btnSHBack03 = view.findViewById(R.id.btnSHBack03);
         initData();
         addEvents();
         return view;
@@ -46,6 +47,18 @@ public class SelfHelpQS_03 extends Fragment {
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.containerQS_body, fragmentQS4);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        btnSHBack03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SelfHelpQS_02 fragmentQS2 = new SelfHelpQS_02();
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.containerQS_body, fragmentQS2);
                 transaction.addToBackStack(null);
                 transaction.commit();
             }

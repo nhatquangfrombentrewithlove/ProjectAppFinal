@@ -21,7 +21,7 @@ import com.example.fragment.FindTherapist_02Fragment;
 public class SelfHelpQS extends Fragment {
 
     RadioButton radGTNam, radGTNu, radGTKhac;
-    Button btnQS1Next;
+    Button btnQS1Next, btnSHBack01;
     Spinner spAge, spJob, spMarriage, spNoPeople;
     ArrayAdapter<CharSequence> adapterAge, adapterJob, adapterMarriage, adapterNoPeople;
 
@@ -40,6 +40,7 @@ public class SelfHelpQS extends Fragment {
         spNoPeople = view.findViewById(R.id.spinnerNoPeople);
 
         btnQS1Next = view.findViewById(R.id.btnQS1Next);
+        btnSHBack01 = view.findViewById(R.id.btnSHBack01);
 
         loadData();
         addEvents();
@@ -56,6 +57,14 @@ public class SelfHelpQS extends Fragment {
                 transaction.replace(R.id.containerQS_body, fragmentQS2);
                 transaction.addToBackStack(null);
                 transaction.commit();
+            }
+        });
+
+        btnSHBack01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Choose_user.class);
+                startActivity(intent);
             }
         });
     }

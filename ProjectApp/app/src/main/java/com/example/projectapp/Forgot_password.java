@@ -1,63 +1,59 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Forgot_password extends AppCompatActivity {
-    Button btnResetPW;
-    TextView txtGuiMa;
-    EditText edtEmailKP, edtOTP;
+public class Forgot_password extends Fragment {
+    Button btnGuiOTP, btnForgotPWBack01;
+    EditText edtEmailKP;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forgot_password);
+        View view = inflater.inflate(R.layout.activity_forgot_password, container, false);
 
-        linkViews();
+        btnGuiOTP = view.findViewById(R.id.btnGuiOTP);
+        edtEmailKP = view.findViewById(R.id.edtEmailKP);
+        btnForgotPWBack01 = view.findViewById(R.id.btnForgotPWBack01);
         addEvents();
+        return view;
     }
 
     private void addEvents() {
-        txtGuiMa.setOnClickListener(new View.OnClickListener() {
+        btnGuiOTP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = edtEmailKP.getText().toString();
-                if(email.length() == 0){
-                    Toast.makeText(Forgot_password.this,"Bạn chưa nhập địa chỉ email",Toast.LENGTH_LONG).show();
+                if (email.length() == 0){
+                    Toast.makeText(getActivity(),"Vui lòng nhập Email",Toast.LENGTH_LONG).show();
                 }else {
-                    Toast.makeText(Forgot_password.this,"Mã OTP đã được gửi, vui lòng kiểm tra Email/SĐT",Toast.LENGTH_LONG).show();
+                    forgot_password_OTP fragmentPW2 = new forgot_password_OTP();
+                    FragmentManager manager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.containerPW_body, fragmentPW2);
+                    transaction.addToBackStack(null);
+                    transaction.commit();
                 }
             }
         });
-        btnResetPW.setOnClickListener(new View.OnClickListener() {
+        btnForgotPWBack01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email, OTP;
-                email = edtEmailKP.getText().toString();
-                OTP = edtOTP.getText().toString();
-                if(email.length() == 0){
-                    Toast.makeText(Forgot_password.this,"Bạn chưa nhập địa chỉ email",Toast.LENGTH_LONG).show();
-                }else if(OTP.length() == 0){
-                    Toast.makeText(Forgot_password.this,"Bạn chưa nhập mã OTP",Toast.LENGTH_LONG).show();
-                }else {
-                    Toast.makeText(Forgot_password.this,"Mật khẩu mới đã được gửi qua Email/SĐT. Vui lòng đăng nhập lại",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(Forgot_password.this, SigninActivity.class);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(getActivity(), SigninActivity.class);
+                startActivity(intent);
             }
         });
     }
 
-    private void linkViews() {
-        btnResetPW = findViewById(R.id.btnResetPW);
-        txtGuiMa = findViewById(R.id.txtGuiMa);
-        edtEmailKP = findViewById(R.id.edtEmailKP);
-        edtOTP = findViewById(R.id.edtOTP);
-    }
 }
