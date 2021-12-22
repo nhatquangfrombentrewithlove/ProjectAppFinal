@@ -7,9 +7,13 @@
     tools:context=".PaymentMethodActivity"
     android:padding="14dp"
     android:orientation="vertical"
-    android:background="@color/background_color"
-    android:id="@+id/layoutPaymentMethod">
+    android:background="@color/background_color">
 
+    <LinearLayout
+        android:id="@+id/layoutPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
     <Button
           android:layout_width="40dp"
           android:layout_height="40dp"

@@ -79,51 +79,8 @@ public class Appointment_call_screen extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(),DoctorList.class);
                 v.getContext().startActivity(myIntent);
-//                AppointmentListFragment appointmentListFragment = new DoctorList();
-//                loadFragmentAppointmentListFrag(appointmentListFragment);
             }
         });
     }
 
-//    void showCustomDialog(){
-//        final Dialog dialog=new Dialog(getContext());
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        dialog.setCancelable(true);
-//        dialog.setContentView(R.layout.activity_cancel_appointment_dialog);
-//
-//        TextView txtDialogHuyhen=dialog.findViewById(R.id.txtDialogHuyhen);
-//        Button btnYes = dialog.findViewById(R.id.btnYes);
-//        Button btnNo = dialog.findViewById(R.id.btnNo);
-//
-//        btnYes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Canceled_appointment fragmentCanceled=new Canceled_appointment();
-//                loadFragment(fragmentCanceled);
-//                dialog.dismiss();
-//            }
-//        });
-//        btnNo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                dialog.dismiss();
-//            }
-//        });
-//        dialog.show();
-//    }
-//
-//
-//    private void loadFragment(Fragment fragment) {
-//        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-//        transaction.replace(R.id.layoutAppointmentCallScreen, fragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-//    }
-
-//    private void loadFragmentAppointmentListFrag(Fragment fragment) {
-//        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-//        transaction.replace(R.id.layoutAppointmentCallScreen, fragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-//    }
 }

@@ -37,25 +37,6 @@ public class PaymentMethodActivity extends AppCompatActivity {
         initData();
     }
 
-//    private void addEvents() {
-//        rcvPayment.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-//            @Override
-//            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-//                return false;
-//            }
-//
-//            @Override
-//            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-//                Intent myIntent = new Intent(PaymentMethodActivity.this,BookConfirmation_screen.class);
-//                startActivity(myIntent);
-//            }
-//
-//            @Override
-//            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-//
-//            }
-//        });
-//    }
 
     private void initData() {
         chooseLists = new ArrayList<>();
