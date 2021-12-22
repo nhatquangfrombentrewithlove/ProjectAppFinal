@@ -1,11 +1,6 @@
 package com.example.adapter;
 
-import static android.R.color.background_light;
-
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,28 +17,25 @@ import com.example.Interface.IRecyclerItemSelectedListener;
 import com.example.model.TimeSlot;
 import com.example.projectapp.R;
 import com.example.utils.Common;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.MyViewHolder> {
+public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<TherapistBusyCalendarAdapter.MyViewHolder> {
 
     Context context;
     List<TimeSlot> timeSlotList;
     List<CardView> cardViewList;
     LocalBroadcastManager localBroadcastManager;
 
-    public MyTimeSlotAdapter(Context context) {
+    public TherapistBusyCalendarAdapter(Context context) {
         this.context = context;
         this.timeSlotList = new ArrayList<>();
         this.localBroadcastManager = LocalBroadcastManager.getInstance(context);
         cardViewList = new ArrayList<>();
     }
 
-    public MyTimeSlotAdapter(Context context, List<TimeSlot> timeSlotList) {
+    public TherapistBusyCalendarAdapter(Context context, List<TimeSlot> timeSlotList) {
         this.context = context;
         this.timeSlotList = timeSlotList;
         this.localBroadcastManager = LocalBroadcastManager.getInstance(context);
@@ -98,8 +90,14 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
                             cardView.setCardBackgroundColor(context.getResources()
                                     .getColor(R.color.white, context.getTheme()));
                     }
-                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources()
-                            .getColor(R.color.color_start, context.getTheme()));
+//                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
+
+                    myViewHolder.card_time_slot.setTag(Common.DISABLE_TAG);
+                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
+
+                    myViewHolder.txt_time_slot_description.setText("Đã được đặt");
+                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
+                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
 
                     Intent intent = new Intent(Common.KEY_ENABLE_BUTTON_NEXT);
                     intent.putExtra(Common.KEY_TIME_SLOT, pos);
@@ -118,16 +116,11 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
         return Common.TIME_SLOT_TOTAL;
     }
 
-
-//    public static class MyViewHolder extends RecyclerView.ViewHolder{
-
     public boolean containsSlot(final int slotNumber) {
         return this.timeSlotList.stream().anyMatch(o -> o.getSlot() == slotNumber);
     }
 
-
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView txt_time_slot, txt_time_slot_description;
         CardView card_time_slot;
 
