@@ -194,10 +194,12 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.2" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_screen.xml" value="0.21296296296296297" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signup.xml" value="0.176" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_turn_on_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_user_review.xml" value="0.264" />
@@ -210,7 +212,9 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_offer.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_booking_time_slot.xml" value="0.14351851851851852" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_01.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_02.xml" value="0.1537037037037037" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/review.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/menu/navigation.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/github/ProjectAppFinal/ProjectApp/app/src/main/res/drawable/radio_right_normal.xml" value="0.24351851851851852" />
