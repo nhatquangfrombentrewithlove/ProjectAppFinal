@@ -35,7 +35,7 @@ public class SigninActivity extends AppCompatActivity {
                 if(email.length() == 0 || pw.length() == 0){
                     Toast.makeText(SigninActivity.this,"Vui lòng nhập đầy đủ thông tin",Toast.LENGTH_LONG).show();
                 }else {
-                    Intent intent = new Intent(SigninActivity.this, Choose_user.class);
+                    Intent intent = new Intent(SigninActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
 

@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homepage_screen"
+    android:background="@color/background_color"
     android:orientation="vertical"
-    android:background="@color/background_color">
-    <ScrollView
+    tools:context=".Homepage_screen"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragmentProfile"
+            android:name="com.example.fragment.profile"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <fragment
-                android:id="@+id/fragmentProfile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:name="com.example.fragment.profile"
-                tools:layout="@layout/fragment_profile"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Đề xuất những trị liệu tốt nhất dành cho bạn"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_profile" />
 
-            <ListView
-                android:layout_marginTop="15dp"
-                android:id="@+id/lvSugestion"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="10sp"/>
-            <Button
-                android:id="@+id/btnChanDoanLai"
-                android:layout_marginTop="30dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Chẩn đoán lại"
-                android:layout_gravity="center"
-                android:button="@android:color/transparent"
-                android:background="@drawable/radio_selected"
-                android:textColor="@color/color_app_black"
-                android:textSize="15sp" />
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đề xuất những trị liệu tốt nhất dành cho bạn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    </ScrollView>
-</LinearLayout>
+        <ListView
+            android:id="@+id/lvSugestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnChanDoanLai"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/radio_selected"
+        android:button="@android:color/transparent"
+        android:text="Chẩn đoán lại"
+        android:textColor="@color/color_app_black"
+        android:textSize="15sp" />
+</ScrollView>
