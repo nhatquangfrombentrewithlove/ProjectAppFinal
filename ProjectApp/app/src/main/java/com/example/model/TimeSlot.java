@@ -10,6 +10,11 @@ public class TimeSlot {
         return slot;
     }
 
+    public TimeSlot(int p){
+        this.slot = new Long(p);
+    }
+
+
     public void setSlot(Long slot) {
         this.slot = slot;
     }

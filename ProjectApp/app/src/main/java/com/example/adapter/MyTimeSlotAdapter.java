@@ -1,11 +1,7 @@
 package com.example.adapter;
 
-import static android.R.color.background_light;
 
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,10 +18,7 @@ import com.example.Interface.IRecyclerItemSelectedListener;
 import com.example.model.TimeSlot;
 import com.example.projectapp.R;
 import com.example.utils.Common;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 

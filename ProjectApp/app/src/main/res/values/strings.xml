@@ -159,4 +159,5 @@
     <string name="gui_ma"><u>Gửi lại</u></string>
     <string name="title_patient">Bệnh nhân</string>
     <string name="title_rate">Đánh giá</string>
+    <string name="Confirm">XÁC NHẬN</string>
 </resources>
