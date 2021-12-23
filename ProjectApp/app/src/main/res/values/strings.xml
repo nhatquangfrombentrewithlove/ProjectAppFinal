@@ -172,4 +172,7 @@
     <string name="create_profile_therapist">Tạo hồ sơ</string>
     <string name="Danhgiatrungbinh">Điểm đánh giá trung bình</string>
     <string name="find_therapist">Tìm bác sĩ</string>
+    <string name="Benhnhan">Bệnh nhân</string>
+    <string name="Bacsi">Bác sĩ</string>
+    <string name="Banlaai">Bạn là ai</string>
 </resources>

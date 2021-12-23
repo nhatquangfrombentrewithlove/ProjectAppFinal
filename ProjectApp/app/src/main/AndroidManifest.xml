@@ -79,14 +79,18 @@
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
-
-        <activity android:name=".TestContainer"
+        <activity
+            android:name=".TestContainer"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity
+            android:name=".RoleOption"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
