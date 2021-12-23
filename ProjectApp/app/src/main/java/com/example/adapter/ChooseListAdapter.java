@@ -9,7 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -65,8 +67,10 @@ public class ChooseListAdapter extends RecyclerView.Adapter<ChooseListAdapter.Vi
 
         @Override
         public void onClick(View v) {
-            Intent myIntent = new Intent(v.getContext(), BookConfirmation_screen.class);
-            v.getContext().startActivity(myIntent);
+            AppCompatActivity activity = (AppCompatActivity) v.getContext();
+            Fragment myFragment = new BookConfirmation_screen();
+            activity.getSupportFragmentManager().beginTransaction().replace(R.id.layoutPaymentMethod, myFragment).addToBackStack(null).commit();
+
         }
     }
 
