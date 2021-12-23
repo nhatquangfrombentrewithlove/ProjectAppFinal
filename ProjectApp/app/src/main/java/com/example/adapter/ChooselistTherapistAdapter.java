@@ -9,9 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.fragment.TherapistBusyCalendarFragment;
 import com.example.model.Chooselist_therapist;
+import com.example.projectapp.BookConfirmation_screen;
 import com.example.projectapp.R;
 import com.example.projectapp.TherapistProfile;
 
@@ -61,8 +65,9 @@ public class ChooselistTherapistAdapter extends RecyclerView.Adapter<ChooselistT
 
         @Override
         public void onClick(View v) {
-            Intent myIntent = new Intent(v.getContext(), TherapistProfile.class);
-            v.getContext().startActivity(myIntent);
+            AppCompatActivity activity = (AppCompatActivity) v.getContext();
+            Fragment myFragment = new TherapistBusyCalendarFragment();
+            activity.getSupportFragmentManager().beginTransaction().replace(R.id.layoutTherapistProfile, myFragment).addToBackStack(null).commit();
         }
     }
 

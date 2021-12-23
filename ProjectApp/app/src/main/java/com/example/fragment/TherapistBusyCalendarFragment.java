@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,6 +26,8 @@ import com.example.adapter.MyTimeSlotAdapter;
 import com.example.adapter.TherapistBusyCalendarAdapter;
 import com.example.model.TimeSlot;
 import com.example.projectapp.R;
+import com.example.projectapp.TherapistProfile;
+import com.example.projectapp.account_screen;
 import com.example.projectapp.confirm_screen;
 import com.example.utils.Common;
 
@@ -126,6 +129,9 @@ public class TherapistBusyCalendarFragment extends Fragment implements ITimeSlot
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Đã cập nhật lịch bận của bạn", Toast.LENGTH_SHORT).show();
+
+                Fragment fragment = new TherapistProfile();
+                loadFragment(fragment);
 //                Intent myIntent = new Intent(v.getContext(), confirm_screen.class);
 //                v.getContext().startActivity(myIntent);
             }
@@ -192,4 +198,13 @@ public class TherapistBusyCalendarFragment extends Fragment implements ITimeSlot
         recycler_time_slot.setAdapter(adapter);
         dialog.dismiss();
     }
+
+    private void loadFragment(Fragment fragment) {
+        // load fragment
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.layoutTherapistProfile, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
 }

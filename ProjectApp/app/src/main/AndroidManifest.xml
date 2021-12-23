@@ -18,20 +18,12 @@
         <activity
             android:name=".activity_therapistcreatenote"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BookingActivity"
             android:exported="true" />
         <activity
             android:name=".AppointmentList"
-            android:exported="true" />
-        <activity
-            android:name=".TherapistBusyCalendarActivity"
             android:exported="true" />
         <activity
             android:name=".ForgotPW_activity"
@@ -87,6 +79,15 @@
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
+
+        <activity android:name=".TestContainer"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
