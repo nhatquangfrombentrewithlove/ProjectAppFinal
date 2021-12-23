@@ -3,6 +3,7 @@ package com.example.projectapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,5 +29,19 @@ public class RoleOption extends AppCompatActivity {
 
     private void addEvents() {
         //do sth
+        btnChooseUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RoleOption.this,BN_Loading_screen.class);
+                startActivity(intent);
+            }
+        });
+        btnChooseTherapist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RoleOption.this,BS_Loading_screen.class);
+                startActivity(intent);
+            }
+        });
     }
 }

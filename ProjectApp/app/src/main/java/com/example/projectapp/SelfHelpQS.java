@@ -63,8 +63,9 @@ public class SelfHelpQS extends Fragment {
         btnSHBack01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Choose_user.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), Choose_user.class);
+//                startActivity(intent);
+                getActivity().finish();
             }
         });
     }

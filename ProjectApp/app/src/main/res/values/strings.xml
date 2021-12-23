@@ -175,4 +175,10 @@
     <string name="Benhnhan">Bệnh nhân</string>
     <string name="Bacsi">Bác sĩ</string>
     <string name="Banlaai">Bạn là ai</string>
+    <string name="intro_bs1">Tư vấn ảo</string>
+    <string name="description_bs1">Lên lịch các cuộc gọi tư vấn cho bệnh nhân bằng hình ảnh và âm thanh ngay tại nhà bạn</string>
+    <string name="intro_bs2">Lên lịch</string>
+    <string name="description_bs2">Dễ dàng sắp xếp lịch hẹn với bệnh nhân dựa trên thời gian rảnh và bận của bạn</string>
+    <string name="intro_bs3">Dễ dàng truy cập hồ sơ bệnh nhân</string>
+    <string name="description_bs3">Tất cả dữ liệu bệnh nhân của bạn như ghi chú, báo cáo, đơn thuốc đều có thể truy cập được từ một nguồn duy nhất</string>
 </resources>

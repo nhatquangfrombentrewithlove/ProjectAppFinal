@@ -19,7 +19,7 @@ public class MainActivity_Bs extends AppCompatActivity {
         setContentView(R.layout.activity_main_bs);
         toolbar = getSupportActionBar();
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_bs);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         toolbar.setTitle("Home");
@@ -32,27 +32,27 @@ public class MainActivity_Bs extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_home_bs:
                     toolbar.setTitle("Trang chủ");
                     fragment = new Homepage_screen();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_self_help:
+                case R.id.navigation_patient_bs:
                     toolbar.setTitle("Bệnh nhân");
                     fragment = new Selfhelp_Suggestion();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_advise:
+                case R.id.navigation_rate_bs:
                     toolbar.setTitle("Đánh giá");
 
 
                     return true;
-                case R.id.navigation_newsfeed:
+                case R.id.navigation_newsfeed_bs:
                     toolbar.setTitle("Bảng tin");
                     fragment = new BlogScreen();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_account:
+                case R.id.navigation_account_bs:
                     toolbar.setTitle("Tài khoản");
                     fragment = new account_screen();
                     loadFragment(fragment);
