@@ -160,4 +160,16 @@
     <string name="title_patient">Bệnh nhân</string>
     <string name="title_rate">Đánh giá</string>
     <string name="Confirm">XÁC NHẬN</string>
+
+
+    <string name="Benhnhannoigiveban">Bênh nhân nói gì về bạn</string>
+    <string name="SortByName">Theo tên</string>
+    <string name="SortByDate">Theo ngày</string>
+    <string name="Lichhenduocxacnhan">Lịch hẹn đã được xác nhận</string>
+    <string name="Giodaxacnhan">2:00 CH</string>
+    <string name="Ngaydaxacnhan">15/10/2021</string>
+    <string name="your_patient">Bệnh nhân của bạn</string>
+    <string name="create_profile_therapist">Tạo hồ sơ</string>
+    <string name="Danhgiatrungbinh">Điểm đánh giá trung bình</string>
+    <string name="find_therapist">Tìm bác sĩ</string>
 </resources>

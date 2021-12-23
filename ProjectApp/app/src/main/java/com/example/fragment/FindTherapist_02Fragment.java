@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.example.projectapp.DoctorList;
 import com.example.projectapp.R;
 
 public class FindTherapist_02Fragment extends Fragment {
@@ -62,7 +59,7 @@ public class FindTherapist_02Fragment extends Fragment {
         btnFindTherapist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), DoctorList.class);
+                Intent intent = new Intent(getActivity(), DoctorListFragment.class);
                 startActivity(intent);
             }
         });

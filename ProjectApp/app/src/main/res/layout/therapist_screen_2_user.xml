@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorList"
     android:orientation="vertical"
-    android:id="@+id/layoutContainer"
-    >
+    android:id="@+id/layoutContainerTherapist">
 
     <LinearLayout
-        android:id="@+id/layoutDoctorList"
+        android:id="@+id/layoutTherapist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" />
@@ -24,7 +22,7 @@
         android:paddingTop="10dp">
 
         <EditText
-            android:id="@+id/edtSearch"
+            android:id="@+id/edtSearchTherapist"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@drawable/edit_text"
@@ -37,7 +35,7 @@
     </LinearLayout>
 
     <TabHost
-        android:id="@+id/tabHost"
+        android:id="@+id/tabHostTherapist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
@@ -58,7 +56,7 @@
                 android:layout_height="match_parent" >
 
                 <LinearLayout
-                    android:id="@+id/tab1"
+                    android:id="@+id/tab1Therapist"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -76,7 +74,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/your_doctor"
+                                android:text="@string/your_patient"
                                 android:textColor="@color/color_app_black"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -107,15 +105,22 @@
                         android:gravity="end"
                         android:paddingTop="20dp">
                         <ListView
-                            android:id="@+id/lvTabDoctorList"
+                            android:id="@+id/lvTabPatientList"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:listSelector="@color/color_app_white_gray" />
                     </LinearLayout>
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_app_black"
+                        android:background="@drawable/radio_selected"
+                        android:layout_gravity="center"
+                        android:text="Xem thêm"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tab2"
+                    android:id="@+id/tab2Therapist"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -124,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:layout_weight="1"
@@ -139,11 +144,16 @@
                         </LinearLayout>
                     </LinearLayout>
                     <ListView
-                        android:id="@+id/lvTabAppointmentList"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:id="@+id/lvTabAppointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:listSelector="@color/color_app_white_gray"
                         android:paddingTop="20dp"/>
+                    <ListView
+                        android:id="@+id/lvTabAppointment1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@color/color_app_white_gray"/>
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>

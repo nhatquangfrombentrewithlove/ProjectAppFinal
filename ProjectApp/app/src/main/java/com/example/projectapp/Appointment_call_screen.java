@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
 import com.example.ConfirmedAppointmentListAdapter.ConfirmedAppointmentListAdapter;
 import com.example.fragment.AppointmentListFragment;
+import com.example.fragment.DoctorListFragment;
 import com.example.model.AppointmentCallList;
 import com.example.model.ConfirmedAppointmentList;
 
@@ -77,7 +78,7 @@ public class Appointment_call_screen extends Fragment {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(),DoctorList.class);
+                Intent myIntent = new Intent(v.getContext(), DoctorListFragment.class);
                 v.getContext().startActivity(myIntent);
             }
         });

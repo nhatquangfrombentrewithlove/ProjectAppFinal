@@ -22,7 +22,6 @@
                 android:text="@string/your_doctor"
                 android:textColor="@color/color_app_black"
                 android:textSize="16sp" />
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"

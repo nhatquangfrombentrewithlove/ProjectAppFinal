@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imvPatientImage1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/avabocphet"
+        android:gravity="center">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/txtPatientName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bốc Phét"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_app_black" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtAppointmentTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Date_time_Giohentruocdo"
+                android:textColor="@color/color_app_light_gray"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtAppointmentDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/Date_time_ngayhen"
+                android:textColor="@color/color_app_light_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã gửi thông báo đổi lịch"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_app_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="end"
+        >
+        <ImageView
+            android:id="@+id/imvGoNext1"
+            android:src="@drawable/ic_button_next"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </LinearLayout>
+</LinearLayout>
