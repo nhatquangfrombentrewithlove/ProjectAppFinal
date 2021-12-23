@@ -85,13 +85,12 @@ public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<Therapist
             public void onItemSelectedListener(View view, int pos) {
                 Log.w("onItemSelectedListener", "" + pos);
                 if (!containsSlot(pos)) {
+
                     for (CardView cardView : cardViewList) {
                         if (cardView.getTag() == null)
                             cardView.setCardBackgroundColor(context.getResources()
                                     .getColor(R.color.white, context.getTheme()));
                     }
-//                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
-
                     myViewHolder.card_time_slot.setTag(Common.DISABLE_TAG);
                     myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
 
@@ -105,7 +104,30 @@ public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<Therapist
                     intent.putExtra(Common.KEY_STEP, 2);
                     Log.e("pos ", "onItemSelectedListener: " + pos);
                     localBroadcastManager.sendBroadcast(intent);
+                    timeSlotList.add(new TimeSlot(pos));
+                }else{
+
+                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.white, context.getTheme()));
+                    myViewHolder.txt_time_slot_description.setText("Còn trống");
+                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
+                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
+
+                    Intent intent = new Intent(Common.KEY_ENABLE_BUTTON_NEXT);
+                    intent.putExtra(Common.KEY_TIME_SLOT, pos);
+                    Common.currentTimeSlot = pos;
+                    intent.putExtra(Common.KEY_STEP, 2);
+                    Log.e("pos ", "onItemSelectedListener: " + pos);
+                    localBroadcastManager.sendBroadcast(intent);
+
+                    for (int i = 0 ; i < timeSlotList.size(); i++ ){
+                        if (timeSlotList.get(i).getSlot().equals(new Long(pos))) {
+                            Log.w("deleted", "deleted");
+                            timeSlotList.remove(i);
+                        }
+                    }
+
                 }
+
             }
 
         });
@@ -120,7 +142,7 @@ public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<Therapist
         return this.timeSlotList.stream().anyMatch(o -> o.getSlot() == slotNumber);
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView txt_time_slot, txt_time_slot_description;
         CardView card_time_slot;
 
