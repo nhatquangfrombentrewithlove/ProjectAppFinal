@@ -17,15 +17,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.adapter.ChooseListAdapter;
+import com.example.adapter.ChooselistUserAdapter;
 import com.example.model.ChooseList;
+import com.example.model.Chooselist_user;
 
 import java.util.ArrayList;
 
 public class account_screen extends Fragment {
 
     RecyclerView rcvProfile;
-    ArrayList<ChooseList> choose_list;
-    ChooseListAdapter adapter;
+    ArrayList<Chooselist_user> choose_list_user;
+    ChooselistUserAdapter adapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,20 +38,20 @@ public class account_screen extends Fragment {
         initData();
         configRecyclerView();
 
-        adapter = new ChooseListAdapter(getContext(),choose_list);
+        adapter = new ChooselistUserAdapter(getContext(),choose_list_user);
         rcvProfile.setAdapter(adapter);
         return view;
     }
 
-    private ArrayList<ChooseList> initData() {
-        choose_list = new ArrayList<>();
-        choose_list.add(new ChooseList(R.drawable.icontaikhoan, "Tài khoản", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.icontutrilieu, "Tự trị liệu", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconcantuvan, "Bác sĩ yêu thích", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthongbao, "Thông báo nhắc nhở", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthanhtoan, "Thanh toán", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconhotro, "Hỗ trợ", R.drawable.ic_button_next));
-        return choose_list;
+    private ArrayList<Chooselist_user> initData() {
+        choose_list_user = new ArrayList<>();
+        choose_list_user.add(new Chooselist_user(R.drawable.icontaikhoan, "Tài khoản", R.drawable.ic_button_next));
+        choose_list_user.add(new Chooselist_user(R.drawable.icontutrilieu, "Tự trị liệu", R.drawable.ic_button_next));
+        choose_list_user.add(new Chooselist_user(R.drawable.iconcantuvan, "Bác sĩ yêu thích", R.drawable.ic_button_next));
+        choose_list_user.add(new Chooselist_user(R.drawable.iconthongbao, "Thông báo nhắc nhở", R.drawable.ic_button_next));
+        choose_list_user.add(new Chooselist_user(R.drawable.iconthanhtoan, "Thanh toán", R.drawable.ic_button_next));
+        choose_list_user.add(new Chooselist_user(R.drawable.iconhotro, "Hỗ trợ", R.drawable.ic_button_next));
+        return choose_list_user;
     }
 
     private void configRecyclerView() {

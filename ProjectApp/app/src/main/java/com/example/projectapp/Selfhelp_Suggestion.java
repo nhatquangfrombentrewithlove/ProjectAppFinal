@@ -25,12 +25,13 @@ public class Selfhelp_Suggestion extends Fragment {
     ArrayList<SuggestionList> suggestionLists;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.activity_selfhelp_suggestion,container,false);
 
-        lvSuggestion = view.findViewById(R.id.lvSugestion);
+        lvSuggestion = view.findViewById(R.id.lvSuggestion);
         btnChanDoanLai = view.findViewById(R.id.btnChanDoanLai);
 
         initDataSuggestion();

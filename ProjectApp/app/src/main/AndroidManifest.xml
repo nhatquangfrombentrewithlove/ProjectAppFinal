@@ -10,12 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+            android:name=".Fragment_Therapist_Blog"
+            android:exported="true" />
+        <activity
+            android:name=".Therapist_Homescreen"
+            android:exported="true" />
+        <activity
             android:name=".activity_therapistcreatenote"
             android:exported="true">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -23,13 +29,10 @@
             android:exported="true" />
         <activity
             android:name=".AppointmentList"
-
             android:exported="true" />
         <activity
             android:name=".TherapistBusyCalendarActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ForgotPW_activity"
             android:exported="true" />
@@ -41,20 +44,16 @@
             android:exported="true" />
         <activity
             android:name=".FindTherapistActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BN_Loading_screen"
             android:exported="true" />
         <activity
             android:name=".Doctor_detail"
             android:exported="true" />
-
         <activity
             android:name=".Call_screen"
             android:exported="true" />
-
         <activity
             android:name=".note"
             android:exported="true" />
@@ -64,19 +63,11 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
-            android:theme="@style/Splash">
-
-        </activity>
-
-
-
-
+            android:theme="@style/Splash" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
-
             android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
@@ -87,18 +78,15 @@
             android:exported="true" />
         <activity
             android:name=".User_review"
-            android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".BookConfirmation_screen"-->
-<!--            android:exported="true" />-->
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".BookConfirmation_screen" -->
+        <!-- android:exported="true" /> -->
         <activity
             android:name=".confirm_screen"
             android:exported="true" />
-
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
-
     </application>
 
 </manifest>

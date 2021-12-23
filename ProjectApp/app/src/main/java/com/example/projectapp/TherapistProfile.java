@@ -17,15 +17,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.adapter.ChooseListAdapter;
+import com.example.adapter.ChooselistTherapistAdapter;
 import com.example.model.ChooseList;
+import com.example.model.Chooselist_therapist;
 
 import java.util.ArrayList;
 
 public class TherapistProfile extends Fragment {
 
     RecyclerView rcvTherapistProfile;
-    ArrayList<ChooseList> choose_list;
-    ChooseListAdapter adapter;
+    ArrayList<Chooselist_therapist> choose_list_therapist;
+    ChooselistTherapistAdapter adapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,20 +38,20 @@ public class TherapistProfile extends Fragment {
         initData();
         configRecyclerView();
 
-        adapter = new ChooseListAdapter(getContext(),choose_list);
+        adapter = new ChooselistTherapistAdapter(getContext(),choose_list_therapist);
         rcvTherapistProfile.setAdapter(adapter);
         return view;
     }
 
-    private ArrayList<ChooseList> initData() {
-        choose_list = new ArrayList<>();
-        choose_list.add(new ChooseList(R.drawable.icontaikhoan, "Tài khoản", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.icontutrilieu, "Thêm tệp âm thanh", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconcantuvan, "Thêm tin văn bản", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthongbao, "Cập nhập lịch rảnh và bận", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconthanhtoan, "Thông báo và nhắc nhở", R.drawable.ic_button_next));
-        choose_list.add(new ChooseList(R.drawable.iconhotro, "Hỗ trợ", R.drawable.ic_button_next));
-        return choose_list;
+    private ArrayList<Chooselist_therapist> initData() {
+        choose_list_therapist = new ArrayList<>();
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.icontaikhoan, "Tài khoản", R.drawable.ic_button_next));
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.icontutrilieu, "Thêm tệp âm thanh", R.drawable.ic_button_next));
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.iconcantuvan, "Thêm tin văn bản", R.drawable.ic_button_next));
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.iconthongbao, "Cập nhập lịch bận", R.drawable.ic_button_next));
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.iconthanhtoan, "Thông báo và nhắc nhở", R.drawable.ic_button_next));
+        choose_list_therapist.add(new Chooselist_therapist(R.drawable.iconhotro, "Hỗ trợ", R.drawable.ic_button_next));
+        return choose_list_therapist;
     }
 
     private void configRecyclerView() {

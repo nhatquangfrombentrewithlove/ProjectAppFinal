@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
     android:orientation="vertical"
-    tools:context=".Homepage_screen"
+    tools:context=".Selfhelp_Suggestion"
     tools:ignore="ScrollViewCount">
 
     <LinearLayout
@@ -30,22 +30,23 @@
             android:textStyle="bold" />
 
         <ListView
-            android:id="@+id/lvSugestion"
+            android:id="@+id/lvSuggestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:divider="@android:color/transparent"
             android:dividerHeight="10sp" />
+        <Button
+            android:id="@+id/btnChanDoanLai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radio_selected"
+            android:button="@android:color/transparent"
+            android:text="Chẩn đoán lại"
+            android:textColor="@color/color_app_black"
+            android:textSize="15sp" />
     </LinearLayout>
-    <Button
-        android:id="@+id/btnChanDoanLai"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/radio_selected"
-        android:button="@android:color/transparent"
-        android:text="Chẩn đoán lại"
-        android:textColor="@color/color_app_black"
-        android:textSize="15sp" />
-</ScrollView>
+
+</LinearLayout>
