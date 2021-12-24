@@ -119,7 +119,7 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Đã cập nhật lịch bận của bạn", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Đã cập nhật lịch hẹn", Toast.LENGTH_SHORT).show();
 //                Intent myIntent = new Intent(v.getContext(), confirm_screen.class);
 //                v.getContext().startActivity(myIntent);
             }
