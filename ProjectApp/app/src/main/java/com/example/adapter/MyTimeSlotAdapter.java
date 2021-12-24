@@ -3,7 +3,6 @@ package com.example.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,7 +83,6 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
 
             @Override
             public void onItemSelectedListener(View view, int pos) {
-                Log.w("onItemSelectedListener", "" + pos);
                 if (!containsSlot(pos)) {
                     for (CardView cardView : cardViewList) {
                         if (cardView.getTag() == null)
@@ -98,7 +96,6 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
                     intent.putExtra(Common.KEY_TIME_SLOT, pos);
                     Common.currentTimeSlot = pos;
                     intent.putExtra(Common.KEY_STEP, 2);
-                    Log.e("pos ", "onItemSelectedListener: " + pos);
                     localBroadcastManager.sendBroadcast(intent);
                 }
             }
@@ -111,13 +108,9 @@ public class MyTimeSlotAdapter extends RecyclerView.Adapter<MyTimeSlotAdapter.My
         return Common.TIME_SLOT_TOTAL;
     }
 
-
-//    public static class MyViewHolder extends RecyclerView.ViewHolder{
-
     public boolean containsSlot(final int slotNumber) {
         return this.timeSlotList.stream().anyMatch(o -> o.getSlot() == slotNumber);
     }
-
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 

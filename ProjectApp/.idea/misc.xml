@@ -39,6 +39,7 @@
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_self_help_qs04.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_busy_calendar.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_calendar_busy.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_change_booking_time_slot.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile01.xml" value="0.165625" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_therapist_create_profile02.xml" value="0.22" />
@@ -56,6 +57,7 @@
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_02.xml" value="0.165625" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_therapist_busy_calendar.xml" value="0.1796875" />
+        <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_therapist_change_booking_time_slot.xml" value="0.1796875" />
         <entry key="..\:/HK5/Mobile/ProjectAppFinal/ProjectApp/app/src/main/res/layout/layout_time_slot.xml" value="0.3333333333333333" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2692307692307692" />
         <entry key="..\:/Project/android/project/ProjectApp/app/src/main/res/drawable/button.xml" value="0.2692307692307692" />
@@ -196,16 +198,12 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_confirm_screen.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_detail.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.25416666666666665" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_therapist.xml" value="0.24537037037037038" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password_otp.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password_reset_password.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_pw.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.2" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.264" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_screen.xml" value="0.21296296296296297" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_signin.xml" value="0.18611111111111112" />
@@ -222,7 +220,6 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_blog_offer.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/custom_layout_payment.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/doctor_list_layout.xml" value="0.25416666666666665" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment__selfhelp__suggestion.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_appointment_list.xml" value="0.24537037037037038" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_booking_time_slot.xml" value="0.14351851851851852" />
@@ -230,9 +227,6 @@
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_01.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_02.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
-
-        <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/fragment_find_therapist_01.xml" value="0.27447916666666666" />
-
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/review.xml" value="0.264" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/layout/self_help_container.xml" value="0.14375" />
         <entry key="..\:/Users/DELL/Desktop/GITHUB/ProjectAppFinal/ProjectApp/app/src/main/res/menu/navigation.xml" value="0.27447916666666666" />
@@ -273,11 +267,9 @@
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_doctor_list.xml" value="0.22" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_theraphy_qs02.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_find_therapist.xml" value="0.17685185185185184" />
-
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.22" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password_otp.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_forgot_password_reset_password.xml" value="0.22" />
-
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_homepage_screen.xml" value="0.22" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_main.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/admin/Downloads/GitHub/ProjectAppFinal/ProjectApp/app/src/main/res/layout/activity_payment_method.xml" value="0.20052083333333334" />
