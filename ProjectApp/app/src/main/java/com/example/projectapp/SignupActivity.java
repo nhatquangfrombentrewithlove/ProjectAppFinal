@@ -13,10 +13,14 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class SignupActivity extends AppCompatActivity {
     TextView txtDangNhap;
     Button btnCreateAccount;
     EditText edtUserName, edtUserEmail, edtUserPW, edtUserConfirmPW;
+    FloatingActionButton fabGmail, fabFace;
+
     String role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,24 +66,56 @@ public class SignupActivity extends AppCompatActivity {
                 confirmpw = edtUserConfirmPW.getText().toString();
                 if(name.length()==0 || email.length() == 0 || pw.length() == 0 || confirmpw.length()==0){
                     Toast.makeText(SignupActivity.this,"Vui lòng nhập đầy đủ thông tin",Toast.LENGTH_LONG).show();
-                }else {
+                }else{
                     if(pw.length()<6){
                         Toast.makeText(SignupActivity.this,"Mật khẩu của bạn quá ngắn, hãy nhập nhiều hơn 6 kí tự",Toast.LENGTH_LONG).show();
                     }else if(!pw.equals(confirmpw)){
                         Toast.makeText(SignupActivity.this,"Xác nhận mật khẩu không đúng",Toast.LENGTH_LONG).show();
                     }else {
                         if (role.equals("BN")) {
-                            Toast.makeText(SignupActivity.this, "Đăng ký thành công!", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(SignupActivity.this, Choose_user.class);
+                            Intent intent = new Intent(SignupActivity.this, OTP_Confirm_createAccount.class);
+                            intent.putExtra("role","BN");
                             startActivity(intent);
                         }
                         if(role.equals("BS")){
-                            Toast.makeText(SignupActivity.this, "Đăng ký thành công!", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(SignupActivity.this, Createprofile_bs_Activity.class);
+                            Intent intent = new Intent(SignupActivity.this, OTP_Confirm_createAccount.class);
+                            intent.putExtra("role","BS");
 
                             startActivity(intent);
                         }
                     }
+                }
+            }
+        });
+        fabGmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (role.equals("BN")) {
+                    Toast.makeText(SignupActivity.this, "Đăng nhập thành công!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                if(role.equals("BS")){
+                    Toast.makeText(SignupActivity.this, "Đăng nhập thành công!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignupActivity.this, MainActivity_Bs.class);
+
+                    startActivity(intent);
+                }
+            }
+        });
+        fabFace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (role.equals("BN")) {
+                    Toast.makeText(SignupActivity.this, "Đăng nhập thành công!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                if(role.equals("BS")){
+                    Toast.makeText(SignupActivity.this, "Đăng nhập thành công!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignupActivity.this, MainActivity_Bs.class);
+
+                    startActivity(intent);
                 }
             }
         });
@@ -92,9 +128,7 @@ public class SignupActivity extends AppCompatActivity {
         edtUserEmail = findViewById(R.id.edtUserEmail);
         edtUserPW = findViewById(R.id.edtUserPW);
         edtUserConfirmPW = findViewById(R.id.edtUserConfirmPW);
+        fabFace = findViewById(R.id.fabFacebook);
+        fabGmail = findViewById(R.id.fabGmail);
     }
-
-
-
-
 }

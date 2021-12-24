@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.fragment.TherapistScreen_02Fragment;
+import com.example.model.TherapistBlog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity_Bs extends AppCompatActivity {
@@ -22,8 +24,8 @@ public class MainActivity_Bs extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation_bs);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        toolbar.setTitle("Home");
-        loadFragment(new Homepage_screen());
+        loadFragment(new Therapist_Homescreen());
+
     }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,28 +35,28 @@ public class MainActivity_Bs extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_home_bs:
-                    toolbar.setTitle("Trang chủ");
-                    fragment = new Homepage_screen();
+//                    toolbar.setTitle("Trang chủ");
+                    fragment = new Therapist_Homescreen();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_patient_bs:
-                    toolbar.setTitle("Bệnh nhân");
-                    fragment = new Selfhelp_Suggestion();
+//                    toolbar.setTitle("Bệnh nhân");
+                    fragment = new TherapistScreen_02Fragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_rate_bs:
-                    toolbar.setTitle("Đánh giá");
-
-
+//                    toolbar.setTitle("Đánh giá");
+                    fragment = new Therapist_reviews();
+                    loadFragment(fragment);
                     return true;
                 case R.id.navigation_newsfeed_bs:
-                    toolbar.setTitle("Bảng tin");
-                    fragment = new BlogScreen();
+//                    toolbar.setTitle("Bảng tin");
+                    fragment = new Fragment_Therapist_Blog();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_account_bs:
-                    toolbar.setTitle("Tài khoản");
-                    fragment = new account_screen();
+//                    toolbar.setTitle("Tài khoản");
+                    fragment = new TherapistProfile();
                     loadFragment(fragment);
                     return true;
             }

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +29,7 @@ public class Therapist_CreateProfile_02 extends Fragment {
         spAddress = view.findViewById(R.id.spinnerAddress);
         spFeelComfortableOnline = view.findViewById(R.id.spinnerFeelComfortableOnline);
         btnBackBSpr02 = view.findViewById(R.id.btnBackBSpr02);
+        btnHoanThanhBSpr = view.findViewById(R.id.btnHoanThanhBSpr);
         loadData();
         addEvents();
         return view;
@@ -43,6 +45,13 @@ public class Therapist_CreateProfile_02 extends Fragment {
                 transaction.replace(R.id.containerBSprofile_body, fragmentprofile1);
                 transaction.addToBackStack(null);
                 transaction.commit();
+            }
+        });
+        btnHoanThanhBSpr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity_Bs.class);
+                startActivity(intent);
             }
         });
     }

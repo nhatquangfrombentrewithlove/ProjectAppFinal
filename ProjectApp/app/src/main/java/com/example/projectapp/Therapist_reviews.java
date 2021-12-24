@@ -40,7 +40,7 @@ public class Therapist_reviews extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        View view = inflater.inflate(R.layout.activity_self_help_qs02, container, false);
+        View view = inflater.inflate(R.layout.activity_therapist_reviews, container, false);
         lvTherapistReview = view.findViewById(R.id.lvTherapistReview);
         ratingBar = view.findViewById(R.id.ratingBar);
 
