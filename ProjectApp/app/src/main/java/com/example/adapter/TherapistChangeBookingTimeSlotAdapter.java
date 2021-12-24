@@ -20,21 +20,21 @@ import com.example.utils.Common;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<TherapistBusyCalendarAdapter.MyViewHolder> {
+public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<TherapistChangeBookingTimeSlotAdapter.MyViewHolder> {
 
     Context context;
     List<TimeSlot> timeSlotList;
     List<CardView> cardViewList;
     LocalBroadcastManager localBroadcastManager;
 
-    public TherapistBusyCalendarAdapter(Context context) {
+    public TherapistChangeBookingTimeSlotAdapter(Context context) {
         this.context = context;
         this.timeSlotList = new ArrayList<>();
         this.localBroadcastManager = LocalBroadcastManager.getInstance(context);
         cardViewList = new ArrayList<>();
     }
 
-    public TherapistBusyCalendarAdapter(Context context, List<TimeSlot> timeSlotList) {
+    public TherapistChangeBookingTimeSlotAdapter(Context context, List<TimeSlot> timeSlotList) {
         this.context = context;
         this.timeSlotList = timeSlotList;
         this.localBroadcastManager = LocalBroadcastManager.getInstance(context);
@@ -83,46 +83,20 @@ public class TherapistBusyCalendarAdapter extends RecyclerView.Adapter<Therapist
             @Override
             public void onItemSelectedListener(View view, int pos) {
                 if (!containsSlot(pos)) {
-
                     for (CardView cardView : cardViewList) {
                         if (cardView.getTag() == null)
                             cardView.setCardBackgroundColor(context.getResources()
                                     .getColor(R.color.white, context.getTheme()));
                     }
-                    myViewHolder.card_time_slot.setTag(Common.DISABLE_TAG);
-                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
-
-                    myViewHolder.txt_time_slot_description.setText("Đã được đặt");
-                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
-                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
+                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources()
+                            .getColor(R.color.color_start, context.getTheme()));
 
                     Intent intent = new Intent(Common.KEY_ENABLE_BUTTON_NEXT);
                     intent.putExtra(Common.KEY_TIME_SLOT, pos);
                     Common.currentTimeSlot = pos;
                     intent.putExtra(Common.KEY_STEP, 2);
                     localBroadcastManager.sendBroadcast(intent);
-                    timeSlotList.add(new TimeSlot(pos));
-                }else{
-
-                    myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.white, context.getTheme()));
-                    myViewHolder.txt_time_slot_description.setText("Còn trống");
-                    myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
-                    myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
-
-                    Intent intent = new Intent(Common.KEY_ENABLE_BUTTON_NEXT);
-                    intent.putExtra(Common.KEY_TIME_SLOT, pos);
-                    Common.currentTimeSlot = pos;
-                    intent.putExtra(Common.KEY_STEP, 2);
-                    localBroadcastManager.sendBroadcast(intent);
-
-                    for (int i = 0 ; i < timeSlotList.size(); i++ ){
-                        if (timeSlotList.get(i).getSlot().equals(new Long(pos))) {
-                            timeSlotList.remove(i);
-                        }
-                    }
-
                 }
-
             }
 
         });

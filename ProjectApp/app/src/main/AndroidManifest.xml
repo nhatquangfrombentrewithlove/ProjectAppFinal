@@ -10,10 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+
             android:name=".Createprofile_bs_Activity"
             android:exported="true" />
         <activity
             android:name=".BS_Loading_screen"
+
+            android:name=".TherapistChangeBookingTimeSlotActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_Bs"
+            android:exported="true" />
+        <activity
+            android:name=".TherapistBusyCalendarActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".BookingActivity"
+
             android:exported="true" />
         <activity
             android:name=".activity_therapistcreatenote"
@@ -35,6 +55,11 @@
             android:exported="true" />
         <activity
             android:name=".FindTherapistActivity"
+
+            android:exported="true" />
+        <activity
+            android:name=".BN_Loading_screen"
+
             android:exported="true" />
         <activity
             android:name=".BN_Loading_screen"
@@ -46,6 +71,14 @@
             android:name=".Call_screen"
             android:exported="true" />
         <activity
+
+            android:name=".DoctorList"
+            android:exported="true" />
+        <activity
+            android:name=".Canceled_appointment"
+            android:exported="true" />
+        <activity
+
             android:name=".note"
             android:exported="true" />
         <activity
@@ -54,7 +87,17 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
+
             android:theme="@style/Splash">
+
+            android:theme="@style/Splash" />
+        <activity
+            android:name=".SelfHelpQS"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,7 +105,11 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name=".MainActivity"
+
+            android:name=".PaymentMethodActivity"
+
             android:exported="true" />
         <activity android:name=".MainActivity_Bs"
             android:exported="true"/>
