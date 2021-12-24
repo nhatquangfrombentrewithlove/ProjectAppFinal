@@ -24,7 +24,7 @@ public class PaymentScreen extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_find_therapist, container, false);
+        View view = inflater.inflate(R.layout.activity_payment_screen, container, false);
 
         lvAppointmentNeedPay = view.findViewById(R.id.lvAppointmentNeedPay);
         btnHuylich = view.findViewById(R.id.btnHuylich);

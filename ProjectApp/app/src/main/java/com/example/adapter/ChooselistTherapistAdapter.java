@@ -9,15 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.fragment.TherapistBusyCalendarFragment;
 import com.example.model.Chooselist_therapist;
-import com.example.projectapp.BookConfirmation_screen;
 import com.example.projectapp.R;
-import com.example.projectapp.TherapistProfile;
+import com.example.projectapp.TherapistBusyCalendarActivity;
 
 import java.util.ArrayList;
 
@@ -45,30 +41,32 @@ public class ChooselistTherapistAdapter extends RecyclerView.Adapter<ChooselistT
         holder.imvIcon.setImageResource(chooselists_therapist.get(position).getIcon());
         holder.txtDescription.setText(chooselists_therapist.get(position).getDescription());
         holder.imvNextButton.setImageResource(chooselists_therapist.get(position).getNextButton());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (holder.getAdapterPosition()==3){
+                    Intent myIntent = new Intent(v.getContext(), TherapistBusyCalendarActivity.class);
+                    v.getContext().startActivity(myIntent);
+                }
+
+            }
+        });
     }
 
     @Override
     public int getItemCount(){
         return chooselists_therapist.size();
     }
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder  {
         ImageView imvIcon;
         TextView txtDescription;
         ImageView imvNextButton;
-        public ViewHolder(@NonNull View itemView){
+
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imvIcon = itemView.findViewById(R.id.imvIconTherapist);
             txtDescription = itemView.findViewById(R.id.txtDescriptionTherapist);
             imvNextButton = itemView.findViewById(R.id.imvNextButtonTherapist);
-            itemView.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View v) {
-            AppCompatActivity activity = (AppCompatActivity) v.getContext();
-            Fragment myFragment = new TherapistBusyCalendarFragment();
-            activity.getSupportFragmentManager().beginTransaction().replace(R.id.layoutTherapistProfile, myFragment).addToBackStack(null).commit();
         }
     }
-
 }

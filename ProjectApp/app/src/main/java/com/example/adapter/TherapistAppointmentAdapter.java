@@ -1,6 +1,7 @@
 package com.example.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import com.example.model.TherapistAppointment;
 import com.example.projectapp.R;
+import com.example.projectapp.TherapistBusyCalendarActivity;
+import com.example.projectapp.TherapistChangeBookingTimeSlotActivity;
 
 import java.util.ArrayList;
 
@@ -72,7 +75,8 @@ public class TherapistAppointmentAdapter extends BaseAdapter {
         holder.btnChangeAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent myIntent = new Intent(view.getContext(), TherapistChangeBookingTimeSlotActivity.class);
+                view.getContext().startActivity(myIntent);
             }
         });
         return view;
