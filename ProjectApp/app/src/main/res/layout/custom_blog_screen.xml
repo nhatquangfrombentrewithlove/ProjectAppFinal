@@ -7,7 +7,7 @@
     android:gravity="center_vertical"
     android:background="@drawable/button_listivew">
     <ImageView
-        android:id="@+id/imvAudioBN"
+        android:id="@+id/imvBlog"
         android:layout_width="80dp"
         android:layout_height="100dp"
         android:src="@drawable/bntin1"/>
@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/txtTieudeBlog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Giải tỏa áp lực"
@@ -24,6 +25,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/black"/>
         <TextView
+            android:id="@+id/txtNoidungBlog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5 mẹo giúp bạn kiểm soát thói quen hằng ngày"

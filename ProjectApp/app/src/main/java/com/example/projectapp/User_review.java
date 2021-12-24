@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
 import com.example.ReviewAdapter.ReviewAdapter;
+import com.example.fragment.DoctorListFragment;
 import com.example.model.ReviewList;
 
 import java.util.ArrayList;
@@ -63,7 +64,7 @@ public class User_review extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(User_review.this, "Cảm ơn lượt đánh giá của bạn", Toast.LENGTH_SHORT).show();
-                Intent myIntent = new Intent(User_review.this,DoctorList.class);
+                Intent myIntent = new Intent(User_review.this, DoctorListFragment.class);
                 startActivity(myIntent);
             }
         });

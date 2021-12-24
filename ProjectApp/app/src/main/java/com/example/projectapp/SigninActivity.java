@@ -14,7 +14,7 @@ public class SigninActivity extends AppCompatActivity {
     Button btnDangNhap;
     TextView txtQuenMK;
     EditText edtEmailDN, edtPWDN;
-
+    String role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,13 @@ public class SigninActivity extends AppCompatActivity {
 
 
         linkViews();
+        getData();
         addEvents();
+    }
+
+    private void getData() {
+        Intent intent = getIntent();
+        role = intent.getStringExtra("role");
     }
 
     private void addEvents() {
@@ -35,8 +41,14 @@ public class SigninActivity extends AppCompatActivity {
                 if(email.length() == 0 || pw.length() == 0){
                     Toast.makeText(SigninActivity.this,"Vui lòng nhập đầy đủ thông tin",Toast.LENGTH_LONG).show();
                 }else {
-                    Intent intent = new Intent(SigninActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    if (role.equals("BN")) {
+                        Intent intent = new Intent(SigninActivity.this, MainActivity.class);
+                        startActivity(intent);
+                    }
+                    if (role.equals("BS")){
+                        Intent intent = new Intent(SigninActivity.this, MainActivity_Bs.class);
+                        startActivity(intent);
+                    }
                 }
 
             }

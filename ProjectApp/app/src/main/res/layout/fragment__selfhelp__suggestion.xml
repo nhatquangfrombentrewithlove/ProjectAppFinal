@@ -3,14 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Selfhep_suggestion"
+    tools:context=".Fragment_Selfhelp_Suggestion"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <Button
-            android:id="@+id/btnBack"
+            android:id="@+id/btnSHBack04"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/ic_button_back"
@@ -29,6 +34,8 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/logo" />
+        </LinearLayout>
+
 
         </LinearLayout>
         <ImageView
@@ -63,12 +70,14 @@
                 android:src="@drawable/playbig"
                 android:background="@color/background_color"
                 android:layout_weight="1"/>
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/playnext"
+                android:layout_weight="1"
                 android:background="@color/background_color"
-                android:layout_weight="1"/>
+                android:src="@drawable/playnext"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
         <SeekBar
             android:layout_marginTop="20dp"

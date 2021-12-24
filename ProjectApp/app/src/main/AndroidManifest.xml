@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+
+            android:name=".Createprofile_bs_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".BS_Loading_screen"
+
             android:name=".TherapistChangeBookingTimeSlotActivity"
             android:exported="true" >
             <intent-filter>
@@ -27,15 +33,10 @@
 
         <activity
             android:name=".BookingActivity"
+
             android:exported="true" />
         <activity
-            android:name=".Selfhelp_Suggestion"
-            android:exported="true" />
-        <activity
-            android:name=".ForgotPW_activity"
-            android:exported="true" />
-        <activity
-            android:name=".SelfHelpContainer"
+            android:name=".activity_therapistcreatenote"
             android:exported="true" />
         <activity
             android:name=".BookingActivity"
@@ -44,13 +45,21 @@
             android:name=".AppointmentList"
             android:exported="true" />
         <activity
+            android:name=".ForgotPW_activity"
+            android:exported="true" />
+        <activity
+            android:name=".SelfHelpContainer"
+            android:exported="true" />
+        <activity
             android:name=".DoctorDetailActivity"
             android:exported="true" />
         <activity
             android:name=".FindTherapistActivity"
+
             android:exported="true" />
         <activity
             android:name=".BN_Loading_screen"
+
             android:exported="true" />
         <activity
             android:name=".BN_Loading_screen"
@@ -59,18 +68,17 @@
             android:name=".Doctor_detail"
             android:exported="true" />
         <activity
-            android:name=".BN_Loading_screen"
-            android:exported="true" />
-        <activity
             android:name=".Call_screen"
             android:exported="true" />
         <activity
+
             android:name=".DoctorList"
             android:exported="true" />
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
         <activity
+
             android:name=".note"
             android:exported="true" />
         <activity
@@ -79,6 +87,9 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
+
+            android:theme="@style/Splash">
+
             android:theme="@style/Splash" />
         <activity
             android:name=".SelfHelpQS"
@@ -86,6 +97,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -93,8 +105,14 @@
             </intent-filter>
         </activity>
         <activity
+
+            android:name=".MainActivity"
+
             android:name=".PaymentMethodActivity"
+
             android:exported="true" />
+        <activity android:name=".MainActivity_Bs"
+            android:exported="true"/>
         <activity
             android:name=".PaymentMethodActivity"
             android:exported="true" />
@@ -108,17 +126,17 @@
             android:name=".User_review"
             android:exported="true" />
         <activity
-            android:name=".BookConfirmation_screen"
-            android:exported="true" />
-        <activity
             android:name=".confirm_screen"
             android:exported="true" />
         <activity
             android:name=".Canceled_appointment"
             android:exported="true" />
         <activity
-            android:name=".confirm_screen"
+            android:name=".TestContainer"
             android:exported="true" />
+        <activity
+            android:name=".RoleOption"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

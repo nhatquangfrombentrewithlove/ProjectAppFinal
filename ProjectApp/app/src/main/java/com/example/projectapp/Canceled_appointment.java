@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
 import com.example.CanceledAppointmentAdapter.CanceledAppointmentAdapter;
+import com.example.fragment.DoctorListFragment;
 import com.example.model.AppointmentCallList;
 import com.example.model.CanceledAppointmentList;
 
@@ -69,7 +70,7 @@ public class Canceled_appointment extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Canceled_appointment.this,DoctorList.class);
+                Intent intent = new Intent(Canceled_appointment.this, DoctorListFragment.class);
                 startActivity(intent);
             }
         });

@@ -64,14 +64,14 @@ public class BN_Loading_screen extends AppCompatActivity {
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                launchHomeScreen();
+                Intent intent = new Intent(BN_Loading_screen.this,SignupActivity.class);
+                intent.putExtra("role", "BN");
+                startActivity(intent);
             }
         });
 
     }
-    private void launchHomeScreen() {
-        startActivity(new Intent(BN_Loading_screen.this, SignupActivity.class));
-    }
+
 
     private void addBottomDots(int currentPage) {
         dots = new TextView[layouts.length];

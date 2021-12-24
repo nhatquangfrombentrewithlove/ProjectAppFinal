@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imvPatientImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/avaquan"
+        android:gravity="center">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/txtPatientName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quân Nguyễn"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_app_black" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtAppointmentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Date_time_Giohentruocdo"
+                android:textColor="@color/color_app_light_gray"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtAppointmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/Date_time_ngayhen"
+                android:textColor="@color/color_app_light_gray"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/imvTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icontick"
+                android:layout_marginStart="50dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnChangeAppointment"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:text="Đổi lịch"
+            android:background="@drawable/button_press_has_color"
+            android:textColor="@color/color_app_black"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="3dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="end"
+        >
+        <ImageView
+            android:id="@+id/imvGoNext"
+            android:src="@drawable/ic_button_next"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </LinearLayout>
+</LinearLayout>

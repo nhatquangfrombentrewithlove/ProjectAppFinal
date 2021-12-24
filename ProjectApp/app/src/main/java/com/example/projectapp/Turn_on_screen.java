@@ -18,7 +18,7 @@ public class Turn_on_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Turn_on_screen.this,BN_Loading_screen.class);
+                Intent intent = new Intent(Turn_on_screen.this,RoleOption.class);
                 startActivity(intent);
                 finish();
             }

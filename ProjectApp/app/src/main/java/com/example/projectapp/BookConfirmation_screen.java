@@ -11,8 +11,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import com.example.fragment.DoctorListFragment;
+
 
 public class BookConfirmation_screen extends Fragment {
+
+//;
+//
+//public class BookConfirmation_screen extends AppCompatActivity {
+
 
     Button btnBackToDocList;
 
@@ -25,7 +32,10 @@ public class BookConfirmation_screen extends Fragment {
         btnBackToDocList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),DoctorList.class);
+
+                Intent intent = new Intent(getActivity(),DoctorListFragment.class);
+
+//                Intent intent = new Intent(BookConfirmation_screen.this, DoctorListFragment.class);
                 startActivity(intent);
             }
         });
