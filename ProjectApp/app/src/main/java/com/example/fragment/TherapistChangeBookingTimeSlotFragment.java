@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.Interface.ITherapishChangeBookingTimeSlotLoadListener;
 import com.example.Interface.ITimeSlotLoadListener;
 import com.example.adapter.TherapistChangeBookingTimeSlotAdapter;
 import com.example.model.TimeSlot;
@@ -28,6 +29,7 @@ import com.example.utils.Common;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -39,15 +41,17 @@ import devs.mulham.horizontalcalendar.HorizontalCalendarView;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 import dmax.dialog.SpotsDialog;
 
-public class TherapistChangeBookingTimeSlotFragment extends Fragment implements ITimeSlotLoadListener {
+public class TherapistChangeBookingTimeSlotFragment extends Fragment implements ITherapishChangeBookingTimeSlotLoadListener {
 
-    ITimeSlotLoadListener iTimeSlotLoadListener;
+    ITherapishChangeBookingTimeSlotLoadListener iTimeSlotLoadListener;
     AlertDialog dialog;
     Button btnConfirm;
 
     Unbinder unbinder;
     LocalBroadcastManager localBroadcastManager;
     Calendar selected_date;
+
+    TherapistChangeBookingTimeSlotAdapter adapter;
 
     @BindView(R.id.recycle_time_slot)
     RecyclerView recycler_time_slot;
@@ -60,11 +64,11 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
         public void onReceive(Context context, Intent intent) {
             Calendar date = Calendar.getInstance();
             date.add(Calendar.DATE, 0);
-            loadAvailabelTimeSlotOfDoctor(Common.currentDoctor, simpleDateFormat.format(date.getTime()));
+            loadAvailabelTimeSlotOfDoctor(Common.currentDoctor, date.getTime());
         }
     };
 
-    private void loadAvailabelTimeSlotOfDoctor(String doctorId, String bookDate) {
+    private void loadAvailabelTimeSlotOfDoctor(String doctorId, Date bookDate) {
         dialog.show();
 
         List<TimeSlot> timeSlots = new ArrayList<>();
@@ -73,12 +77,11 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
         for (int i = 0; i < 5; i++) {
             Random rd = new Random();
             int slot = rd.nextInt(max - min) + min;
-            TimeSlot timeSlot = new TimeSlot();
-            timeSlot.setSlot(new Long(slot));
+            TimeSlot timeSlot = new TimeSlot(slot);
             timeSlots.add(timeSlot);
         }
 
-        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots, bookDate);
 
     }
 
@@ -119,10 +122,11 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Đã gửi thông báo đổi lịch cho bệnh nhân ", Toast.LENGTH_SHORT).show();
-                getActivity().finish();
-//                Intent myIntent = new Intent(v.getContext(), confirm_screen.class);
-//                v.getContext().startActivity(myIntent);
+                if (adapter.isNoChanged()) {
+                    Toast.makeText(getActivity(), "Không có gì thay đổi", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getActivity(), "Đã cập nhật lịch bận của bạn", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -153,7 +157,7 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
             public void onDateSelected(Calendar date, int position) {
                 if (selected_date.getTimeInMillis() != date.getTimeInMillis()) {
                     selected_date = date;
-                    loadAvailabelTimeSlotOfDoctor(Common.currentDoctor, simpleDateFormat.format(date.getTime()));
+                    loadAvailabelTimeSlotOfDoctor(Common.currentDoctor, date.getTime());
                 }
             }
         });
@@ -165,25 +169,19 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
             timeSlot.setSlot(new Long(i));
             timeSlots.add(timeSlot);
         }
-        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots);
+        iTimeSlotLoadListener.onTimeSlotLoadSuccess(timeSlots, new Date());
     }
 
     @Override
-    public void onTimeSlotLoadSuccess(List<TimeSlot> timeSlotList) {
-        TherapistChangeBookingTimeSlotAdapter adapter = new TherapistChangeBookingTimeSlotAdapter(getContext(), timeSlotList);
+    public void onTimeSlotLoadSuccess(List<TimeSlot> timeSlotList, Date selectedDate) {
+        adapter = new TherapistChangeBookingTimeSlotAdapter(getContext(), timeSlotList, selectedDate);
         recycler_time_slot.setAdapter(adapter);
         dialog.dismiss();
     }
 
     @Override
-    public void onTimeSlotLoadFailed(String message) {
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
-        dialog.dismiss();
-    }
-
-    @Override
     public void onTimeSlotLoadEmpty() {
-        TherapistChangeBookingTimeSlotAdapter adapter = new TherapistChangeBookingTimeSlotAdapter(getContext());
+        adapter = new TherapistChangeBookingTimeSlotAdapter(getContext());
         recycler_time_slot.setAdapter(adapter);
         dialog.dismiss();
     }

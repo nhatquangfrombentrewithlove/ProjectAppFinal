@@ -18,14 +18,19 @@ import com.example.projectapp.R;
 import com.example.utils.Common;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<TherapistChangeBookingTimeSlotAdapter.MyViewHolder> {
 
     Context context;
     List<TimeSlot> timeSlotList;
+    int currentTimeSlot = -1;
+    int firstCurrentTimeSlot = -1;
     List<CardView> cardViewList;
     LocalBroadcastManager localBroadcastManager;
+    Date selectedDate;
 
     public TherapistChangeBookingTimeSlotAdapter(Context context) {
         this.context = context;
@@ -34,11 +39,24 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
         cardViewList = new ArrayList<>();
     }
 
-    public TherapistChangeBookingTimeSlotAdapter(Context context, List<TimeSlot> timeSlotList) {
+    public TherapistChangeBookingTimeSlotAdapter(Context context, List<TimeSlot> timeSlotList, Date selectedDate) {
         this.context = context;
         this.timeSlotList = timeSlotList;
+        this.selectedDate = selectedDate;
+        if (isSameDate(new Date(), selectedDate)) {
+            int min = 0;
+            int max = 20;
+            Random rd = new Random();
+            currentTimeSlot = rd.nextInt(max - min) + min;
+            firstCurrentTimeSlot = currentTimeSlot;
+        }
         this.localBroadcastManager = LocalBroadcastManager.getInstance(context);
         cardViewList = new ArrayList<>();
+    }
+
+    private boolean isSameDate(Date date1, Date date2) {
+        return date1.getDate() == date2.getDate() && date1.getMonth() == date2.getMonth()
+                && date1.getYear() == date2.getYear();
     }
 
     @NonNull
@@ -61,7 +79,6 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
             for (TimeSlot slotValue : timeSlotList) {
                 int slot = Integer.parseInt(slotValue.getSlot().toString());
                 if (slot == i) { //if slot = position
-
                     myViewHolder.card_time_slot.setTag(Common.DISABLE_TAG);
                     myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources().getColor(R.color.color_app_light_gray, context.getTheme()));
 
@@ -69,6 +86,12 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
                     myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
                     myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.white, context.getTheme()));
                 }
+            }
+            if (currentTimeSlot != -1 && currentTimeSlot == i) {
+                myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources()
+                        .getColor(R.color.color_start, context.getTheme()));
+                myViewHolder.txt_time_slot_description.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
+                myViewHolder.txt_time_slot.setTextColor(context.getResources().getColor(R.color.black, context.getTheme()));
             }
         }
 
@@ -79,7 +102,6 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
         //Check if card time slot is available
 
         myViewHolder.setiRecyclerItemSelectedListener(new IRecyclerItemSelectedListener() {
-
             @Override
             public void onItemSelectedListener(View view, int pos) {
                 if (!containsSlot(pos)) {
@@ -90,6 +112,7 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
                     }
                     myViewHolder.card_time_slot.setCardBackgroundColor(context.getResources()
                             .getColor(R.color.color_start, context.getTheme()));
+                    currentTimeSlot = pos;
 
                     Intent intent = new Intent(Common.KEY_ENABLE_BUTTON_NEXT);
                     intent.putExtra(Common.KEY_TIME_SLOT, pos);
@@ -109,6 +132,10 @@ public class TherapistChangeBookingTimeSlotAdapter extends RecyclerView.Adapter<
 
     public boolean containsSlot(final int slotNumber) {
         return this.timeSlotList.stream().anyMatch(o -> o.getSlot() == slotNumber);
+    }
+
+    public boolean isNoChanged() {
+        return firstCurrentTimeSlot == currentTimeSlot;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
