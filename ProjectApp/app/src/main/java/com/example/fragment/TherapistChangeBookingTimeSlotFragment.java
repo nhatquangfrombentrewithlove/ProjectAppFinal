@@ -124,8 +124,10 @@ public class TherapistChangeBookingTimeSlotFragment extends Fragment implements 
             public void onClick(View v) {
                 if (adapter.isNoChanged()) {
                     Toast.makeText(getActivity(), "Không có gì thay đổi", Toast.LENGTH_SHORT).show();
+                    getActivity().finish();
                 } else {
-                    Toast.makeText(getActivity(), "Đã cập nhật lịch bận của bạn", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Đã gửi đề xuất đổi lịch hẹn cho bệnh nhân", Toast.LENGTH_SHORT).show();
+                    getActivity().finish();
                 }
             }
         });

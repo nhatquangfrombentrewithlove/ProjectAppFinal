@@ -18,10 +18,7 @@
         <activity
             android:name=".TherapistChangeBookingTimeSlotActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity_Bs"
@@ -68,15 +65,17 @@
         <activity
             android:name=".Turn_on_screen"
             android:exported="true"
-            android:theme="@style/Splash"/>
+            android:theme="@style/Splash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity
             android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
@@ -93,6 +92,12 @@
             android:exported="true" />
         <activity
             android:name=".TherapistBusyCalendarActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".RoleOption"
+            android:exported="true"/>
+        <activity
+            android:name=".BS_Loading_screen"
             android:exported="true"/>
     </application>
 </manifest>
