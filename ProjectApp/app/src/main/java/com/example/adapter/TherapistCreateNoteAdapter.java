@@ -1,6 +1,7 @@
 package com.example.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,9 @@ import android.widget.TextView;
 
 import com.example.model.PatientNote;
 import com.example.model.TherapistUser;
+import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.R;
+import com.example.projectapp.activity_therapistcreatenote;
 
 import java.util.ArrayList;
 

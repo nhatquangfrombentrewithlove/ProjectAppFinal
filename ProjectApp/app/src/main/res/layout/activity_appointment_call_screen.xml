@@ -65,7 +65,8 @@
         android:id="@+id/lvConfirmedAppointment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:scrollbars="none"/>
 
     <ListView
         android:id="@+id/lvAppointmentCall"

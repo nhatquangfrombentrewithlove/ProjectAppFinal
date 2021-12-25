@@ -8,18 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/hygge_ic"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjectApp">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".OTP_Confirm_createAccount"
+            android:exported="true" />
         <activity
             android:name=".Createprofile_bs_Activity"
             android:exported="true" />
         <activity
             android:name=".TherapistChangeBookingTimeSlotActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity_Bs"
@@ -70,14 +68,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
             android:name=".PaymentMethodActivity"
             android:exported="true" />
         <activity
@@ -93,11 +88,7 @@
             android:name=".confirm_screen"
             android:exported="true" />
         <activity
-            android:name=".TestContainer"
-            android:exported="true" />
-        <activity
-            android:name=".RoleOption"
-            android:exported="true"></activity>
+            android:name=".TherapistBusyCalendarActivity"
+            android:exported="true"/>
     </application>
-
 </manifest>

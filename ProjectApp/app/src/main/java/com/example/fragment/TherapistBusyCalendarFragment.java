@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -129,11 +130,8 @@ public class TherapistBusyCalendarFragment extends Fragment implements ITimeSlot
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Đã cập nhật lịch bận của bạn", Toast.LENGTH_SHORT).show();
+                getActivity().finish();
 
-                Fragment fragment = new TherapistProfile();
-                loadFragment(fragment);
-//                Intent myIntent = new Intent(v.getContext(), confirm_screen.class);
-//                v.getContext().startActivity(myIntent);
             }
         });
 
@@ -199,12 +197,5 @@ public class TherapistBusyCalendarFragment extends Fragment implements ITimeSlot
         dialog.dismiss();
     }
 
-    private void loadFragment(Fragment fragment) {
-        // load fragment
-        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.layoutTherapistProfile, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
 
 }

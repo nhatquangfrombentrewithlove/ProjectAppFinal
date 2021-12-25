@@ -181,4 +181,6 @@
     <string name="description_bs2">Dễ dàng sắp xếp lịch hẹn với bệnh nhân dựa trên thời gian rảnh và bận của bạn</string>
     <string name="intro_bs3">Dễ dàng truy cập hồ sơ bệnh nhân</string>
     <string name="description_bs3">Tất cả dữ liệu bệnh nhân của bạn như ghi chú, báo cáo, đơn thuốc đều có thể truy cập được từ một nguồn duy nhất</string>
+    <string name="name_Benhnhan">Quân Nguyễn</string>
+    <string name="name_Bacsi">Phan Giang</string>
 </resources>

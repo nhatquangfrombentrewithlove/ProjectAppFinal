@@ -56,8 +56,16 @@ public class SigninActivity extends AppCompatActivity {
         txtQuenMK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SigninActivity.this, ForgotPW_activity.class);
-                startActivity(intent);
+                if (role.equals("BS")){
+                    Intent intent = new Intent(SigninActivity.this, ForgotPW_activity.class);
+                    intent.putExtra("role","BS");
+                    startActivity(intent);
+                }
+                if (role.equals("BN")){
+                    Intent intent = new Intent(SigninActivity.this, ForgotPW_activity.class);
+                    intent.putExtra("role","BN");
+                    startActivity(intent);
+                }
             }
         });
     }

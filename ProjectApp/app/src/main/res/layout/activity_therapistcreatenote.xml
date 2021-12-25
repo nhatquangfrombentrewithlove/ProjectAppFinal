@@ -57,7 +57,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:listSelector="@color/color_app_white_gray"/>
+        android:listSelector="@color/color_app_white_gray"
+        android:scrollbars="none"/>
 
 
 </LinearLayout>

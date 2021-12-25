@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        toolbar.setTitle("Home");
+//        toolbar.setTitle("Trang chủ");
         loadFragment(new Homepage_screen());
     }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -37,27 +37,27 @@ public class MainActivity extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    toolbar.setTitle("Trang chủ");
+//                    toolbar.setTitle("Trang chủ");
                     fragment = new Homepage_screen();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_self_help:
-                    toolbar.setTitle("Tự trị liệu");
+//                    toolbar.setTitle("Tự trị liệu");
                     fragment = new Selfhelp_Suggestion();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_advise:
-                    toolbar.setTitle("Cần tư vấn");
+//                    toolbar.setTitle("Cần tư vấn");
                     fragment = new DoctorListFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_newsfeed:
-                    toolbar.setTitle("Bảng tin");
+//                    toolbar.setTitle("Bảng tin");
                     fragment = new BlogScreen();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_account:
-                    toolbar.setTitle("Tài khoản");
+//                    toolbar.setTitle("Tài khoản");
                     fragment = new account_screen();
                     loadFragment(fragment);
                     return true;
