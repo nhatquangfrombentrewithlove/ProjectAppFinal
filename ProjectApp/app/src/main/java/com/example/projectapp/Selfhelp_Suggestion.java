@@ -3,6 +3,7 @@ package com.example.projectapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,8 +37,20 @@ public class Selfhelp_Suggestion extends Fragment {
 
         initDataSuggestion();
         loadData();
+        addEvents();
         return view;
     }
+
+    private void addEvents() {
+        btnChanDoanLai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SelfHelpContainer.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     private void loadData() {
         adapter = new SelfHelpSuggestionAdapter(getContext(), R.layout.custom_selfhelp_suggestion, initDataSuggestion());
         lvSuggestion.setAdapter(adapter);
