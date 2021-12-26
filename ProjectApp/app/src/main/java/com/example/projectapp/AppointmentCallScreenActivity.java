@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.fragment.BookingTimeSlotFragment;
+import com.example.fragment.AppointmentCallScreenFragment;
 
 public class AppointmentCallScreenActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class AppointmentCallScreenActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        Appointment_call_screen fragment1 = new Appointment_call_screen();
+        AppointmentCallScreenFragment fragment1 = new AppointmentCallScreenFragment();
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.container_body, fragment1);

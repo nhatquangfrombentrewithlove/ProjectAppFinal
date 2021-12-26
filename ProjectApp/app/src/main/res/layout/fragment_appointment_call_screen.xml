@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/background_color"
-    tools:context=".Appointment_call_screen">
+    tools:context="com.example.fragment.AppointmentCallScreenFragment">
 
     <LinearLayout
         android:id="@+id/layoutAppointmentCallScreen"

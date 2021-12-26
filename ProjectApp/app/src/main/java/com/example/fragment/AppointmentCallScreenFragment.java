@@ -1,4 +1,4 @@
-package com.example.projectapp;
+package com.example.fragment;
 
 import androidx.fragment.app.Fragment;
 
@@ -15,10 +15,11 @@ import com.example.ConfirmedAppointmentListAdapter.ConfirmedAppointmentListAdapt
 import com.example.fragment.DoctorListFragment;
 import com.example.model.AppointmentCallList;
 import com.example.model.ConfirmedAppointmentList;
+import com.example.projectapp.R;
 
 import java.util.ArrayList;
 
-public class Appointment_call_screen extends Fragment {
+public class AppointmentCallScreenFragment extends Fragment {
 
     ListView lvAppointmentCall,lvConfirmedAppointment;
     ArrayList<AppointmentCallList> appointment_Call_List;

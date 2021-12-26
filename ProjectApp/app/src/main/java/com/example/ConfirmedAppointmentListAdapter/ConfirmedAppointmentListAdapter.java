@@ -1,8 +1,5 @@
 package com.example.ConfirmedAppointmentListAdapter;
 
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -15,23 +12,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import com.example.CanceledAppointmentAdapter.CanceledAppointmentAdapter;
-import com.example.model.CanceledAppointmentList;
 import com.example.model.ConfirmedAppointmentList;
-import com.example.projectapp.Appointment_call_screen;
 import com.example.projectapp.Call_screen;
 import com.example.projectapp.Canceled_appointment;
 import com.example.projectapp.R;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class ConfirmedAppointmentListAdapter extends BaseAdapter {
 

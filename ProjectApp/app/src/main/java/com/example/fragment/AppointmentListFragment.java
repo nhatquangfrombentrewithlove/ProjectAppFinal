@@ -1,26 +1,19 @@
 package com.example.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.AppointmentListAdapter;
-import com.example.adapter.DoctorListAdapter;
 import com.example.model.DoctorAppointmentList;
-import com.example.model.DoctorList;
-import com.example.projectapp.Appointment_call_screen;
-import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.R;
 
 import java.util.ArrayList;
@@ -47,7 +40,7 @@ public class AppointmentListFragment extends Fragment {
             @Override
 
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Appointment_call_screen fragmentAppointmentCall = new Appointment_call_screen();
+                AppointmentCallScreenFragment fragmentAppointmentCall = new AppointmentCallScreenFragment();
                 loadFragment(fragmentAppointmentCall);
             }
         });
