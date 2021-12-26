@@ -62,18 +62,20 @@ public class TherapistScreen_02Fragment extends Fragment {
         lvTabAppointment = view.findViewById(R.id.lvTabAppointment);
         lvTabAppointment1 = view.findViewById(R.id.lvTabAppointment1);
 
-        lvTabAppointment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        initData();
+        loadData();
+        addEvents();
+        return view;
+    }
+
+    private void addEvents() {
+        lvTabPatient.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 Intent intent = new Intent(v.getContext(), activity_therapistcreatenote.class);
                 startActivity(intent);
             }
         });
-
-        initData();
-        loadData();
-
-        return view;
     }
 
     private void initData() {
