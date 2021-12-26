@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imvPatientImage1"
@@ -17,7 +19,8 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         android:layout_marginLeft="10dp"
-        android:paddingStart="10dp">
+        android:paddingStart="10dp"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/txtPatientName2"
@@ -57,17 +60,12 @@
             android:textColor="@color/color_app_black" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="end"
-        >
         <ImageView
             android:id="@+id/imvGoNext1"
             android:src="@drawable/ic_button_next"
             android:layout_width="36dp"
-            android:layout_height="36dp" />
-    </LinearLayout>
+            android:layout_height="36dp"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="end"/>
+
 </LinearLayout>

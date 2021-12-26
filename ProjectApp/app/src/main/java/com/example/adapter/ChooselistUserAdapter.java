@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.model.Chooselist_user;
+import com.example.projectapp.PaymentScreen;
 import com.example.projectapp.R;
 import com.example.projectapp.TherapistProfile;
 import com.example.projectapp.account_screen;
@@ -64,7 +65,7 @@ public class ChooselistUserAdapter extends RecyclerView.Adapter<ChooselistUserAd
 
         @Override
         public void onClick(View v) {
-            Intent myIntent = new Intent(v.getContext(), account_screen.class);
+            Intent myIntent = new Intent(v.getContext(), PaymentScreen.class);
             v.getContext().startActivity(myIntent);
         }
     }

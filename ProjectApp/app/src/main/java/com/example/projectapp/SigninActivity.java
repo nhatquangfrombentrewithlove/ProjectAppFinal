@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class SigninActivity extends AppCompatActivity {
-    Button btnDangNhap;
+    Button btnDangNhap, btnSigninBack;
     TextView txtQuenMK;
     EditText edtEmailDN, edtPWDN;
     String role;
@@ -32,6 +32,12 @@ public class SigninActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        btnSigninBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,5 +81,6 @@ public class SigninActivity extends AppCompatActivity {
         txtQuenMK = findViewById(R.id.txtQuenMK);
         edtEmailDN = findViewById(R.id.edtEmailDN);
         edtPWDN = findViewById(R.id.edtPWDN);
+        btnSigninBack = findViewById(R.id.btnSigninBack);
     }
 }

@@ -13,9 +13,12 @@ import android.widget.TextView;
 
 import com.example.model.PatientNote;
 import com.example.model.TherapistUser;
+import com.example.projectapp.Choose_user;
 import com.example.projectapp.DoctorDetailActivity;
+import com.example.projectapp.FindTherapistActivity;
 import com.example.projectapp.R;
 import com.example.projectapp.activity_therapistcreatenote;
+import com.example.projectapp.note;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,7 @@ public class TherapistCreateNoteAdapter extends BaseAdapter {
     Context context;
     int item_list;
     ArrayList<PatientNote> createNoteAdapters;
+
 
     public TherapistCreateNoteAdapter(Context context, int item_list, ArrayList<PatientNote> createNoteAdapters) {
         this.context = context;
@@ -73,10 +77,10 @@ public class TherapistCreateNoteAdapter extends BaseAdapter {
         holder.btnOpenNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(view.getContext(), note.class);
+                view.getContext().startActivity(intent);
             }
         });
-
         return view;
     }
     public static class ViewHolder {
