@@ -21,7 +21,7 @@
                 android:name="com.example.fragment.profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:layout="@layout/fragment_profile" />
+                tools:layout="@layout/fragment_profile_bs" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
                 android:textStyle="bold" />
 
             <ListView
-                android:id="@+id/lvAppointment"
+                android:id="@+id/lvAppointment_bs"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:divider="@android:color/transparent"

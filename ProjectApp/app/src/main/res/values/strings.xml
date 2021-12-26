@@ -183,4 +183,5 @@
     <string name="description_bs3">Tất cả dữ liệu bệnh nhân của bạn như ghi chú, báo cáo, đơn thuốc đều có thể truy cập được từ một nguồn duy nhất</string>
     <string name="name_Benhnhan">Quân Nguyễn</string>
     <string name="name_Bacsi">Phan Giang</string>
+    <string name="welcome_name_bs">Xin chào, Giang</string>
 </resources>

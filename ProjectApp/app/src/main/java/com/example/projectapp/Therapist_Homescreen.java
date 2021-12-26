@@ -22,7 +22,7 @@ import com.example.model.BlogList;
 import java.util.ArrayList;
 
 public class Therapist_Homescreen extends Fragment {
-    ListView lvAppointment;
+    ListView lvAppointment_bs;
     ArrayList<AppointmentList> appointmentLists;
     AppointmentListAdapter adapter;
     RecyclerView rcvBlog;
@@ -34,7 +34,7 @@ public class Therapist_Homescreen extends Fragment {
         super.onCreate(savedInstanceState);
 
         View view = inflater.inflate(R.layout.activity_therapist_homescreen, container, false);
-        lvAppointment= view.findViewById(R.id.lvAppointment);
+        lvAppointment_bs= view.findViewById(R.id.lvAppointment_bs);
         rcvBlog = view.findViewById(R.id.rcvBlog);
 
         initDataAppointment();
@@ -47,7 +47,7 @@ public class Therapist_Homescreen extends Fragment {
     private void loadData() {
         //Appointment
         adapter = new AppointmentListAdapter(getContext(), R.layout.custom_appointment, initDataAppointment());
-        lvAppointment.setAdapter(adapter);
+        lvAppointment_bs.setAdapter(adapter);
 
 
 
@@ -59,8 +59,8 @@ public class Therapist_Homescreen extends Fragment {
     private ArrayList<AppointmentList> initDataAppointment() {
         //Appointment
         appointmentLists = new ArrayList<>();
-        appointmentLists.add(new AppointmentList(R.drawable.avabsngan, "Bệnh nhân Phan Giang","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
-        appointmentLists.add(new AppointmentList(R.drawable.avabsquang, "Bệnh nhân Phan Giang","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
+        appointmentLists.add(new AppointmentList(R.drawable.avaanh, "Bệnh nhân Ngọc Ánh","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
+        appointmentLists.add(new AppointmentList(R.drawable.avadat, "Bệnh nhân Phát Đạt","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
         return appointmentLists;
     }
 

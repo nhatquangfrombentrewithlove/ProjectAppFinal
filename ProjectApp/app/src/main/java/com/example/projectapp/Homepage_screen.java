@@ -77,8 +77,8 @@ public class Homepage_screen extends Fragment {
     private ArrayList<AppointmentList> initDataAppointment() {
         //Appointment
         appointmentLists = new ArrayList<>();
-        appointmentLists.add(new AppointmentList(R.drawable.avabsngan, "BS. Phan Giang","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
-        appointmentLists.add(new AppointmentList(R.drawable.avabsquang, "BS. Phan Giang","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
+        appointmentLists.add(new AppointmentList(R.drawable.avabsngan, "BS. Thu Ngân","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
+        appointmentLists.add(new AppointmentList(R.drawable.avabsquang, "BS. Nhật Quang","14:00 PM, 02/11/2021",R.drawable.ic_button_next));
         return appointmentLists;
     }
     private ArrayList<AudioList> initDataAudio(){
