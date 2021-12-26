@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.model.Chooselist_user;
 import com.example.projectapp.PaymentScreen;
 import com.example.projectapp.R;
+import com.example.projectapp.TherapistBusyCalendarActivity;
 import com.example.projectapp.TherapistProfile;
 import com.example.projectapp.account_screen;
 
@@ -45,13 +46,23 @@ public class ChooselistUserAdapter extends RecyclerView.Adapter<ChooselistUserAd
         holder.imvIcon.setImageResource(chooselist_users.get(position).getIcon());
         holder.txtDescription.setText(chooselist_users.get(position).getDescription());
         holder.imvNextButton.setImageResource(chooselist_users.get(position).getNextButton());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (holder.getAdapterPosition()==4){
+                    Intent myIntent = new Intent(v.getContext(), PaymentScreen.class);
+                    v.getContext().startActivity(myIntent);
+                }
+
+            }
+        });
     }
 
     @Override
     public int getItemCount(){
         return chooselist_users.size();
     }
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imvIcon;
         TextView txtDescription;
         ImageView imvNextButton;
@@ -60,13 +71,14 @@ public class ChooselistUserAdapter extends RecyclerView.Adapter<ChooselistUserAd
             imvIcon = itemView.findViewById(R.id.imvIconUser);
             txtDescription = itemView.findViewById(R.id.txtDescriptionUser);
             imvNextButton = itemView.findViewById(R.id.imvNextButtonUser);
-            itemView.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View v) {
-            Intent myIntent = new Intent(v.getContext(), PaymentScreen.class);
-            v.getContext().startActivity(myIntent);
-        }
+//            itemView.setOnClickListener(this);
+//        }
+//
+//        @Override
+//        public void onClick(View v) {
+//            Intent myIntent = new Intent(v.getContext(), PaymentScreen.class);
+//            v.getContext().startActivity(myIntent);
+//        }
+    }
     }
 }

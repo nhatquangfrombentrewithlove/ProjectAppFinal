@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.example.adapter.AppointmentListAdapter;
 import com.example.adapter.DoctorListAdapter;
 import com.example.model.DoctorAppointmentList;
+import com.example.projectapp.AppointmentCallScreenActivity;
 import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.R;
 
@@ -72,6 +73,13 @@ public class DoctorListFragment extends Fragment {
             }
         });
 
+        lvTabAppointmentList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), AppointmentCallScreenActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

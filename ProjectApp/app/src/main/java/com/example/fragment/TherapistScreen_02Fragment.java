@@ -1,9 +1,11 @@
 package com.example.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TabHost;
 
@@ -17,7 +19,9 @@ import com.example.adapter.TherapistUserAdapter;
 import com.example.model.TherapistAppointment;
 import com.example.model.TherapistAppointment1;
 import com.example.model.TherapistUser;
+import com.example.projectapp.DoctorDetailActivity;
 import com.example.projectapp.R;
+import com.example.projectapp.activity_therapistcreatenote;
 
 import java.util.ArrayList;
 
@@ -57,6 +61,14 @@ public class TherapistScreen_02Fragment extends Fragment {
         lvTabPatient = view.findViewById(R.id.lvTabPatientList);
         lvTabAppointment = view.findViewById(R.id.lvTabAppointment);
         lvTabAppointment1 = view.findViewById(R.id.lvTabAppointment1);
+
+        lvTabAppointment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Intent intent = new Intent(v.getContext(), activity_therapistcreatenote.class);
+                startActivity(intent);
+            }
+        });
 
         initData();
         loadData();

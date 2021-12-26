@@ -52,8 +52,14 @@ public class activity_therapistcreatenote extends AppCompatActivity {
         lvPatientNote.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(view.getContext(), DoctorDetailActivity.class);
+                Intent intent = new Intent(activity_therapistcreatenote.this, note.class);
                 startActivity(intent);
+            }
+        });
+        btnGoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

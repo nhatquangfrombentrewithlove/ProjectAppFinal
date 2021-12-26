@@ -70,8 +70,7 @@ public class Canceled_appointment extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Canceled_appointment.this, DoctorListFragment.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

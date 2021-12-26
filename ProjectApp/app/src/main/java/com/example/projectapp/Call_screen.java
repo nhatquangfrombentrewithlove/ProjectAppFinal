@@ -29,17 +29,18 @@ public class Call_screen extends AppCompatActivity {
         btnCallEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragment = new Appointment_call_screen();
-                loadFragment(fragment);
+                finish();
+//                fragment = new Appointment_call_screen();
+//                loadFragment(fragment);
             }
         });
 
 
     }
-    private void loadFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.layoutCallScreen, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+//    private void loadFragment(Fragment fragment) {
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.replace(R.id.layoutCallScreen, fragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 }

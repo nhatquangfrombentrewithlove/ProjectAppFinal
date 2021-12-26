@@ -1,22 +1,17 @@
 package com.example.projectapp;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.AppointmentCallListAdapter.AppointmentCallListAdapter;
 import com.example.ConfirmedAppointmentListAdapter.ConfirmedAppointmentListAdapter;
-import com.example.fragment.AppointmentListFragment;
 import com.example.fragment.DoctorListFragment;
 import com.example.model.AppointmentCallList;
 import com.example.model.ConfirmedAppointmentList;
@@ -31,13 +26,12 @@ public class Appointment_call_screen extends Fragment {
     AppointmentCallListAdapter adapter;
     ConfirmedAppointmentListAdapter confirmed_adapter;
     Button btnGhichu,btnDanhgia,btnGoi,btnHuylich,btnBack;
-    Fragment fragmentCallScreen;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.activity_appointment_call_screen, container, false);
+        View view = inflater.inflate(R.layout.fragment_appointment_call_screen, container, false);
 
         lvAppointmentCall=view.findViewById(R.id.lvAppointmentCall);
         lvConfirmedAppointment = view.findViewById(R.id.lvConfirmedAppointment);
@@ -78,8 +72,7 @@ public class Appointment_call_screen extends Fragment {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), DoctorListFragment.class);
-                v.getContext().startActivity(myIntent);
+                getActivity().finish();
             }
         });
     }

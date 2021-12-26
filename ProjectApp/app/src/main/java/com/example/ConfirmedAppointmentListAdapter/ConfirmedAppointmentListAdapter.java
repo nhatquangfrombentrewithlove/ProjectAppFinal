@@ -38,10 +38,6 @@ public class ConfirmedAppointmentListAdapter extends BaseAdapter {
     Context context;
     int itemACSListview;
     ArrayList<ConfirmedAppointmentList> confirmed_Appointment_list;
-    ArrayList<CanceledAppointmentList> canceledAppointmentLists;
-    CanceledAppointmentAdapter canceledAppointmentAdapter;
-
-    Fragment fragment;
 
     public ConfirmedAppointmentListAdapter(Context context, int itemACSListview, ArrayList<ConfirmedAppointmentList> confirmed_Appointment_list) {
         this.context = context;
@@ -112,16 +108,8 @@ public class ConfirmedAppointmentListAdapter extends BaseAdapter {
                 btnYes.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-//                        confirmed_Appointment_list.remove(position);
-//                        canceledAppointmentLists=new ArrayList<>();
-//                        canceledAppointmentLists.add(new CanceledAppointmentList(R.drawable.iconcalendar,"Lịch hẹn đã bị hủy","02:00 CH","02/11/2021"));
-//                        canceledAppointmentAdapter=new CanceledAppointmentAdapter(holder.lvCanceledAppointment.getContext(), R.layout.custom_canceled_appointment_layout,canceledAppointmentLists);
-//                        holder.lvCanceledAppointment.setAdapter(canceledAppointmentAdapter);
-//                        notifyDataSetChanged();
                         Intent intent = new Intent(v.getContext(),Canceled_appointment.class);
                         v.getContext().startActivity(intent);
-//                        Canceled_appointment fragmentCanceled=new Canceled_appointment();
-//                loadFragment(fragmentCanceled);
                         dialog.dismiss();
                     }
                 });
