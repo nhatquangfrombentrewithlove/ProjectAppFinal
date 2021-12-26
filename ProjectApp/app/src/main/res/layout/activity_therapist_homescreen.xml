@@ -17,8 +17,8 @@
             android:orientation="vertical">
 
             <fragment
-                android:id="@+id/fragmentProfile"
-                android:name="com.example.fragment.profile"
+                android:id="@+id/fragmentProfile_bs"
+                android:name="com.example.fragment.profile_bs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_profile_bs" />
